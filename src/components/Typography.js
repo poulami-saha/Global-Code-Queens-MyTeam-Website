@@ -1,4 +1,4 @@
-import { createElement } from 'react';
+import React from 'react';
 
 export const TypographyElements = {
   "body-1": "p",
@@ -11,7 +11,7 @@ export const TypographyElements = {
 }
 
 export default function Typography(
-  { elType, className = "", id, style, children }
+  { elType, className = "", id = "", children }
 ) {
   if (!Object.keys(TypographyElements).includes(elType)) {
     throw TypeError("Unsupported element type for Typography component")
@@ -19,13 +19,11 @@ export default function Typography(
 
   className = elType + " " + className + " typography";
 
-  return createElement(
-    TypographyElements[elType],
-    { 
-      className,
-      id,
-      style
-    },
-    children,
+  const Tag = TypographyElements[elType];
+
+  return (
+    <Tag className={className} id={id}>
+      {children}
+    </Tag>
   )
 }
