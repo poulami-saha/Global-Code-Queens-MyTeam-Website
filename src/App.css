@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,600;0,700;1,600;1,700&display=swap");
+
+* {
+  /* font fallback stack from React defaults */
+  font-family: "Livvic", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 600; /* semi-bold */
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +45,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.buttonContainer {
+  height: 120px;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttonContainerColor {
+  background-color: #012f34;
 }
