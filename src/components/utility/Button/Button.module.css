@@ -1,3 +1,14 @@
+:root {
+  --primary-white-color: #fff;
+  --primary-hover-color: #002529;
+  --primary-disabled-color: #666666;
+  --primary-disabled-border-color: #cccccc;
+  --secondary-hover-color: #79c8c7;
+  --secondary-disabled-color: #374041;
+  --tertiary-color: #012f34;
+  --tertiary-disabled-color: #666666;
+  --tertiary-disabled-border-color: #a0a0a0;
+}
 .button {
   padding: 10px 20px;
   border: none;
@@ -12,19 +23,19 @@
 /* Primary Button */
 .buttonPrimary {
   background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--primary-white-color);
+  border: 2px solid var(--primary-white-color);
 }
 
 .buttonPrimaryHover:hover {
-  background-color: #fff;
-  color: #002529;
+  background-color: var(--primary-white-color);
+  color: var(--primary-hover-color);
 }
 
 .buttonPrimaryDisabled:disabled {
   background-color: transparent;
-  color: #666666;
-  border: 2px solid #cccccc;
+  color: var(--primary-disabled-color);
+  border: 2px solid var(--primary-disabled-border-color);
 }
 
 /* Secondary Button */
@@ -34,26 +45,26 @@
 }
 
 .buttonSecondaryHover:hover {
-  background-color: #79c8c7;
+  background-color: var(--secondary-hover-color);
 }
 
 .buttonSecondaryDisabled:disabled {
-  background-color: #374041;
+  background-color: var(--secondary-disabled-color);
 }
 
 /* Tertiary Button */
 .buttonTertiary {
   background-color: #fff;
-  color: #012F34;
-  border: 2px solid #012F34;
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
 }
 
 .buttonTertiaryHover:hover {
-  background-color: #012F34;
-  color: #fff;
+  background-color: var(--tertiary-color);
+  color: var(--primary-white-color);
 }
 
 .buttonTertiaryDisabled:disabled {
-  color: #666666;
-  border: 2px solid #a0a0a0;
+  color: var(--tertiary-disabled-color);
+  border: 2px solid var(--tertiary-disabled-border-color);
 }
