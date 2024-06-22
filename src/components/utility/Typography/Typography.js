@@ -17,7 +17,7 @@ export default function Typography(
     throw TypeError("Unsupported element type for Typography component")
   };
 
-  className = elType + " " + className + " typography";
+  className = `${elType} ${className}`;
 
   const Tag = TypographyElements[elType];
 
