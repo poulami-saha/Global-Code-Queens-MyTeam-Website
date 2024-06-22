@@ -1,0 +1,10 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content > :first-child {
+    padding-bottom: 20px;
+    margin-block-start: 75px;
+  }
