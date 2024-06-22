@@ -5,6 +5,7 @@
   }
   
   .content > :first-child {
+    flex: 1;
     padding-bottom: 20px;
     margin-block-start: 75px;
   }
