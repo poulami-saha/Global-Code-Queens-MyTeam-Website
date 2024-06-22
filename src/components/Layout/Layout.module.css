@@ -1,14 +1,14 @@
 .layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .content {
-    flex: 1;
+  flex: 1;
 }
-  
-  .content > :first-child {
-    padding-bottom: 20px;
-    margin-block-start: 75px;
-  }
+
+.content > :first-child {
+  padding-bottom: 20px;
+  margin-block-start: 75px;
+}
