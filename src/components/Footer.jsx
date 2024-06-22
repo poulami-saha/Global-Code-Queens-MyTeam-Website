@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-function footer() {
+function Footer() {
     return (
         <div>
             
@@ -10,4 +10,4 @@ function footer() {
     )
 }
 
-export default footer
+export default Footer;
