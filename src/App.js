@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/Typography.css';
-import {default as Typography} from './components/Typography.js';
+import styles from './components/utility/Typography/Typography.module.css';
+import {default as Typography} from './components/utility/Typography/Typography';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Typography elType='h1-large'>
+        <Typography elType='h1Large' className={styles.h1Large}>
           Edit <code>src/App.js</code> and save to reload.
         </Typography>
 
-        <Typography elType='body-1'>
+        <Typography elType='body1' className={styles.body1}>
           <a
             className="App-link"
             href="https://reactjs.org"

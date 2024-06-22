@@ -1,11 +1,11 @@
 import React from 'react';
 
 export const TypographyElements = {
-  "body-1": "p",
-  "body-2": "p",
+  "body1": "p",
+  "body2": "p",
   "span": "span",
-  "h1-small": "h1",
-  "h1-large": "h1",
+  "h1Small": "h1",
+  "h1Large": "h1",
   "h2": "h2",
   "h3": "h3",
 }

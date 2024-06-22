@@ -12,7 +12,7 @@ h1, h2, h3 {
   font-weight: 700; /* bold */
 }
 
-h1, h1.h1-large {
+h1, h1.h1Large {
   font-size: 64px;
   line-height: 56px;
 }
@@ -27,18 +27,18 @@ h3 {
   line-height: 28px;
 }
 
-.body-1 {
+.body1 {
   font-size: 18px;
   line-height: 28px;
 }
 
-.body-2 {
+.body2 {
   font-size: 15px;
   line-height: 25px;
 }
 
 @media (width >= 960px) {
-  h1.h1-large {
+  h1.h1Large {
     font-size: 100px;
     line-height: 100px;
   }
@@ -50,7 +50,7 @@ h3 {
 }
 
 @media (width < 768px) {
-  h1, h1.h1-large {
+  h1, h1.h1Large {
     font-size: 40px;
     line-height: 40px;
   }
