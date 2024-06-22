@@ -1,71 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import styles from './components/utility/Typography/Typography.module.css';
-import {default as Typography} from './components/utility/Typography/Typography';
-import Button from "./components/utility/Button/Button";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import NotFound from "./components/pages/NotFound/NotFound";
+import Home from "./components/pages/Home/Home";
+import About from "./components/pages/About/About";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
+import Playground from "./components/pages/Playground/Playground";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    errorElement: <NotFound />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <ContactUs /> },
+      { path: "/playground", element: <Playground /> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Typography elType='h1Large' className={styles.h1Large}>
-          Edit <code>src/App.js</code> and save to reload.
-        </Typography>
-
-        <Typography elType='body1' className={styles.body1}>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </Typography>
-        <h3>Primary Button</h3>
-        <div className="buttonContainer buttonContainerColor">
-          <Button
-            type="primary"
-            onClick={() => alert("Primary Button Clicked")}
-          >
-            Primary Button
-          </Button>
-
-          <Button type="primary" disabled>
-            Primary Button
-          </Button>
-        </div>
-
-        <h3>Secondary Button</h3>
-        <div className="buttonContainer buttonContainerColor">
-          <Button
-            type="secondary"
-            onClick={() => alert("Secondary Button Clicked")}
-          >
-            Secondary Button
-          </Button>
-
-          <Button type="secondary" disabled>
-            Secondary Button
-          </Button>
-        </div>
-
-        <h3>Tertiary Button</h3>
-        <div className="buttonContainer">
-          <Button
-            type="tertiary"
-            onClick={() => alert("Tertiary Button Clicked")}
-          >
-            Tertiary Button
-          </Button>
-          <Button type="tertiary" disabled>
-            Tertiary Button
-          </Button>
-        </div>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
