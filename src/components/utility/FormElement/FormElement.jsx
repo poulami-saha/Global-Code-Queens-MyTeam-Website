@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './FormElement.module.css';
+import Typography from '../Typography/Typography';
 
 const FormElement = ({ type, placeholder, value, onChange, error }) => {
   const [isActive, setIsActive] = useState(false);
@@ -36,7 +37,7 @@ const FormElement = ({ type, placeholder, value, onChange, error }) => {
   return (
     <div className={styles.formElement}>
       {inputElement}
-      {error && <div className={styles.errorMessage}>{error}</div>}
+      {error && <Typography elType="body1" className='error'>{error}</Typography>}
     </div>
   );
 };
