@@ -1,9 +1,8 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./Playground.module.css";
 import Typography from "../../utility/Typography/Typography";
 import Button from "../../utility/Button/Button";
-import FormElement from '../../utility/FormElement/FormElement';
-
+import FormElement from "../../utility/FormElement/FormElement";
 
 const Playground = () => {
   const [value, setValue] = useState('');
@@ -16,14 +15,14 @@ const Playground = () => {
     } else {
       setError('');
     }
-  }
+  };
   return (
     <div className={styles.appHeader}>
-      <Typography elType="h1Large" className={styles.h1Large}>
+      <Typography elType="h1">
         Edit <code>src/App.js</code> and save to reload.
       </Typography>
 
-      <Typography elType="body1" className={styles.body1}>
+      <Typography elType="body1">
         <a
           className={styles.appLink}
           href="https://reactjs.org"
@@ -70,19 +69,17 @@ const Playground = () => {
           Tertiary Button
         </Button>
       </div>
-       {/* Form Element */}
-      <>
-      <Typography elType='h1Small' className={styles.h1Small}>
-          Form Elements
-      </Typography>
-      <FormElement
-        type="text"
-        placeholder="Message"
-        value={value}
-        onChange={handleChange}
-        error={error}
-      />
-      </>
+
+      <div>
+        <Typography elType="h2">Form Elements</Typography>
+        <FormElement
+          type="text"
+          placeholder="Message"
+          value={value}
+          onChange={handleChange}
+          error={error}
+        />
+      </div>
     </div>
   );
 };
