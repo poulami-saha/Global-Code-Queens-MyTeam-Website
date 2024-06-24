@@ -1,0 +1,26 @@
+.footerHero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: palevioletred;
+}
+
+.footerContent {
+    display: flex;
+    place-items: center;
+    
+    justify-content: center;
+
+
+}
+
+.button-section {
+  display: flex;
+}
+.btn button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid rgb(128, 107, 107);
+}
