@@ -32,6 +32,10 @@ The challenge is part of [Frontend Mentor](https://www.frontendmentor.io/) premi
       remotes/origin/responsive-footer-component
       remotes/origin/typography-component
     ```
+4. This project uses npm as its package manager (not yarn). Install the dependencies by running `npm install`.
+5. Start the local dev server with `npm start`.
+  - If you haven't run `npm install`, you won't be able to start the site.
+  - Occasionally, new dependencies may be added. When this happens, you'll probably need to run the install command again.
 
 # Branching
 ## How to organize branches
@@ -48,7 +52,8 @@ The challenge is part of [Frontend Mentor](https://www.frontendmentor.io/) premi
     - Open a new branch from there: `git checkout -n feature/example` 
   - Option 2:
     - Open a new branch from `main`
-    - Merge the current state of any branch(es) that you want features from
+    - Merge the current state of any branch(es) that you want features from, using 
+      `git pull origin desired-branch-name` *from inside your new branch*
 
 # Pull Requests
 Pull requests, or PRs, are how we share our work for review before merging it into the main branch. GitHub has documentation for how to create a [PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
@@ -68,6 +73,7 @@ When you have opened a PR, please let us know! *All members of the team are enco
 
 ## Merging PRs
 - PRs must be approved by at least one team member before they are merged.
+- Please do not merge your PR if you have 1 approval and there is a change requested by another approver. Please address all comments before merging the PR.
 - We encourage people to merge their own PRs after approval!
   - Merge conflicts will happen sometimes and it's good to learn about resolving them.
   - If you're uncomfortable doing your own merge, ask if someone can help walk you through it.
