@@ -1,29 +1,32 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./Playground.module.css";
 import Typography from "../../utility/Typography/Typography";
 import Button from "../../utility/Button/Button";
-import FormElement from '../../utility/FormElement/FormElement';
-
+import FormElement from "../../utility/FormElement/FormElement";
 
 const Playground = () => {
-  const [value, setValue] = useState('');
-  const [error, setError] = useState('');
+  const [value, setValue] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (event) => {
     setValue(event.target.value);
-    if (event.target.value === '') {
-      setError('This field is required');
+    if (event.target.value === "") {
+      setError("This field is required");
     } else {
-      setError('');
+      setError("");
     }
-  }
+  };
   return (
     <div className={styles.appHeader}>
-      <Typography elType="h1Large" className={styles.h1Large}>
-        Edit <code>src/App.js</code> and save to reload.
-      </Typography>
+      <h3>Typography</h3>
+      <Typography elType="h1Large">h1 Large Text</Typography>
+      <Typography elType="h1Small">H1 Small Text</Typography>
+      <Typography elType="body1">body1 Text</Typography>
+      <Typography elType="body2">body2 Text</Typography>
+      <Typography elType="h2">h2 Text</Typography>
+      <Typography elType="h3">h3 Text</Typography>
 
-      <Typography elType="body1" className={styles.body1}>
+      <Typography elType="body1">
         <a
           className={styles.appLink}
           href="https://reactjs.org"
@@ -70,19 +73,17 @@ const Playground = () => {
           Tertiary Button
         </Button>
       </div>
-       {/* Form Element */}
-      <>
-      <Typography elType='h1Small' className={styles.h1Small}>
-          Form Elements
-      </Typography>
-      <FormElement
-        type="text"
-        placeholder="Message"
-        value={value}
-        onChange={handleChange}
-        error={error}
-      />
-      </>
+
+      <div>
+        <Typography elType="h2">Form Elements</Typography>
+        <FormElement
+          type="text"
+          placeholder="Message"
+          value={value}
+          onChange={handleChange}
+          error={error}
+        />
+      </div>
     </div>
   );
 };

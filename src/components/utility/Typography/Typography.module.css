@@ -1,58 +1,57 @@
-/* defined in App.css:
-@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,600;0,700;1,600;1,700&display=swap');
-
-body {
-  font-family: "Livvic", -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
-  font-weight: 600;
-}
-*/
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700; /* bold */
 }
 
-h1, h1.h1Large {
-  font-size: 64px;
-  line-height: 56px;
+.h1Large,
+.h1Small {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
-h2 {
-  font-size: 32px;
-  line-height: 32px;
+.h2 {
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
-h3 {
-  font-size: 18px;
-  line-height: 28px;
-}
-
+.h3,
 .body1 {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 0.9rem;
+  line-height: 1.75rem;
 }
 
 .body2 {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
-@media (width >= 960px) {
-  h1.h1Large {
-    font-size: 100px;
-    line-height: 100px;
-  }
-
-  h2 {
-    font-size: 48px;
-    line-height: 48px;
+@media (min-width: 768px) {
+  .h1Large,
+  .h1Small {
+    font-size: 4rem;
+    line-height: 3.5rem;
   }
 }
 
-@media (width < 768px) {
-  h1, h1.h1Large {
-    font-size: 40px;
-    line-height: 40px;
+@media (min-width: 960px) {
+  .h1Large {
+    font-size: 6.25rem;
+    line-height: 6.25rem;
+  }
+
+  .h1Small {
+    font-size: 4rem;
+    line-height: 6.25rem;
+  }
+
+  .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .h3,
+  .body1 {
+    font-size: 1.12rem;
   }
 }
