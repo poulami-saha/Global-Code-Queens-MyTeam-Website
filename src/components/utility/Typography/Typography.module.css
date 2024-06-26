@@ -14,7 +14,8 @@ h2 {
   line-height: 2rem;
 }
 
-h3 .body1 {
+h3,
+.body1 {
   font-size: 0.9rem;
   line-height: 1.75rem;
 }
@@ -42,7 +43,8 @@ h3 .body1 {
     line-height: 3rem;
   }
 
-  h3 .body1 {
+  h3,
+  .body1 {
     font-size: 1.12rem;
   }
 }
