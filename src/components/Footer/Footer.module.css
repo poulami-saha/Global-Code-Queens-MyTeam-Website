@@ -11,7 +11,6 @@
   /* HeroFooter Syles */
 
   .footerContent {
-
        background-color: #F67E7E;
        display: flex;
        align-content: center;
@@ -34,6 +33,10 @@
     font-size: 2rem;
 
   }
+
+  .footerImg {
+    height: auto;
+  }
   
   
 
@@ -47,3 +50,148 @@
     font-size: 1rem;
 
   }
+
+
+  /* SubFooter styles */
+
+
+  .footerInfo {
+    background-color: #012F34;
+    display: flex;
+    justify-content: space-between;
+   padding: 2rem;
+   position: relative;
+   
+  }
+
+  .logoDesc img {
+    text-align: justify;
+    
+  }
+
+  .logoDesc ul {
+    margin-right: 3rem;
+  }
+
+  
+
+  .logoText {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   text-align: justify;
+   color: #FFFF;
+   padding-top: 1rem;
+   margin-left: 0.5rem;
+  }
+
+  .location ul {
+    display: grid;
+    text-align: justify;
+    gap: .4rem;
+    color: #979797;
+    font-size: 15px;
+  }
+
+  .footerInfo ul li {
+   list-style: none;
+  }
+
+  .socialLinks p {
+    color: #979797;
+    font-size: 15px;
+    padding-top: 1rem;
+    text-align: justify;
+
+
+
+  }
+
+  .socialLinks ul {
+    display: flex;
+    gap: 0.8rem;
+
+  }
+
+
+  /* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+   .footer {
+    display: grid;
+   }
+
+
+  .footerText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* width: 100%; */
+    padding: 10px 15px;
+  }
+
+
+
+  .footerText h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn button {
+    font-size: 0.875rem;
+    padding: 0.4rem 1.2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .footerText {
+    display: grid;
+    /* width: 100%; */
+    padding: 10px 15px;
+  }
+
+  .footerText h2 {
+    font-size: 1.75rem;
+  }
+
+  .btn button {
+    font-size: 0.9375rem;
+    padding: 0.45rem 1.3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .footerText {
+    flex-direction: row;
+    padding: 18px 25px;
+  }
+
+  .footerText h2 {
+    font-size: 1.875rem;
+  }
+
+  .btn button {
+    font-size: 0.9375rem;
+    padding: 0.45rem 1.3rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .footerText {
+    flex-direction: row;
+    padding: 20px 30px;
+  }
+
+  .footerText h2 {
+    font-size: 2rem;
+  }
+
+  .btn button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
