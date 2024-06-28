@@ -15,8 +15,7 @@
 }
 
 .disabled {
-  background-color: #f0f0f0;
-  color: #ccc;
-  border-color: #ccc;
+  color: var(--primary-disabled-color);
+  border-color: var(--primary-disabled-border-color);
   cursor: not-allowed;
 }

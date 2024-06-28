@@ -22,13 +22,12 @@ const Button = ({ style, disabled = false, onClick, children, className }) => {
   const buttonClass = classNames(styles.button, className, {
     [styles.disabled]: disabled,
   });
-
+  const buttonStyle = buttonColorStyle[style];
   const colorConfig = {
-    "--button-color": buttonColorStyle[style].color,
-    "--button-border-color": buttonColorStyle[style].borderColor,
-    "--button-hover-background-color":
-      buttonColorStyle[style].hoverBackgroundColor,
-    "--button-hover-color": buttonColorStyle[style].hoverColor,
+    "--button-color": buttonStyle.color,
+    "--button-border-color": buttonStyle.borderColor,
+    "--button-hover-background-color": buttonStyle.hoverBackgroundColor,
+    "--button-hover-color": buttonStyle.hoverColor,
   };
 
   return (

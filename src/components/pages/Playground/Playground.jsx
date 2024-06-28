@@ -36,18 +36,26 @@ const Playground = () => {
           Learn React
         </a>
       </Typography>
-      <Button style="white" onClick={() => alert("Primary Button Clicked")}>
+      <Button
+        style="white"
+        onClick={() => alert("Primary Button Clicked")}
+        className={styles.buttonMargin}
+      >
         White Color Button
       </Button>
-      <Button style="dark" onClick={() => alert("Secondary Button Clicked")}>
+      <Button
+        style="dark"
+        onClick={() => alert("Secondary Button Clicked")}
+        className={styles.buttonMargin}
+      >
         Dark Color Button
       </Button>
 
-      <Button style="white" disabled>
+      <Button style="white" disabled className={styles.buttonMargin}>
         Disabled White Color Button
       </Button>
       <div>
-        <Typography elType="h2">Form Elements</Typography>
+        <Typography elType="body1">Form Elements</Typography>
         <FormElement
           type="text"
           placeholder="Message"
