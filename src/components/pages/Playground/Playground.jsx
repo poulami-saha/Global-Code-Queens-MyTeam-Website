@@ -36,44 +36,16 @@ const Playground = () => {
           Learn React
         </a>
       </Typography>
-      <h3>Primary Button</h3>
-      <div className="buttonContainer buttonContainerColor">
-        <Button type="primary" onClick={() => alert("Primary Button Clicked")}>
-          Primary Button
-        </Button>
+      <Button style="white" onClick={() => alert("Primary Button Clicked")}>
+        White Color Button
+      </Button>
+      <Button style="dark" onClick={() => alert("Secondary Button Clicked")}>
+        Dark Color Button
+      </Button>
 
-        <Button type="primary" disabled>
-          Primary Button
-        </Button>
-      </div>
-
-      <h3>Secondary Button</h3>
-      <div className="buttonContainer buttonContainerColor">
-        <Button
-          type="secondary"
-          onClick={() => alert("Secondary Button Clicked")}
-        >
-          Secondary Button
-        </Button>
-
-        <Button type="secondary" disabled>
-          Secondary Button
-        </Button>
-      </div>
-
-      <h3>Tertiary Button</h3>
-      <div className="buttonContainer">
-        <Button
-          type="tertiary"
-          onClick={() => alert("Tertiary Button Clicked")}
-        >
-          Tertiary Button
-        </Button>
-        <Button type="tertiary" disabled>
-          Tertiary Button
-        </Button>
-      </div>
-
+      <Button style="white" disabled>
+        Disabled White Color Button
+      </Button>
       <div>
         <Typography elType="h2">Form Elements</Typography>
         <FormElement

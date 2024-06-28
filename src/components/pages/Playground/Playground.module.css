@@ -9,6 +9,9 @@
 .buttonContainerColor {
   background-color: #012f34;
 }
+.buttonContainerAlternateColor {
+  background-color: white;
+}
 
 .appHeader {
   background-color: #282c34;
