@@ -17,7 +17,7 @@ h3 {
 
 .h3,
 .body1 {
-  font-size: 0.9rem;
+  font-size: 1.12rem;
   line-height: 1.75rem;
 }
 
@@ -62,10 +62,5 @@ h3 {
   .h2 {
     font-size: 3rem;
     line-height: 3rem;
-  }
-
-  .h3,
-  .body1 {
-    font-size: 1.12rem;
   }
 }
