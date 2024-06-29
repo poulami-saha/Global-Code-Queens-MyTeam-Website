@@ -26,6 +26,20 @@ h3 {
   line-height: 1.5rem;
 }
 
+.error::placeholder {
+  color: var(--error-color);
+  opacity: 0.6;
+}
+
+.error {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.62rem;
+  line-height: 0.81rem;
+  color: var(--error-color);
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   .h1Large,
   .h1Small {

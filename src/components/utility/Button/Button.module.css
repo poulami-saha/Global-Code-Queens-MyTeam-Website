@@ -19,3 +19,34 @@
   border-color: var(--primary-disabled-border-color);
   cursor: not-allowed;
 }
+
+/* Secondary Button */
+.buttonSecondary {
+  background-color: var(--primary-white-color);
+  color: var(--secondary-disabled-font-color);
+}
+
+.buttonSecondaryHover:hover {
+  background-color: var(--secondary-hover-color);
+}
+
+.buttonSecondaryDisabled:disabled {
+  background-color: var(--secondary-disabled-color);
+}
+
+/* Tertiary Button */
+.buttonTertiary {
+  background-color: var(--primary-white-color);
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+}
+
+.buttonTertiaryHover:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-white-color);
+}
+
+.buttonTertiaryDisabled:disabled {
+  color: var(--tertiary-disabled-color);
+  border: 2px solid var(--tertiary-disabled-border-color);
+}
