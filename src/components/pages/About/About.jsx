@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./About.module.css";
+import Clients from "../../About/Clients";
 
 const About = () => {
-  return <div>About</div>;
+  return <Clients />;
 };
 
 export default About;
