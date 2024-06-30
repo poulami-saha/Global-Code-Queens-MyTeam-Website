@@ -19,9 +19,6 @@ html {
   --primary-disabled-border-color: #cccccc;
   --secondary-hover-color: #79c8c7;
   --secondary-disabled-color: #374041;
-  --secondary-disabled-font-color: #002529;
   --tertiary-color: #012f34;
-  --tertiary-disabled-color: #666666;
-  --tertiary-disabled-border-color: #a0a0a0;
   --error-color: #f67e7e;
 }
