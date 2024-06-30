@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Global-Code-Queens-MyTeam-Website/static/css/main.87c1632b.css",
-    "main.js": "/Global-Code-Queens-MyTeam-Website/static/js/main.76b4d521.js",
+    "main.js": "/Global-Code-Queens-MyTeam-Website/static/js/main.640be97f.js",
     "static/js/453.354c2bf0.chunk.js": "/Global-Code-Queens-MyTeam-Website/static/js/453.354c2bf0.chunk.js",
     "index.html": "/Global-Code-Queens-MyTeam-Website/index.html",
     "main.87c1632b.css.map": "/Global-Code-Queens-MyTeam-Website/static/css/main.87c1632b.css.map",
-    "main.76b4d521.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/main.76b4d521.js.map",
+    "main.640be97f.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/main.640be97f.js.map",
     "453.354c2bf0.chunk.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/453.354c2bf0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87c1632b.css",
-    "static/js/main.76b4d521.js"
+    "static/js/main.640be97f.js"
   ]
 }
