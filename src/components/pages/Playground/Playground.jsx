@@ -37,21 +37,21 @@ const Playground = () => {
         </a>
       </Typography>
       <Button
-        style="white"
+        elType="white"
         onClick={() => alert("Primary Button Clicked")}
         className={styles.buttonMargin}
       >
         White Color Button
       </Button>
       <Button
-        style="dark"
+        elType="dark"
         onClick={() => alert("Secondary Button Clicked")}
         className={styles.buttonMargin}
       >
         Dark Color Button
       </Button>
 
-      <Button style="white" disabled className={styles.buttonMargin}>
+      <Button elType="white" disabled className={styles.buttonMargin}>
         Disabled White Color Button
       </Button>
       <div>
