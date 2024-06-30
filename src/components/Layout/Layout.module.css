@@ -9,8 +9,3 @@
 .content {
   flex: 1;
 }
-
-.content > :first-child {
-  padding-bottom: 20px;
-  margin-block-start: 75px;
-}
