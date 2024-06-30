@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Global-Code-Queens-MyTeam-Website/static/css/main.e645ed90.css",
-    "main.js": "/Global-Code-Queens-MyTeam-Website/static/js/main.0153db37.js",
+    "main.css": "/Global-Code-Queens-MyTeam-Website/static/css/main.87c1632b.css",
+    "main.js": "/Global-Code-Queens-MyTeam-Website/static/js/main.af24d18b.js",
     "static/js/453.354c2bf0.chunk.js": "/Global-Code-Queens-MyTeam-Website/static/js/453.354c2bf0.chunk.js",
     "index.html": "/Global-Code-Queens-MyTeam-Website/index.html",
-    "main.e645ed90.css.map": "/Global-Code-Queens-MyTeam-Website/static/css/main.e645ed90.css.map",
-    "main.0153db37.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/main.0153db37.js.map",
+    "main.87c1632b.css.map": "/Global-Code-Queens-MyTeam-Website/static/css/main.87c1632b.css.map",
+    "main.af24d18b.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/main.af24d18b.js.map",
     "453.354c2bf0.chunk.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/453.354c2bf0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e645ed90.css",
-    "static/js/main.0153db37.js"
+    "static/css/main.87c1632b.css",
+    "static/js/main.af24d18b.js"
   ]
 }
