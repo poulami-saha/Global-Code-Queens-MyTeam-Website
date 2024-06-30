@@ -1,0 +1,21 @@
+.container {
+  background: #014e56;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  color: white;
+  padding-inline: 24px;
+  text-align: center;
+  gap: 16px;
+  position: relative;
+}
+
+.containerImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  transform: translate(0, -45%);
+}
