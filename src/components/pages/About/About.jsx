@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./About.module.css";
 import Clients from "../../About/Clients";
 import AboutDetails from "../../About/AboutDetails";
+// import styles from "./About.module.css";
 
 const About = () => {
   return (
