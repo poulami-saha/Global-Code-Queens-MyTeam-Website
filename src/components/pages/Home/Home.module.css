@@ -1,0 +1,36 @@
+.Home2 {
+  height: auto;
+  width: 100%;
+  background-color: rgb(1, 47, 52);
+  color: white;
+  display: flex;
+}
+.Home__secondsection {
+  margin-left: 1rem;
+}
+.Home__secondsection__firstContainer {
+  display: flex;
+}
+.Home2__Heading {
+  margin: 1rem 4rem 1rem 0.5rem;
+}
+.Home__secondsection__secondContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+}
+.Home__secondsection__secondContainer__first, 
+.Home__secondsection__secondContainer__second, 
+.Home__secondsection__secondContainer__third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Home2__body1{
+    color: rgb(246, 126, 126);
+}
+.Home2__body2{
+    text-align: center;
+}
