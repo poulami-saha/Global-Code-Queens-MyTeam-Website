@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #004047;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 1002px;
+}
+
+.topImage {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+
+.bottomImage {
+  width: 147px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 8.75rem; 
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 1.875rem;
+  row-gap: 3rem;
+}

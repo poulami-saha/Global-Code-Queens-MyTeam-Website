@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 253px;
+  width: 350px;
+  background: #012f34;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border-color: #C4FFFE;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 1rem;
+}
+
+.name {
+  color: #79C8C7;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
+.quote {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  position: absolute;
+  bottom: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border-style: none;
+}
+
+#show {
+  background: #F67E7E;
+}
+
+#close {
+  background: #79C8C7;
+}
+
+#show:hover {
+  background: #79C8C7;
+}
+
+#close:hover {
+  background: #F67E7E;
+}
+
+.icon {
+  fill: #012F34;
+}
+
+.twitter {
+  margin-right: 1rem;
+}
+
+.twitter:hover {
+  fill: #F67E7E;
+}
+
+.linkedin:hover {
+  fill: #F67E7E;
+}
