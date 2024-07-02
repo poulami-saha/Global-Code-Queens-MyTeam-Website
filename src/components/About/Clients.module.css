@@ -3,7 +3,7 @@
   margin: 0;
 }
 .container {
-  background: #012f34;
+  background: var(--dark-theme-background);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -110,7 +110,6 @@
   }
   .news {
     flex-direction: row;
-    gap: 4rem;
     justify-content: space-between;
   }
   .logoVerge {

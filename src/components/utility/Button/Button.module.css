@@ -37,12 +37,12 @@
 /* Tertiary Button */
 .buttonTertiary {
   background-color: var(--primary-white-color);
-  color: var(--tertiary-color);
-  border: 2px solid var(--tertiary-color);
+  color: var(--dark-theme-background);
+  border: 2px solid var(--dark-theme-background);
 }
 
 .buttonTertiaryHover:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--dark-theme-background);
   color: var(--primary-white-color);
 }
 

@@ -3,7 +3,11 @@ import Clients from "../../About/Clients";
 // import styles from "./About.module.css";
 
 const About = () => {
-  return <Clients />;
+  return (
+    <>
+      <Clients />
+    </>
+  );
 };
 
 export default About;
