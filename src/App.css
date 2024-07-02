@@ -11,3 +11,14 @@
 html {
   font-size: 16px; /* base font size */
 }
+
+:root {
+  --primary-white-color: #fff;
+  --primary-hover-color: #002529;
+  --primary-disabled-color: #666666;
+  --primary-disabled-border-color: #cccccc;
+  --secondary-hover-color: #79c8c7;
+  --secondary-disabled-color: #374041;
+  --tertiary-color: #012f34;
+  --error-color: #f67e7e;
+}
