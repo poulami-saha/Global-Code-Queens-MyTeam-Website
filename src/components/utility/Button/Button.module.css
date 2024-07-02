@@ -16,18 +16,18 @@
 
 .disabled {
   color: var(--primary-disabled-color);
-  border-color: var(--primary-disabled-border-color);
+  border-color: var(--primary-disabled-border);
   cursor: not-allowed;
 }
 
 /* Secondary Button */
 .buttonSecondary {
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-white);
   color: var(--secondary-disabled-font-color);
 }
 
 .buttonSecondaryHover:hover {
-  background-color: var(--secondary-hover-color);
+  background-color: var(--rapture-blue);
 }
 
 .buttonSecondaryDisabled:disabled {
@@ -36,14 +36,14 @@
 
 /* Tertiary Button */
 .buttonTertiary {
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-white);
   color: var(--dark-theme-background);
   border: 2px solid var(--dark-theme-background);
 }
 
 .buttonTertiaryHover:hover {
   background-color: var(--dark-theme-background);
-  color: var(--primary-white-color);
+  color: var(--primary-white);
 }
 
 .buttonTertiaryDisabled:disabled {
