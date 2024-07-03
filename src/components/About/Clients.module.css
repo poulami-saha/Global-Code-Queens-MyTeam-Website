@@ -64,7 +64,7 @@
   }
   .news {
     flex-direction: row;
-    gap: 3rem;
+    gap: 2.5rem;
     justify-content: space-between;
   }
 
