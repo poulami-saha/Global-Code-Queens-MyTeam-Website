@@ -119,8 +119,4 @@
 }
 .SuccessStories_caption {
   padding-bottom: 10px;
-  font-size: calc(13 / 16 * 1rem);
-  line-height: calc(18 / 16);
-  font-style: italic;
-  font-weight: 400;
 }

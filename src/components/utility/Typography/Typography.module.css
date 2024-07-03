@@ -37,6 +37,7 @@ h3 {
 .h3Large {
   font-size: 1.12rem;
   line-height: 1.75rem;
+  font-weight: 700;
 }
 
 .error::placeholder {
