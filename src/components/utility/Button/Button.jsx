@@ -18,11 +18,11 @@ const buttonColorStyle = {
   },
 };
 
-const Button = ({ style, disabled = false, onClick, children, className }) => {
+const Button = ({ elType, disabled = false, onClick, children, className }) => {
   const buttonClass = classNames(styles.button, className, {
     [styles.disabled]: disabled,
   });
-  const buttonStyle = buttonColorStyle[style];
+  const buttonStyle = buttonColorStyle[elType];
   const colorConfig = {
     "--button-color": buttonStyle.color,
     "--button-border-color": buttonStyle.borderColor,
@@ -43,7 +43,7 @@ const Button = ({ style, disabled = false, onClick, children, className }) => {
 };
 
 Button.propTypes = {
-  style: PropTypes.oneOf(Object.keys(buttonColorStyle)).isRequired,
+  elType: PropTypes.oneOf(Object.keys(buttonColorStyle)).isRequired,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
