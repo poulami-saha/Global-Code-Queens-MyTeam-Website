@@ -1,26 +1,16 @@
-:root {
-  --primary-dark: #014e56;
-  --primary-right: #f67e7e;
-  --primary-white: #ffffff;
-  --secondary-light: #79c8c7;
-  --secondary-middle: #2c6269;
-  --secondary-dark: #004047;
-}
 
 /* whole section */
 .SuccessStories {
-  background-color: var(--primary-dark);
-  color: var(--primary-white);
+  background-color: var(--secondary-dark-color);
+  color: var(--primary-white-color);
   position: relative;
 }
 
-/* whole section  background decoratioin*/
+/* whole section  background decoration*/
 .SuccessStories::before,
 .SuccessStories::after {
     content: "";
     position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .SuccessStories::before {
@@ -78,7 +68,7 @@
 /* content */
 .SuccessStories_content {
   width: 100%;
-  padding: 10px 0;
+  padding-block: 10px;
   background: transparent url("../../../assets/icon-quotes.svg") no-repeat center top / 56px 56px;
 }
 
@@ -94,7 +84,7 @@
   height: 60px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 2px solid var(--secondary-light);
+  border: 2px solid var(--secondary-hover-color);
   overflow: hidden;
 }
 
@@ -111,11 +101,11 @@
   margin-bottom: 48px;
 }
 .SuccessStories_heading span {
-  color: var(--secondary-light);
+  color: var(--secondary-hover-color);
   font-weight: 800;
 }
 .SuccessStories_name {
-  color: var(--secondary-light);
+  color: var(--secondary-hover-color);
 }
 .SuccessStories_caption {
   padding-bottom: 10px;

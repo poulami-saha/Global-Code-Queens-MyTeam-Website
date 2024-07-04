@@ -17,8 +17,11 @@ html {
   --primary-hover-color: #002529;
   --primary-disabled-color: #666666;
   --primary-disabled-border-color: #cccccc;
+  --primary-dark-color: #014E56;
   --secondary-hover-color: #79c8c7;
   --secondary-disabled-color: #374041;
+  --secondary-semidark-color: #2C6269;
+  --secondary-dark-color: #004047;
   --tertiary-color: #012f34;
   --error-color: #f67e7e;
 }
