@@ -10,7 +10,7 @@ import containerImage from "../../assets/bg-pattern-about-4.svg";
 const Clients = () => {
   return (
     <section className={styles.container}>
-      <img src={containerImage} alt="geometric background flourish" className={styles.containerImage} />
+      <img src={containerImage} alt="" className={styles.containerImage} />
       <Typography elType="h2" className={styles.title}>
         Some of our clients
       </Typography>
