@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import styles from "./FormElement.module.css";
 import Typography from "../Typography/Typography";
 
-const FormElement = ({ type, placeholder, value, onChange, error }) => {
+const FormElement = ({ type, placeholder, value, onChange, onBlur, error }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleFocus = () => {
     setIsActive(true);
   };
 
-  const handleBlur = () => {
+  const handleBlur = (e) => {
     setIsActive(false);
+    if (onBlur) {
+      onBlur(e);
+    }
   };
 
   const inputElement =
@@ -27,7 +30,7 @@ const FormElement = ({ type, placeholder, value, onChange, error }) => {
       />
     ) : (
       <input
-        type="text"
+        type={type}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
