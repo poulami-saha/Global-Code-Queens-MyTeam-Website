@@ -5,6 +5,7 @@ import pattern3 from "../../../assets/bg-pattern-home-3.svg";
 import iconcog from "../../../assets/icon-cog.svg";
 import iconchart from "../../../assets/icon-chart.svg";
 import iconperson from "../../../assets/icon-person.svg";
+import SuccessStories from "../../HomeContainer/SuceessStories/SuccessStories";
 
 const Home = () => {
   return (
