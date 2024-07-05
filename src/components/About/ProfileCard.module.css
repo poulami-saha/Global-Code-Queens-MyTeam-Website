@@ -13,7 +13,7 @@
   padding-right: 1.5rem;
   height: 13.813rem;
   width: 18.875rem;
-  background: #012f34;
+  background: var(--dark-theme-background);
 }
 
 .avatar {
@@ -27,13 +27,13 @@
 }
 
 .name {
-  color: #79C8C7;
+  color: var(--rapture-blue);
   width: 100%;
   text-align: center;
 }
 
 .title {
-  color: #FFFFFF;
+  color: var(--primary-white);
   font-style: italic;
   font-weight: 500;
   width: 100%;
@@ -45,48 +45,43 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--primary-white);
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
-.button {
+.showButton, 
+.hideButton {
   position: absolute;
   bottom: -28px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0;
   width: 56px;
   height: 56px;
   border-radius: 50%;
   border-style: none;
 }
 
-#show {
-  background: #F67E7E;
+.hideButton, 
+.showButton:hover:enabled {
+  background: var(--rapture-blue);
 }
 
-#close {
-  background: #79C8C7;
+.showButton, 
+.hideButton:hover:enabled {
+  background: var(--coral-color);
 }
 
-#show:hover {
-  background: #79C8C7;
+.closeIcon path {
+  fill: var(--dark-theme-background);
 }
 
-#close:hover {
-  background: #F67E7E;
-}
-
-.icon {
-  fill: #012F34;
-}
-
-.twitter {
+.twitterIcon {
   margin-right: 1rem;
 }
 
-.twitter:hover {
-  fill: #F67E7E;
-}
-
-.linkedin:hover {
-  fill: #F67E7E;
+.twitterIcon:hover path,
+.linkedinIcon:hover path  {
+  fill: var(--coral-color);
 }

@@ -4,7 +4,7 @@
 }
 
 .container {
-  background-color: #004047;
+  background-color: var(--deep-jungle-blue);
   display: flex;
   position: relative;
   justify-content: center;
@@ -35,7 +35,7 @@
 }
 
 .title {
-  color: #FFFFFF;
+  color: var(--primary-white);
   text-align: center;
   margin-bottom: 4rem;
   margin-top: 8.75rem; 

@@ -17,21 +17,21 @@ export const directors = [
     name: "Cristian Duncan",
     title: "Co-founder & COO",
     quote:
-      "Our success stems from a strong foundation of teamwork, innovation, and a relentless focus on delivering excellence to our clients and talent every single day.",
+      "Our success stems from teamwork, innovation, and a focus on delivering excellence every single day.",
     avatar: christian,
   },
   {
     name: "Cruz Hamer",
     title: "Co-founder & CTO",
     quote:
-      "We are committed to pushing the boundaries of what's possible, ensuring that our talent and clients have the best tools and platforms to succeed.",
+      "We are committed to to ensuring that our talent and clients have the best tools and platforms to succeed.",
     avatar: cruz,
   },
   {
     name: "Drake Heaton",
     title: "Business Development Lead",
     quote:
-      "By cultivating strategic alliances and identifying emerging opportunities, we are poised to expand our footprint and amplify our impact in the industry.",
+      "By cultivating strategic alliances, we are poised to expand our footprint and amplify our impact in the industry.",
     avatar: drake,
   },
   {

@@ -14,8 +14,8 @@ const Directors = () => {
           Meet the directors
         </Typography>
         <div className={styles.profiles}>
-          {directors.map((director) => (
-            <ProfileCard person={director} />
+          {directors.map((director, idx) => (
+            <ProfileCard key={idx} person={director} />
           ))}
         </div>
       </article>
