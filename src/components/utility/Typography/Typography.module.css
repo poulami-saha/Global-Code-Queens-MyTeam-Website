@@ -41,7 +41,7 @@ h3 {
 }
 
 .error::placeholder {
-  color: var(--error-color);
+  color: var(--coral-color);
   opacity: 0.6;
 }
 
@@ -50,7 +50,7 @@ h3 {
   font-weight: 700;
   font-size: 0.62rem;
   line-height: 0.81rem;
-  color: var(--error-color);
+  color: var(--coral-color);
   text-align: left;
 }
 

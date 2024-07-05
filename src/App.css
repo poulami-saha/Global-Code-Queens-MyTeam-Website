@@ -13,15 +13,15 @@ html {
 }
 
 :root {
-  --primary-white-color: #fff;
-  --primary-hover-color: #002529;
+  --primary-white: #ffffff;
+  --dark-green: #002529;
   --primary-disabled-color: #666666;
-  --primary-disabled-border-color: #cccccc;
-  --primary-dark-color: #014E56;
-  --secondary-hover-color: #79c8c7;
+  --primary-disabled-border: #cccccc;
+  --rapture-blue: #79c8c7;
   --secondary-disabled-color: #374041;
-  --secondary-semidark-color: #2C6269;
-  --secondary-dark-color: #004047;
-  --tertiary-color: #012f34;
-  --error-color: #f67e7e;
+  --coral-color: #f67e7e;
+  --dark-theme-background: #012f34;
+  --midnight-green: #014e56;
+  --police-blue: #2c6269;
+  --deep-jungle-blue: #004047;
 }

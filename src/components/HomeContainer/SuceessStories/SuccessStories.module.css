@@ -1,8 +1,8 @@
 
 /* whole section */
 .SuccessStories {
-  background-color: var(--secondary-dark-color);
-  color: var(--primary-white-color);
+  background-color: var(--deep-jungle-blue);
+  color: var(--primary-white);
   position: relative;
 }
 
@@ -84,7 +84,7 @@
   height: 60px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 2px solid var(--secondary-hover-color);
+  border: 2px solid var(--rapture-blue);
   overflow: hidden;
 }
 
@@ -101,11 +101,11 @@
   margin-bottom: 48px;
 }
 .SuccessStories_heading span {
-  color: var(--secondary-hover-color);
+  color: var(--rapture-blue);
   font-weight: 800;
 }
 .SuccessStories_name {
-  color: var(--secondary-hover-color);
+  color: var(--rapture-blue);
 }
 .SuccessStories_caption {
   padding-bottom: 10px;
