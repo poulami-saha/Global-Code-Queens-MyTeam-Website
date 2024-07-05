@@ -7,20 +7,27 @@
   gap: 20px;
 }
 .buttonContainerColor {
-  background-color: #012f34;
+  background-color: var(--dark-theme-background);
+}
+.buttonContainerAlternateColor {
+  background-color: white;
 }
 
 .appHeader {
-  background-color: #282c34;
+  background-color: gray;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .appLink {
   color: #61dafb;
+}
+
+.buttonMargin {
+  margin-block: 1rem;
 }

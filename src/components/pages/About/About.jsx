@@ -1,9 +1,13 @@
 import React from "react";
-import styles from "./About.module.css";
-import Directors from "../../About/Directors";
+import Clients from "../../About/Clients";
+// import styles from "./About.module.css";
 
 const About = () => {
-  return <Directors />;
+  return (
+    <>
+      <Clients />
+    </>
+  );
 };
 
 export default About;
