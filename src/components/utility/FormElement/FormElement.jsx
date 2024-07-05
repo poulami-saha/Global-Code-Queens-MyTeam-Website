@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import styles from "./FormElement.module.css";
 import Typography from "../Typography/Typography";
 
-const FormElement = ({ type, placeholder, value, onChange, onBlur, error }) => {
+const FormElement = ({ type, placeholder, value, onChange, onBlur,onFocus, error }) => {
   const [isActive, setIsActive] = useState(false);
 
-  const handleFocus = () => {
+  const handleFocus = (e) => {
     setIsActive(true);
+    if (onFocus) {
+      onFocus(e);
+    }
   };
 
   const handleBlur = (e) => {

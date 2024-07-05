@@ -44,7 +44,7 @@ const ContactForm = () => {
           error: "Message must be at least 25 characters",
         },
       }));
-    } else if (inputField === "email" && !isEmailValid(formData[inputField])){
+    } else if (inputField === "email" && !isEmailValid(formData[inputField].value)) {
       setFormData((prevState) => ({
         ...prevState,
         [inputField]: {
@@ -54,6 +54,13 @@ const ContactForm = () => {
       }));
     }
   };
+  const handleFocus = (inputField) => () => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [inputField]: { ...prevState[inputField], error: "" },
+    }));
+  };
+
   return (
     <form>
       <FormElement
@@ -62,6 +69,7 @@ const ContactForm = () => {
         value={formData.name.value}
         onChange={handleChange("name")}
         onBlur={handleBlur("name")}
+        onFocus={handleFocus("name")}
         error={formData.name.error}
       />
       <FormElement
@@ -70,6 +78,7 @@ const ContactForm = () => {
         value={formData.email.value}
         onChange={handleChange("email")}
         onBlur={handleBlur("email")}
+        onFocus={handleFocus("email")}
         error={formData.email.error}
       />
       <FormElement
@@ -78,6 +87,7 @@ const ContactForm = () => {
         value={formData.companyName.value}
         onChange={handleChange("companyName")}
         onBlur={handleBlur("companyName")}
+        onFocus={handleFocus("companyName")}
         error={formData.companyName.error}
       />
       <FormElement
@@ -86,6 +96,7 @@ const ContactForm = () => {
         value={formData.title.value}
         onChange={handleChange("title")}
         onBlur={handleBlur("title")}
+        onFocus={handleFocus("title")}
         error={formData.title.error}
       />
       <FormElement
@@ -94,6 +105,7 @@ const ContactForm = () => {
         value={formData.message.value}
         onChange={handleChange("message")}
         onBlur={handleBlur("message")}
+        onFocus={handleFocus("message")}
         error={formData.message.error}
       />
     </form>
