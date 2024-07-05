@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ContactForm.module.css";
+import style from "./ContactForm.module.css";
 import FormElement from "../utility/FormElement/FormElement";
 
 const ContactForm = () => {
@@ -18,19 +18,38 @@ const ContactForm = () => {
       [inputField]: { ...prevState[inputField], value: value, error: "" },
     }));
   };
+  // check if email is valid
+  const isEmailValid = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 
   const handleBlur = (inputField) => () => {
     if (!formData[inputField].value) {
       setFormData((prevState) => ({
         ...prevState,
-        [inputField]: { ...prevState[inputField], error: "This field is required" },
+        [inputField]: {
+          ...prevState[inputField],
+          error: "This field is required",
+        },
       }));
-    } else if (inputField === "message" && formData[inputField].value.length < 25) {
+    } else if (
+      inputField === "message" &&
+      formData[inputField].value.length < 25
+    ) {
       setFormData((prevState) => ({
         ...prevState,
         [inputField]: {
           ...prevState[inputField],
           error: "Message must be at least 25 characters",
+        },
+      }));
+    } else if (inputField === "email" && !isEmailValid(formData[inputField])){
+      setFormData((prevState) => ({
+        ...prevState,
+        [inputField]: {
+          ...prevState[inputField],
+          error: "Invalid email address",
         },
       }));
     }
