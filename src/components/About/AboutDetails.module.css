@@ -1,11 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .container {
-  background: #014e56;
+  background: var(--midnight-green);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  color: white;
+  color: var(--primary-white);
   padding-inline: 24px;
   text-align: center;
   gap: 16px;
@@ -14,12 +18,18 @@
   padding-bottom: 108px;
 }
 
-.containerImage {
+.container::after {
+  content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 108px;
-  transform: translate(0, 50%);
+}
+
+.container::after {
+  width: 200px;
+  height: 100px;
+  bottom: 0px;
+  right: 0px;
+  transform: translate(50%, 0);
+  background-image: url("../../assets/bg-pattern-about-1-mobile-nav-1.svg");
 }
 
 @media (min-width: 768px) {
@@ -31,8 +41,7 @@
   .aboutus {
     width: 457px;
   }
-  .containerImage {
-    transform: translate(50%, 0);
+  .container::after {
     height: 200px;
   }
 }
@@ -42,7 +51,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-inline: 165px;
+    padding-inline: 10%;
     gap: 24px;
     padding-top: 122px;
     padding-bottom: 112px;
@@ -50,7 +59,7 @@
   .bar {
     width: 50px;
     height: 4px;
-    background: #f67e7e;
+    background: var(--coral-color);
     margin-block: 40px;
   }
   .aboutus {

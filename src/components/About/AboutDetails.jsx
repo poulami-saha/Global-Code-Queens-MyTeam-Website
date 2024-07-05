@@ -1,14 +1,9 @@
 import Typography from "../utility/Typography/Typography";
 import styles from "./AboutDetails.module.css";
-import containerImage from "../../assets/bg-pattern-about-1-mobile-nav-1.svg";
+
 const AboutDetails = () => {
   return (
     <section className={styles.container}>
-      <img
-        src={containerImage}
-        alt="background-image"
-        className={styles.containerImage}
-      />
       <Typography elType="h1Small">About</Typography>
       <article>
         <div className={styles.bar}></div>

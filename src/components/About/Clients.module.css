@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   height: 632px;
-  max-width: 100%;
 }
 .title {
   color: #fff;
@@ -56,7 +55,6 @@
   .container {
     padding-inline: 40px;
     height: 308px;
-    max-width: 100%;
     overflow-x: hidden;
   }
   .title {
@@ -65,7 +63,6 @@
   .news {
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-between;
   }
 
   .logoVerge {
@@ -131,5 +128,11 @@
   .logoGadgets {
     height: 3rem;
     width: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news {
+    gap: 6rem;
   }
 }
