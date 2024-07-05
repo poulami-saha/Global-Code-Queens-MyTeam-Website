@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import style from "./ContactForm.module.css";
+import styles from "./ContactForm.module.css";
 import FormElement from "../utility/FormElement/FormElement";
+import Button from "../utility/Button/Button";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -108,6 +109,13 @@ const ContactForm = () => {
         onFocus={handleFocus("message")}
         error={formData.message.error}
       />
+      <Button
+        elType="white"
+        onClick={() => alert("Primary Button Clicked")}
+        // disabled={}
+      >
+        Submit
+      </Button>
     </form>
   );
 };
