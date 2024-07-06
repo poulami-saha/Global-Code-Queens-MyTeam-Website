@@ -67,12 +67,13 @@ const Playground = () => {
       <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
         <Button
           type="secondary"
+          elType="white"
           onClick={() => alert("Secondary Button Clicked")}
           className={styles.buttonMargin}
         >
           Secondary Button
         </Button>
-        <Button type="secondary" disabled className={styles.buttonMargin}>
+        <Button type="secondary" elType="white" disabled className={styles.buttonMargin}>
         Disabled Secondary Color Button
       </Button>
       </div>
