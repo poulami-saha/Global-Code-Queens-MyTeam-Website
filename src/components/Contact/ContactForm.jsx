@@ -134,7 +134,7 @@ const ContactForm = () => {
           error={formData.message.error}
         />
       </div>
-      <Button elType="white" onClick={handleSubmit} disabled={!isFormValid()}>
+      <Button type="secondary" elType="white" onClick={handleSubmit} disabled={!isFormValid()}>
         Submit
       </Button>
     </form>
