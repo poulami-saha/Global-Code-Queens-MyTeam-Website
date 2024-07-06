@@ -36,24 +36,46 @@ const Playground = () => {
           Learn React
         </a>
       </Typography>
-      <Button
-        elType="white"
-        onClick={() => alert("Primary Button Clicked")}
-        className={styles.buttonMargin}
-      >
-        White Color Button
-      </Button>
+      {/* Primary buttons */}
+      <Typography elType="h3">Primary button light</Typography>
+      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+        <Button
+          elType="white"
+          onClick={() => alert("Primary light Button Clicked")}
+          className={styles.buttonMargin}
+        >
+          White Color Button
+        </Button>
+        <Button elType="white" disabled className={styles.buttonMargin}>
+          Disabled White Color Button
+        </Button>
+      </div>
+      {/* Primary buttons */}
+      <Typography elType="h3">Primary button dark</Typography>
       <Button
         elType="dark"
-        onClick={() => alert("Secondary Button Clicked")}
+        onClick={() => alert("Primary dark Button Clicked")}
         className={styles.buttonMargin}
       >
         Dark Color Button
       </Button>
-
       <Button elType="white" disabled className={styles.buttonMargin}>
         Disabled White Color Button
       </Button>
+      {/* secondary buttons */}
+      <Typography elType="h3">Secondary button</Typography>
+      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+        <Button
+          type="secondary"
+          onClick={() => alert("Secondary Button Clicked")}
+          className={styles.buttonMargin}
+        >
+          Secondary Button
+        </Button>
+        <Button type="secondary" disabled className={styles.buttonMargin}>
+        Disabled Secondary Color Button
+      </Button>
+      </div>
       <div>
         <Typography elType="body1">Form Elements</Typography>
         <FormElement
