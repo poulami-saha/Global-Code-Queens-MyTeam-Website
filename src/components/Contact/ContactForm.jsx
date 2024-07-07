@@ -4,13 +4,15 @@ import FormElement from "../utility/FormElement/FormElement";
 import Button from "../utility/Button/Button";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const initialState = {
     name: { value: "", error: "", touched: false, placeholder: "Name", type: "text" },
     email: { value: "", error: "", touched: false, placeholder: "Email Address", type: "text" },
     companyName: { value: "", error: "", touched: false, placeholder: "Company Name", type: "text" },
     title: { value: "", error: "", touched: false, placeholder: "Title", type: "text" },
     message: { value: "", error: "", touched: false, placeholder: "Message", type: "textarea" },
-  });
+  };
+  
+  const [formData, setFormData] = useState(initialState);
 
   const handleChange = (inputField) => (e) => {
     const { value } = e.target;
@@ -31,7 +33,7 @@ const ContactForm = () => {
     return emailRegex.test(email);
   };
 
-  const handleBlur = (inputField) => {
+  const handleBlur = (inputField) => () => {
     if (!formData[inputField].value) {
       setFormData((prevState) => ({
         ...prevState,
@@ -77,13 +79,8 @@ const ContactForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormData({
-      name: { value: "", error: "", touched: false, placeholder: "Name", type: "text" },
-      email: { value: "", error: "", touched: false, placeholder: "Email Address", type: "text" },
-      companyName: { value: "", error: "", touched: false, placeholder: "Company Name", type: "text" },
-      title: { value: "", error: "", touched: false, placeholder: "Title", type: "text" },
-      message: { value: "", error: "", touched: false, placeholder: "Message", type: "textarea" },
-    });
+    console.log('formData'+ formData)
+    setFormData(initialState);
   };
   return (
     <form className={styles.flexColumnStart} onSubmit={handleSubmit}>
