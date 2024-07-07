@@ -2,14 +2,7 @@ body{
     background-color: var(--midnight-green);
 }
 
-.ContactForm{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 24px;
-}
-
-.ContactFormInputs{
+.flexColumnStart{
     display: flex;
     flex-direction: column;
     align-items: start;

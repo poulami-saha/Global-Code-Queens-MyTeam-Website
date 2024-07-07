@@ -5,11 +5,11 @@ import Button from "../utility/Button/Button";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: { value: "", error: "", touched: false },
-    email: { value: "", error: "", touched: false },
-    companyName: { value: "", error: "", touched: false },
-    title: { value: "", error: "", touched: false },
-    message: { value: "", error: "", touched: false },
+    name: { value: "", error: "", touched: false, placeholder: "Name", type: "text" },
+    email: { value: "", error: "", touched: false, placeholder: "Email Address", type: "text" },
+    companyName: { value: "", error: "", touched: false, placeholder: "Company Name", type: "text" },
+    title: { value: "", error: "", touched: false, placeholder: "Title", type: "text" },
+    message: { value: "", error: "", touched: false, placeholder: "Message", type: "textarea" },
   });
 
   const handleChange = (inputField) => (e) => {
@@ -78,66 +78,31 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormData({
-      name: { value: "", error: "", touched: false },
-      email: { value: "", error: "", touched: false },
-      companyName: { value: "", error: "", touched: false },
-      title: { value: "", error: "", touched: false },
-      message: { value: "", error: "", touched: false },
+      name: { value: "", error: "", touched: false, placeholder: "Name", type: "text" },
+      email: { value: "", error: "", touched: false, placeholder: "Email Address", type: "text" },
+      companyName: { value: "", error: "", touched: false, placeholder: "Company Name", type: "text" },
+      title: { value: "", error: "", touched: false, placeholder: "Title", type: "text" },
+      message: { value: "", error: "", touched: false, placeholder: "Message", type: "textarea" },
     });
   };
   return (
-    <form className={styles.ContactForm}>
-      <div className={styles.ContactFormInputs}>
-        <FormElement
-          type="text"
-          placeholder="Name"
-          value={formData.name.value}
-          onChange={handleChange("name")}
-          onBlur={handleBlur("name")}
-          onFocus={handleFocus("name")}
-          error={formData.name.error}
-        />
-        <FormElement
-          type="text"
-          placeholder="Email Address"
-          value={formData.email.value}
-          onChange={handleChange("email")}
-          onBlur={handleBlur("email")}
-          onFocus={handleFocus("email")}
-          error={formData.email.error}
-        />
-        <FormElement
-          type="text"
-          placeholder="Company Name"
-          value={formData.companyName.value}
-          onChange={handleChange("companyName")}
-          onBlur={handleBlur("companyName")}
-          onFocus={handleFocus("companyName")}
-          error={formData.companyName.error}
-        />
-        <FormElement
-          type="text"
-          placeholder="Title"
-          value={formData.title.value}
-          onChange={handleChange("title")}
-          onBlur={handleBlur("title")}
-          onFocus={handleFocus("title")}
-          error={formData.title.error}
-        />
-        <FormElement
-          type="textarea"
-          placeholder="Message"
-          value={formData.message.value}
-          onChange={handleChange("message")}
-          onBlur={handleBlur("message")}
-          onFocus={handleFocus("message")}
-          error={formData.message.error}
-        />
-      </div>
-      <Button type="secondary" elType="white" onClick={handleSubmit} disabled={!isFormValid()}>
-        Submit
-      </Button>
-    </form>
+    <form className={styles.flexColumnStart} onSubmit={handleSubmit}>
+    {Object.entries(formData).map(([key, { value, error, placeholder, type }]) => (
+      <FormElement
+        key={key}
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange(key)}
+        onBlur={handleBlur(key)}
+        onFocus={handleFocus(key)}
+        error={error}
+      />
+    ))}
+    <Button  type="secondary" disabled={!isFormValid()}>
+      Submit
+    </Button>
+  </form>
   );
 };
 
