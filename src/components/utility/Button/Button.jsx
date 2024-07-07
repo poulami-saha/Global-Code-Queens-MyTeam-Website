@@ -53,7 +53,7 @@ const Button = ({ type = "primary", elType, disabled = false, onClick, children,
 };
 
 Button.propTypes = {
-  elType: PropTypes.oneOf(["white", "dark"]).isRequired,
+  elType: PropTypes.oneOf(["white", "dark"]),
   type: PropTypes.oneOf(["primary", "secondary"]),
   disabled: PropTypes.bool,
   onClick: PropTypes.func,

@@ -31,7 +31,7 @@ const ContactForm = () => {
     return emailRegex.test(email);
   };
 
-  const handleBlur = (inputField) => () => {
+  const handleBlur = (inputField) => {
     if (!formData[inputField].value) {
       setFormData((prevState) => ({
         ...prevState,
