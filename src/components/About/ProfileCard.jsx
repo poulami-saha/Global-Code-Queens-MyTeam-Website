@@ -20,47 +20,45 @@ const ProfileCard = ({ person }) => {
   };
   
   return (
-    <div>
-      <div className={styles.container}>
-        {!showQuote ? (
-          <>
-            <img src={avatar} alt={`${name}`} className={styles.avatar} />
-            <Typography elType="h3" className={styles.name}>
-              {name}
-            </Typography>
-            <Typography elType="body2" className={styles.title}>
-              {title}
-            </Typography>
-            <Button
-              elType="dark"
-              className={styles.showButton}
-              onClick={handleClick}
-            >
-              <CrossIcon className={styles.icon} />
-            </Button>
-          </>
-        ) : (
-          <>
-            <Typography elType="h3" className={styles.name}>
-              {name}
-            </Typography>
-            <Typography elType="body2" className={styles.quote}>
-              {`"${quote}"`}
-            </Typography>
-            <div>
-              <TwitterIcon className={styles.twitterIcon} />
-              <LinkedinIcon className={styles.linkedinIcon} />
-            </div>
-            <Button
-              elType="dark"
-              className={styles.hideButton}
-              onClick={handleClick}
-            >
-              <CloseIcon className={styles.closeIcon} />
-            </Button>
-          </>
-        )}
-      </div>
+    <div className={styles.card}>
+      {!showQuote ? (
+        <div className={styles.avatarContainer}>
+          <img src={avatar} alt={`${name}`} className={styles.avatar} />
+          <Typography elType="h3" className={styles.name}>
+            {name}
+          </Typography>
+          <Typography elType="body2" className={styles.title}>
+            {title}
+          </Typography>
+          <Button
+            elType="dark"
+            className={styles.showButton}
+            onClick={handleClick}
+          >
+            <CrossIcon className={styles.icon} />
+          </Button>
+        </div>
+      ) : (
+        <div className={styles.quoteContainer}>
+          <Typography elType="h3" className={styles.name}>
+            {name}
+          </Typography>
+          <Typography elType="body2" className={styles.quote}>
+            {`"${quote}"`}
+          </Typography>
+          <div>
+            <TwitterIcon className={styles.twitterIcon} />
+            <LinkedinIcon className={styles.linkedinIcon} />
+          </div>
+          <Button
+            elType="dark"
+            className={styles.hideButton}
+            onClick={handleClick}
+          >
+            <CloseIcon className={styles.closeIcon} />
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

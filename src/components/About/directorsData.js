@@ -1,16 +1,16 @@
-import nikita from "../assets/avatar-nikita.jpg";
-import aden from "../assets/avatar-aden.jpg"
-import christian from "../assets/avatar-christian.jpg";
-import drake from "../assets/avatar-drake.jpg";
-import cruz from "../assets/avatar-cruz.jpg";
-import griffin from "../assets/avatar-griffin.jpg";
+import nikita from "../../assets/avatar-nikita.jpg";
+import aden from "../../assets/avatar-aden.jpg";
+import christian from "../../assets/avatar-christian.jpg";
+import drake from "../../assets/avatar-drake.jpg";
+import cruz from "../../assets/avatar-cruz.jpg";
+import griffin from "../../assets/avatar-griffin.jpg";
 
 export const directors = [
   {
     name: "Nikita Marks",
     title: "Founder & CEO",
     quote:
-      "Our mission is to empower talent to achieve their highest aspirations while maintaining the integrity and passion that drive their craft.",
+      "Our mission is to empower talent to achieve their aspirations with integrity and passion.",
     avatar: nikita,
   },
   {
@@ -31,7 +31,7 @@ export const directors = [
     name: "Drake Heaton",
     title: "Business Development Lead",
     quote:
-      "By cultivating strategic alliances, we are poised to expand our footprint and amplify our impact in the industry.",
+      "By cultivating strategic alliances, we aim to expand our footprint and amplify our industry impact.",
     avatar: drake,
   },
   {

@@ -3,26 +3,41 @@
   margin: 0;
 }
 
-.container {
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.card {
+  height: 17.563rem;
+  width: 20.438rem;
+}
+
+.avatarContainer, 
+.quoteContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 2rem;
+  height: 15.813rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  height: 13.813rem;
-  width: 18.875rem;
   background: var(--dark-theme-background);
+}
+
+.avatarContainer {
+  padding-top: 2rem;
+}
+
+.quoteContainer {
+  padding-top: 2.188rem;
 }
 
 .avatar {
   width: 96px;
   height: 96px;
+  outline: 2px solid var(--very-pale-cyan);
+  outline-offset: -2px;
   border-radius: 50%;
-  border-color: #C4FFFE;
-  border-width: 2px;
-  border-style: solid;
   margin-bottom: 1rem;
 }
 
@@ -42,20 +57,18 @@
 
 .quote {
   margin-top: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.386rem;
+  padding-right: 1.386rem;
   text-align: center;
   color: var(--primary-white);
   font-weight: 600;
-  margin-bottom: 1.5rem;
 }
 
 .showButton, 
 .hideButton {
   position: absolute;
   bottom: -28px;
-  left: 50%;
-  transform: translate(-50%);
   padding: 0;
   width: 56px;
   height: 56px;
@@ -84,4 +97,31 @@
 .twitterIcon:hover path,
 .linkedinIcon:hover path  {
   fill: var(--coral-color);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 17.563rem;
+  }
+
+  .quoteContainer {
+    padding-left: 1.438rem;
+    padding-right: 1.438rem;
+  }
+
+  .quote {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .card {
+    width: 21.875rem;
+  }
+
+  .quote {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
