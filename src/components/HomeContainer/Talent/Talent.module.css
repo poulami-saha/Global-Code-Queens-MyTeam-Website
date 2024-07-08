@@ -1,0 +1,50 @@
+.container {
+  background: var(--police-blue);
+  color: var(--primary-white);
+  height: 400px;
+
+}
+.rectangle{
+  background-color: var(--rapture-blue);
+  width: 50px;
+  height: 4px;
+  margin-bottom: 83px;
+}
+
+.container::after{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  top:75px;
+  content: "";
+  position: absolute;
+  background-image: url("../../../assets/bg-pattern-home-1.svg");
+}
+
+.container::before{
+  width: 358px;
+  height: 100px;
+  right: 400px;
+  top: 400px;
+  content: "";
+  position: absolute;
+  background-image: url("../../../assets/bg-pattern-home-2.svg");
+}
+
+.text_wrapper{
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  width: 635px;
+}
+
+.content {
+  width: 445px;
+}
+
+span {
+  color: var(--coral-color);
+}
