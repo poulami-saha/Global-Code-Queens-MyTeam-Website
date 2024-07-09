@@ -1,8 +1,6 @@
-.formElement {
-  position: relative;
-  width: 248px;
+.formElement{
+  width: 100%;
 }
-
 input,
 textarea {
   border: none;
@@ -10,15 +8,14 @@ textarea {
   color: #ffffff;
   background: transparent;
   padding-left: 14px;
-  width: 100%;
   outline: none;
   opacity: 0.6;
-
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: -0.115385px;
+  width: 100%;
 }
 
 .input {
@@ -29,16 +26,10 @@ textarea {
   height: 84px;
   resize: none;
 }
-
-input:hover
-textarea:hover {
-  cursor: pointer;
-  border-bottom: 1px solid #79c8c7;
-}
-
 input:focus,
 textarea:focus {
   opacity: 1;
+  cursor: pointer;
   border-bottom: 1px solid #79c8c7;
 }
 
