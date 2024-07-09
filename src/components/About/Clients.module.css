@@ -4,24 +4,30 @@
 }
 .container {
   background: var(--dark-theme-background);
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 632px;
-  max-width: 100%;
+  position: relative;
+}
+.container::after {
+  content: "";
+  position: absolute;
+}
+
+.container::after {
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../assets/bg-pattern-about-4.svg");
 }
 .title {
   color: #fff;
   margin-bottom: 64px;
-}
-.containerImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  transform: translate(0, -45%);
+  margin-top: 24px;
 }
 
 .news {
@@ -56,7 +62,6 @@
   .container {
     padding-inline: 40px;
     height: 308px;
-    max-width: 100%;
     overflow-x: hidden;
   }
   .title {
@@ -65,7 +70,6 @@
   .news {
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-between;
   }
 
   .logoVerge {
@@ -89,10 +93,7 @@
     height: 1.5rem;
     width: 6rem;
   }
-  .containerImage {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .container::after {
     height: 200px;
     width: 200px;
     transform: translate(0, -45%);
@@ -100,13 +101,11 @@
 }
 
 @media (min-width: 960px) {
-  .containerImage {
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0%);
+  .container {
+    height: 437px;
+  }
+  .container::after {
+    transform: none;
   }
   .news {
     flex-direction: row;
