@@ -1,4 +1,7 @@
 .ContactPage{
     background-color: var(--midnight-green);
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
 }
