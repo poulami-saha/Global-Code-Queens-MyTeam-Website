@@ -1,10 +1,10 @@
 import React from "react";
 import ContactForm from "../../Contact/ContactForm";
-// import styles from './ContactUs.module.css';
+import styles from './ContactUs.module.css';
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className={styles.ContactPage}>
       <ContactForm />
     </div>
   );
