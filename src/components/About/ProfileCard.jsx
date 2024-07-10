@@ -18,7 +18,7 @@ const ProfileCard = ({ person }) => {
   const handleClick = () => {
     setShowQuote(!showQuote);
   };
-  
+
   return (
     <div className={styles.card}>
       {!showQuote ? (
@@ -32,7 +32,7 @@ const ProfileCard = ({ person }) => {
           </Typography>
           <Button
             elType="dark"
-            className={styles.showButton}
+            className={styles.button}
             onClick={handleClick}
           >
             <CrossIcon className={styles.icon} />
@@ -52,7 +52,7 @@ const ProfileCard = ({ person }) => {
           </div>
           <Button
             elType="dark"
-            className={styles.hideButton}
+            className={styles.button}
             onClick={handleClick}
           >
             <CloseIcon className={styles.closeIcon} />

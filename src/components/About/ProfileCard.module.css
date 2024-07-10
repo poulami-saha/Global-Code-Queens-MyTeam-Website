@@ -3,7 +3,9 @@
   margin: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,15 +14,14 @@
   width: 20.438rem;
 }
 
-.avatarContainer, 
+.avatarContainer,
 .quoteContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   height: 15.813rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem;
   background: var(--dark-theme-background);
 }
 
@@ -56,33 +57,31 @@
 }
 
 .quote {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding-left: 1.386rem;
-  padding-right: 1.386rem;
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0 1.386rem;
   text-align: center;
   color: var(--primary-white);
   font-weight: 600;
 }
 
-.showButton, 
-.hideButton {
+.avatarContainer .button,
+.quoteContainer .button {
   position: absolute;
   bottom: -28px;
   padding: 0;
   width: 56px;
   height: 56px;
-  border-radius: 50%;
+  border-radius: 80%;
   border-style: none;
 }
 
-.hideButton, 
-.showButton:hover:enabled {
+.quoteContainer .button,
+.avatarContainer .button:hover:enabled {
   background: var(--rapture-blue);
 }
 
-.showButton, 
-.hideButton:hover:enabled {
+.avatarContainer .button,
+.quoteContainer .button:hover:enabled {
   background: var(--coral-color);
 }
 
@@ -95,7 +94,7 @@
 }
 
 .twitterIcon:hover path,
-.linkedinIcon:hover path  {
+.linkedinIcon:hover path {
   fill: var(--coral-color);
 }
 
@@ -110,18 +109,17 @@
   }
 
   .quote {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: 960px) {
   .card {
-    width: 21.875rem;
+    width: calc((96vw / 3) - 1.875rem);
+    max-width: 21.875rem;
   }
 
   .quote {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 0 1.5rem;
   }
 }

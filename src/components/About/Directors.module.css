@@ -3,7 +3,9 @@
   margin: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,28 +14,35 @@
   display: flex;
   position: relative;
   justify-content: center;
-  z-index: 1;
+  overflow-y: hidden;
 }
 
-.topImage {
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+}
+
+.container::before {
   width: 200px;
   height: 200px;
-  position: absolute;
-  top: -100px;
-  left: -100px;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../assets/bg-pattern-about-2-contact-1.svg");
 }
 
-.bottomImage {
+.container::after {
   width: 147px;
   height: 100px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 0px;
+  right: 0px;
+  background-image: url("../../assets/bg-pattern-home-4-about-3.svg");
 }
 
 .article {
-  margin-top: 5.5rem;
-  margin-bottom: 5.5rem;
+  max-width: 94vw;
+  margin: 5.5rem auto;
 }
 
 .title {
@@ -43,40 +52,39 @@
 
 .profiles {
   margin-top: 3rem;
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
   row-gap: 1.5rem;
+  column-gap: 0.688rem;
 }
 
 @media (min-width: 768px) {
+  .container::before {
+    transform: translate(-50%, 0%);
+  }
+
   .topImage {
     top: 0;
   }
 
   .article {
-    margin-top: 6.25rem;
-    margin-bottom: 6.25rem;
+    margin: 6.25rem auto;
   }
 
   .profiles {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 0.688rem;
     row-gap: 3rem;
   }
 }
 
 @media (min-width: 960px) {
   .article {
-    margin-top: 8.75rem;
-    margin-bottom: 8.75rem;
+    margin: 8.75rem auto;
   }
 
   .profiles {
     margin-top: 4rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     column-gap: 1.875rem;
-    row-gap: 3rem;
   }
 }

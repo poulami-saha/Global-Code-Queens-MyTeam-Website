@@ -1,12 +1,14 @@
 import React from "react";
 import Clients from "../../About/Clients";
 import AboutDetails from "../../About/AboutDetails";
+import Directors from "../../About/Directors";
 //import styles from "./About.module.css";
 
 const About = () => {
   return (
     <>
       <AboutDetails />
+      <Directors />
       <Clients />
     </>
   );
