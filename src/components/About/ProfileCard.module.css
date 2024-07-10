@@ -1,17 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-*,
-*::before,
-*::after {
   box-sizing: border-box;
 }
 
 .card {
   height: 17.563rem;
   width: 20.438rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatarContainer,
@@ -19,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  width: 100%;
   height: 15.813rem;
   padding: 0 1.5rem;
   background: var(--dark-theme-background);
@@ -64,10 +63,9 @@
   font-weight: 600;
 }
 
-.avatarContainer .button,
-.quoteContainer .button {
+.mainButton {
   position: absolute;
-  bottom: -28px;
+  bottom: 0px;
   padding: 0;
   width: 56px;
   height: 56px;
@@ -75,13 +73,13 @@
   border-style: none;
 }
 
-.quoteContainer .button,
-.avatarContainer .button:hover:enabled {
+.hideButton,
+.showButton:hover:enabled {
   background: var(--rapture-blue);
 }
 
-.avatarContainer .button,
-.quoteContainer .button:hover:enabled {
+.showButton,
+.hideButton:hover:enabled {
   background: var(--coral-color);
 }
 
