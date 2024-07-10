@@ -5,12 +5,10 @@ import jakarta from "../../assets/logo-jakarta-post.png";
 import guardian from "../../assets/logo-the-guardian.png";
 import techRadar from "../../assets/logo-tech-radar.png";
 import gadgetsNow from "../../assets/logo-gadgets-now.png";
-import containerImage from "../../assets/bg-pattern-about-4.svg";
 
 const Clients = () => {
   return (
     <section className={styles.container}>
-      <img src={containerImage} alt="" className={styles.containerImage} />
       <Typography elType="h2" className={styles.title}>
         Some of our clients
       </Typography>
