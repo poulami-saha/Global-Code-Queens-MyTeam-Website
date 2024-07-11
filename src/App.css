@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,600;0,700;1,600;1,700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   /* font fallback stack from React defaults */
   font-family: "Livvic", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -13,12 +16,15 @@ html {
 }
 
 :root {
-  --primary-white-color: #fff;
-  --primary-hover-color: #002529;
+  --primary-white: #ffffff;
+  --dark-green: #002529;
   --primary-disabled-color: #666666;
-  --primary-disabled-border-color: #cccccc;
-  --secondary-hover-color: #79c8c7;
+  --primary-disabled-border: #cccccc;
+  --rapture-blue: #79c8c7;
   --secondary-disabled-color: #374041;
-  --tertiary-color: #012f34;
-  --error-color: #f67e7e;
+  --coral-color: #f67e7e;
+  --dark-theme-background: #012f34;
+  --midnight-green: #014e56;
+  --police-blue: #2c6269;
+  --deep-jungle-blue: #004047;
 }
