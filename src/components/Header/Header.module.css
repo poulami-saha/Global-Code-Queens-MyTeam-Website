@@ -91,6 +91,10 @@ nav ul li {
     right: 0;
     bottom: 0;
     background: var(--police-blue);
+    background-image: url(../../assets/bg-pattern-about-1-mobile-nav-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left 220%;
+    background-size: auto;
     z-index: 1;
     width: 350px;
     max-width: 320px;
