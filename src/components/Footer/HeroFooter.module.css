@@ -1,0 +1,286 @@
+
+.footerContent {
+    background-color: #012F34;
+    position: relative;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .footerContent.light {
+    background-color: #ffffff;
+    color: #012f34;
+  }
+  
+  .footerContent.dark {
+    background-color: #012f34;
+    color: #ffffff;
+  }
+  
+  .footerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  
+  .logoDesc {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerLinks {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+    /* flex-direction: column; */
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+    margin: 5px 0;
+  }
+  
+  .location {
+    color: #979797;
+    font-size: 1rem;
+  }
+  
+  .socialContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+    
+  }
+
+
+  
+  .copyright {
+    color: #979797;
+    /* color: inherit; */
+    font-size: 0.9rem;
+    margin-top: 2.5rem;
+    align-items: center;
+  }
+  
+  .themeToggleContainer {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, right 0.3s ease; }
+  
+  .themeToggle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .themeToggleText {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .themeToggle:hover,
+  .themeToggleText:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    .footerContent {
+        padding: 70px ;
+    }
+    
+    .footerInfo {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      position: relative;
+    }
+  
+    .footerLinks {
+      flex-direction: row;
+    }
+
+    .socialLinks {
+        position: absolute;
+        left: 24px;
+        bottom: -40px;
+        
+    }
+
+    .location {
+        position: absolute;
+        right: -30px;
+        bottom: -30px;
+        text-align: end;
+        
+    }
+
+
+    .copyright {
+        position: absolute;
+        bottom: -65px;
+        right: -30px;
+
+
+    }
+  
+    .socialContent {
+      align-items: flex-end;
+
+    }
+  
+    .themeToggleContainer {
+      top: 5px;
+      right: -10px;
+    }
+  
+    .themeToggleText {
+      margin-left: 10px;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .footerInfo {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .footerLinks {
+      flex-direction: row;
+    }
+
+
+  
+    .socialContent {
+      align-items: flex-end;
+    }
+  
+    .themeToggleContainer {
+      top: 20px;
+      right: 20px;
+    }
+  
+    .themeToggleText {
+      margin-left: 10px;
+    }
+
+    
+  }
+
+
+
+
+/* old styles */
+/* .footerContent {
+  background-color: #012F34;
+  position: relative;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footerInfo {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.location {
+  color: #979797;
+  font-size: 0.9rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socialContent {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.copyright {
+  color: #979797;
+  font-size: 0.9rem;
+}
+
+.footerContent.light {
+  background-color: #ffffff;
+  color: #012f34;
+}
+
+.footerContent.dark {
+  background-color: #012f34;
+  color: #ffffff;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.themeToggle {
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    transition: background-color 0.5s;
+    place-content: left;
+  }
+
+.themeToggleContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.themeToggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.themeToggleText {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.themeToggle:hover {
+  opacity: 0.8;
+}
+
+.themeToggleText:hover {
+  opacity: 0.8;
+} */
