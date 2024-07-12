@@ -27,8 +27,8 @@
 
 .NotFound_container::after {
   width: 200px;
-  height: 224px;
-  bottom: -100px;
+  height: 112px;
+  bottom: 0px;
   right: -100px;
   background-image: url("../../../assets/bg-pattern-contact-2.svg");
 }
