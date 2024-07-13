@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-span {
+.heading_highlight {
   color: var(--coral-color);
   font-weight: inherit;
 }

@@ -8,7 +8,7 @@ const Talent = () => {
     <section className={styles.container}>
       <div className={styles.text_wrapper}>
         <Typography elType="h1Large" className={styles.heading}>
-          Find the<br/> best <span>talent</span>
+          Find the<br/> best <span className={styles.heading_highlight}>talent</span>
         </Typography>
         <div className={styles.content}>
           <div className={styles.rectangle}>
