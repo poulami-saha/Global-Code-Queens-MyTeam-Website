@@ -19,9 +19,10 @@ const Header = () => {
           <img src={icon_close} alt="" className={styles.icon_close} onClick={toggleMenu} />
        <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
+         
           {/* <button className={styles.btn}>contact us</button> */}
-          </ul>
+        </ul>
+         <li><Link to="/contact">Contact Us</Link></li>
       </nav>
     
       </header>
