@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import icon_close from "../../assets/icon-close.svg";
 import logo from "../../assets/logo.svg";
 import styles from "./Header.module.css";
@@ -11,18 +11,21 @@ const Header = () => {
    setMobileMenu(true);
   };
   return (
+  
     <header className={styles.header}>
       <img src={logo} alt="myteam logo" className={styles.logo} />
       <nav>
         <ul className={ mobileMenu ? '' :  styles['hide-mobile-menu']}>
           <img src={icon_close} alt="" className={styles.icon_close} onClick={toggleMenu} />
-         <li>home</li>
-          <li>about</li>
-        </ul>
-          <button className={styles.btn}>contact us</button>
+       <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
+          {/* <button className={styles.btn}>contact us</button> */}
+          </ul>
       </nav>
     
-    </header>
+      </header>
+      
   );
 };
 

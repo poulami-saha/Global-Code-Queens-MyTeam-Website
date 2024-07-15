@@ -88,13 +88,13 @@ nav ul li {
     align-items: flex-start;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -32px;
     bottom: 0;
     background: var(--police-blue);
     background-image: url(../../assets/bg-pattern-about-1-mobile-nav-1.svg);
     background-repeat: no-repeat;
-    background-position: bottom left 220%;
-    background-size: auto;
+    background-position: bottom left 170%;
+    background-size: 60%;
     z-index: 1;
     width: 350px;
     max-width: 320px;
@@ -120,7 +120,7 @@ nav ul li {
     cursor: pointer;
     position: relative;
     bottom: 40px;
-    left: 200px;
+    left: 150px;
   }
   .hide-mobile-menu {
     right: -350px;
