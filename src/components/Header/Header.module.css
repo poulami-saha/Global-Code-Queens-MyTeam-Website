@@ -16,9 +16,9 @@
   z-index: 10;
 }
 .logo {
-  width: 160px;
+  width: 100px;
 }
-nav {
+.header-nav {
   width: 1000px;
   max-width: 750px;
   margin-right: 60px;
@@ -26,15 +26,24 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-nav ul {
+.nav-list {
   display: flex;
   align-items: center;
 }
 
-nav ul li {
+.nav-list-item{
   list-style: none;
   color: var(--primary-white);
   padding-right: 30px;
+}
+.nav-link {
+  color: var(--primary-white);
+  text-decoration: none;
+  /* gets rid of the underline */
+}
+
+.nav-link:hover {
+  color: var(--coral-color);
 }
 
 .btn {
@@ -55,17 +64,17 @@ nav ul li {
 
 /* -----------------Media Query------------------- */
 @media (max-width: 1240px) {
-  nav {
+  .header-nav {
     margin-right: 30px;
   }
 }
 @media (max-width: 1196px) {
-  nav {
+  .header-nav {
     margin-left: 30px;
   }
 }
 @media (max-width: 870px) {
-  nav {
+.header-nav {
     margin-left: 30px;
   }
 }
@@ -82,7 +91,7 @@ nav ul li {
     font-size: 16px;
     border: 1.5px solid #fff;
   }
-  nav {
+  .header-nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -101,12 +110,12 @@ nav ul li {
     padding-top: 70px;
     transition: 0.5s;
   }
-  nav ul {
-    /* width: 100%; */
+    .nav-list {
+    width: 100%;
     flex-direction: column;
     padding: 30px 40px;
   }
-  nav ul li {
+    .nav-list-item {
     padding: 25px;
     margin-left: 15px;
   }

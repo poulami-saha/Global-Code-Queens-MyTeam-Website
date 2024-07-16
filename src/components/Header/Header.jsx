@@ -14,15 +14,15 @@ const Header = () => {
   
     <header className={styles.header}>
       <img src={logo} alt="myteam logo" className={styles.logo} />
-      <nav>
+      <nav className={styles.header-nav}>
         <ul className={ mobileMenu ? '' :  styles['hide-mobile-menu']}>
           <img src={icon_close} alt="" className={styles.icon_close} onClick={toggleMenu} />
-       <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-         
+       <li className={styles.nav-list-item}><Link to="/">Home</Link></li>
+          <li className={styles.nav-list-item}><Link to="/about">About</Link></li>
+           <li className={styles.nav-list-item}><Link to="/contact">Contact Us</Link></li>
           {/* <button className={styles.btn}>contact us</button> */}
         </ul>
-         <li><Link to="/contact">Contact Us</Link></li>
+       
       </nav>
     
       </header>
