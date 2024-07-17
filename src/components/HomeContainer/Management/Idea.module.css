@@ -6,6 +6,10 @@
   margin-block: 24px;
 }
 
+.container:last-child {
+  margin-bottom: 0;
+}
+
 .title {
   margin-top: 16px;
   margin-bottom: 8px;
@@ -33,6 +37,7 @@
   .container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     gap: 23px;
   }
   .description {
@@ -42,7 +47,6 @@
     margin-bottom: 16px;
   }
   .idea {
-    justify-content: flex-start;
     align-items: flex-start;
   }
 }
@@ -50,6 +54,5 @@
 @media (min-width: 960px) {
   .container {
     margin-top: 0px;
-    justify-content: flex-start;
   }
 }
