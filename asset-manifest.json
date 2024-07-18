@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Global-Code-Queens-MyTeam-Website/static/css/main.d89b5d2c.css",
-    "main.js": "/Global-Code-Queens-MyTeam-Website/static/js/main.6b65ee40.js",
+    "main.css": "/Global-Code-Queens-MyTeam-Website/static/css/main.a288f4fc.css",
+    "main.js": "/Global-Code-Queens-MyTeam-Website/static/js/main.b17482ad.js",
     "static/js/453.354c2bf0.chunk.js": "/Global-Code-Queens-MyTeam-Website/static/js/453.354c2bf0.chunk.js",
     "static/media/avatar-kady.jpg": "/Global-Code-Queens-MyTeam-Website/static/media/avatar-kady.78fc482c1b331d912ca1.jpg",
     "static/media/avatar-arthur.jpg": "/Global-Code-Queens-MyTeam-Website/static/media/avatar-arthur.098c2e26b1c3fa071061.jpg",
@@ -14,12 +14,12 @@
     "static/media/bg-pattern-home-5.svg": "/Global-Code-Queens-MyTeam-Website/static/media/bg-pattern-home-5.95a2a6211526850cef55.svg",
     "static/media/bg-pattern-about-1-mobile-nav-1.svg": "/Global-Code-Queens-MyTeam-Website/static/media/bg-pattern-about-1-mobile-nav-1.b09936d7157850a9c759.svg",
     "static/media/bg-pattern-home-4-about-3.svg": "/Global-Code-Queens-MyTeam-Website/static/media/bg-pattern-home-4-about-3.aacd4e03b04df33749ba.svg",
-    "main.d89b5d2c.css.map": "/Global-Code-Queens-MyTeam-Website/static/css/main.d89b5d2c.css.map",
-    "main.6b65ee40.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/main.6b65ee40.js.map",
+    "main.a288f4fc.css.map": "/Global-Code-Queens-MyTeam-Website/static/css/main.a288f4fc.css.map",
+    "main.b17482ad.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/main.b17482ad.js.map",
     "453.354c2bf0.chunk.js.map": "/Global-Code-Queens-MyTeam-Website/static/js/453.354c2bf0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d89b5d2c.css",
-    "static/js/main.6b65ee40.js"
+    "static/css/main.a288f4fc.css",
+    "static/js/main.b17482ad.js"
   ]
 }
