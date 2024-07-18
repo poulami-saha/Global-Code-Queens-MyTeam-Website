@@ -1,0 +1,7 @@
+.flexColumnStart{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    width: 100%;
+}
