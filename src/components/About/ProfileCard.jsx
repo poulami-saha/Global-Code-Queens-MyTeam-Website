@@ -49,7 +49,7 @@ const ProfileCard = ({ person: { name, title, quote, avatar }}) => {
     <div className={styles.card}>
       {!showQuote ? avatarContainer() : quoteContainer()}
       <Button
-        elType="dark"
+        elType={!showQuote ? "showMore" : "hideMore"}
         className={`${styles.mainButton} ${
           showQuote ? styles.hideButton : styles.showButton
         }`}
