@@ -15,24 +15,27 @@
 }
 
 .disabled {
-  color: var(--primary-disabled-color);
-  border-color: var(--primary-disabled-border);
+  /* color: var(--primary-disabled-color);
+  border-color: var(--primary-disabled-border); */
+  opacity: 0.25;
   cursor: not-allowed;
 }
 
 /* Secondary Button */
 .buttonSecondary {
   background-color: var(--primary-white);
-  color: var(--secondary-disabled-font-color);
+  color: var(--dark-green);
 }
 
 .buttonSecondaryHover:hover {
   background-color: var(--rapture-blue);
+  border: var(--rapture-blue);
 }
 
-.buttonSecondaryDisabled:disabled {
-  background-color: var(--secondary-disabled-color);
-}
+/* .buttonSecondaryDisabled:disabled {
+  background-color: var(--primary-white);
+  opacity: 0.25;
+} */
 
 /* Tertiary Button */
 .buttonTertiary {
