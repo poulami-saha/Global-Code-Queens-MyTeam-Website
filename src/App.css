@@ -7,3 +7,21 @@
     sans-serif;
   font-weight: 600; /* semi-bold */
 }
+
+html {
+  font-size: 16px; /* base font size */
+}
+
+:root {
+  --primary-white: #ffffff;
+  --dark-green: #002529;
+  --primary-disabled-color: #666666;
+  --primary-disabled-border: #cccccc;
+  --rapture-blue: #79c8c7;
+  --secondary-disabled-color: #374041;
+  --coral-color: #f67e7e;
+  --dark-theme-background: #012f34;
+  --midnight-green: #014e56;
+  --police-blue: #2c6269;
+  --deep-jungle-blue: #004047;
+}
