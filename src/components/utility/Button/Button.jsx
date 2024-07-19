@@ -25,8 +25,7 @@ const Button = ({ elType, disabled = false, onClick, children, className }) => {
 };
 
 Button.propTypes = {
-  elType: PropTypes.oneOf(["white", "dark", "showMore", "hideMore"]),
-  type: PropTypes.oneOf(["primary", "secondary"]),
+  elType: PropTypes.oneOf(["primaryWhite", "primaryDark", "secondary", "showMore", "hideMore"]),
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
