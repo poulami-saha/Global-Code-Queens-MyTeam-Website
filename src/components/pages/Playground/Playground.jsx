@@ -1,29 +1,32 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./Playground.module.css";
 import Typography from "../../utility/Typography/Typography";
 import Button from "../../utility/Button/Button";
-import FormElement from '../../utility/FormElement/FormElement';
-
+import FormElement from "../../utility/FormElement/FormElement";
 
 const Playground = () => {
-  const [value, setValue] = useState('');
-  const [error, setError] = useState('');
+  const [value, setValue] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (event) => {
     setValue(event.target.value);
-    if (event.target.value === '') {
-      setError('This field is required');
+    if (event.target.value === "") {
+      setError("This field is required");
     } else {
-      setError('');
+      setError("");
     }
-  }
+  };
   return (
     <div className={styles.appHeader}>
-      <Typography elType="h1Large" className={styles.h1Large}>
-        Edit <code>src/App.js</code> and save to reload.
-      </Typography>
+      <h3>Typography</h3>
+      <Typography elType="h1Large">h1 Large Text</Typography>
+      <Typography elType="h1Small">H1 Small Text</Typography>
+      <Typography elType="body1">body1 Text</Typography>
+      <Typography elType="body2">body2 Text</Typography>
+      <Typography elType="h2">h2 Text</Typography>
+      <Typography elType="h3">h3 Text</Typography>
 
-      <Typography elType="body1" className={styles.body1}>
+      <Typography elType="body1">
         <a
           className={styles.appLink}
           href="https://reactjs.org"
@@ -33,56 +36,57 @@ const Playground = () => {
           Learn React
         </a>
       </Typography>
-      <h3>Primary Button</h3>
-      <div className="buttonContainer buttonContainerColor">
-        <Button type="primary" onClick={() => alert("Primary Button Clicked")}>
-          Primary Button
+      {/* Primary buttons */}
+      <Typography elType="h3">Primary button light</Typography>
+      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+        <Button
+          elType="white"
+          onClick={() => alert("Primary light Button Clicked")}
+          className={styles.buttonMargin}
+        >
+          White Color Button
         </Button>
-
-        <Button type="primary" disabled>
-          Primary Button
+        <Button elType="white" disabled className={styles.buttonMargin}>
+          Disabled White Color Button
         </Button>
       </div>
-
-      <h3>Secondary Button</h3>
-      <div className="buttonContainer buttonContainerColor">
+      {/* Primary buttons */}
+      <Typography elType="h3">Primary button dark</Typography>
+      <Button
+        elType="dark"
+        onClick={() => alert("Primary dark Button Clicked")}
+        className={styles.buttonMargin}
+      >
+        Dark Color Button
+      </Button>
+      <Button elType="white" disabled className={styles.buttonMargin}>
+        Disabled White Color Button
+      </Button>
+      {/* secondary buttons */}
+      <Typography elType="h3">Secondary button</Typography>
+      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
         <Button
           type="secondary"
+          elType="white"
           onClick={() => alert("Secondary Button Clicked")}
+          className={styles.buttonMargin}
         >
           Secondary Button
         </Button>
-
-        <Button type="secondary" disabled>
-          Secondary Button
-        </Button>
+        <Button type="secondary" elType="white" disabled className={styles.buttonMargin}>
+        Disabled Secondary Color Button
+      </Button>
       </div>
-
-      <h3>Tertiary Button</h3>
-      <div className="buttonContainer">
-        <Button
-          type="tertiary"
-          onClick={() => alert("Tertiary Button Clicked")}
-        >
-          Tertiary Button
-        </Button>
-        <Button type="tertiary" disabled>
-          Tertiary Button
-        </Button>
+      <div>
+        <Typography elType="body1">Form Elements</Typography>
+        <FormElement
+          type="text"
+          placeholder="Message"
+          value={value}
+          onChange={handleChange}
+          error={error}
+        />
       </div>
-       {/* Form Element */}
-      <>
-      <Typography elType='h1Small' className={styles.h1Small}>
-          Form Elements
-      </Typography>
-      <FormElement
-        type="text"
-        placeholder="Message"
-        value={value}
-        onChange={handleChange}
-        error={error}
-      />
-      </>
     </div>
   );
 };
