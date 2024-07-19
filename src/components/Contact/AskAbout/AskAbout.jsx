@@ -1,15 +1,15 @@
 import React from 'react'
 import Typography from '../../utility/Typography/Typography'
-// import styles from './AskAbout.module.css'
+import styles from './AskAbout.module.css'
 
 const AskAbout = () => {
   return (
     <section>
-        <header>
-        <Typography elType="h2" className={styles}>
+        <header className={styles.headings}>
+        <Typography elType="h1Small" className={styles.header}>
         Contact
         </Typography>
-        <Typography elType="body4" className={styles}>
+        <Typography elType="h3" className={styles.title}>
         Ask us about
         </Typography>
         </header>

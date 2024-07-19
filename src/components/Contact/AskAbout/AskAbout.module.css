@@ -1,0 +1,21 @@
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+}
+
+.title {
+}
+@media (min-width: 768px) {
+  .headings {
+    /* justify-content: start; */
+    align-items: start;
+  }
+}
+
+@media (min-width: 960px) {
+}
