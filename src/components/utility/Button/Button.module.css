@@ -6,6 +6,7 @@
   font-size: 1rem;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   background-color: transparent;
+  background-color: var(--button-background-color);
   color: var(--button-color);
 }
 

@@ -75,8 +75,27 @@ const Playground = () => {
         </Button>
         <Button type="secondary" elType="white" disabled className={styles.buttonMargin}>
         Disabled Secondary Color Button
-      </Button>
+        </Button>
       </div>
+
+      {/* showMore buttons */}
+      <Button
+        elType="showMore"
+        onClick={() => alert("Show More Button Clicked")}
+        className={styles.buttonMargin}
+      >
+        Show More Button
+      </Button>
+
+      {/* hideMore buttons */}
+      <Button
+        elType="hideMore"
+        onClick={() => alert("Hide More Button Clicked")}
+        className={styles.buttonMargin}
+      >
+        Hide More Button
+      </Button>
+
       <div>
         <Typography elType="body1">Form Elements</Typography>
         <FormElement

@@ -25,8 +25,11 @@ const buttonColorStyle = {
       hoverColor: "#012F34",
     },
     hideMore: {
-      backgroundColor: "",
-      hoverBackgroundColor: "",
+      color: "#012F34",
+      backgroundColor: "#79c8c7",
+      borderColor: "#012F34",
+      hoverBackgroundColor: "#f67e7e",
+      hoverColor: "#012F34",
     },
   },
   secondary: {
