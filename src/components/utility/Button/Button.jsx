@@ -3,15 +3,14 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./Button.module.css";
 
-const Button = ({ type = "primary", elType, disabled = false, onClick, children, className }) => {
-  const isSecondary = type === "secondary";
+const Button = ({ elType, disabled = false, onClick, children, className }) => {
   const buttonClass = classNames(styles.button, className, {
     [styles.disabled]: disabled,
-    [styles.buttonSecondary]: isSecondary,
-    [styles.buttonPrimaryDark]: type === "primary" && elType === "dark",
-    [styles.buttonPrimaryWhite]: type ==="primary" && elType === "white",
-    [styles.buttonShowMore]: elType === "showMore",
-    [styles.buttonHideMore]: elType === "hideMore",
+    [styles.buttonPrimaryDark]:   elType === "primaryDark",
+    [styles.buttonPrimaryWhite]:  elType === "primaryWhite",
+    [styles.buttonSecondary]:     elType === "secondary",
+    [styles.buttonShowMore]:      elType === "showMore",
+    [styles.buttonHideMore]:      elType === "hideMore",
   })
 
   return (
