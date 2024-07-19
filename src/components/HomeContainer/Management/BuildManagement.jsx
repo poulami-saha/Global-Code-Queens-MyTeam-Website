@@ -14,14 +14,13 @@ const BuildManagement = () => {
           </Typography>
 
           <div>
-            {Ideas.map(({ id, title, description, avatar, altText }) => {
+            {Ideas.map(({ id, title, description, avatar }) => {
               return (
                 <Idea
                   key={id}
                   title={title}
                   description={description}
                   avatar={avatar}
-                  altText={altText}
                 />
               );
             })}

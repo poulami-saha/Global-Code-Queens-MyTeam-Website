@@ -38,8 +38,6 @@
 @media (min-width: 960px) {
   .container {
     flex-direction: row;
-  }
-  .rectangle {
     background-position-y: bottom;
   }
   .ideas {
