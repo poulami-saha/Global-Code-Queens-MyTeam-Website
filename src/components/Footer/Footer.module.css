@@ -1,13 +1,13 @@
 .footer {
   max-width: 100%;
-  background-color: var(--tertiary-color);
-  color: var(--primary-white-color);
+  background-color: var(--dark-green);
+  color: var(--primary-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 68px;
+  padding-top: 66px;
+  padding-bottom: 64px;
   padding-inline: 24px;
   box-sizing: border-box;
 }
@@ -22,13 +22,13 @@
 .footerLinks {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
   transition: all 3ms ease-in;
-  /* margin-block: 5px; */
+  margin-block: 24px;
 }
 
 .footerLinks .link:hover {
-  color: #f67e7e;
+  color: var(--coral-color);
 }
 
 .link {
@@ -38,7 +38,7 @@
 }
 
 .location {
-  color: #ffff;
+  color: var(--primary-white);
   opacity: 0.6;
   text-align: center;
   margin-bottom: 40px;
@@ -55,11 +55,6 @@
   gap: 1rem;
   margin-bottom: 16px;
   cursor: pointer;
-}
-
-.socialLinks img:hover {
-  filter: brightness(0) saturate(100%) invert(53%) sepia(42%) saturate(4100%)
-    hue-rotate(323deg) brightness(100%) contrast(98%);
 }
 
 .copyright {
@@ -79,71 +74,39 @@
     width: 98%;
   }
   .socialContent {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    width: 98%;
   }
   .footerLinks {
     justify-content: flex-start;
   }
 
   .location {
-    position: absolute;
-    right: 60px;
-    text-align: end;
-  }
-
-  .socialLinks img:hover {
-    filter: brightness(0) saturate(100%) invert(53%) sepia(42%) saturate(4100%)
-      hue-rotate(323deg) brightness(100%) contrast(98%);
-  }
-
-  .socialLinks {
-    position: absolute;
-    left: 50px;
-    bottom: 0;
-  }
-
-  .copyright {
-    position: absolute;
-    bottom: 0;
-    right: 55px;
-    text-align: justify;
+    text-align: right;
   }
 }
 
 @media (min-width: 960px) {
   .footer {
-    padding-inline: 40px;
+    flex-direction: row;
+    padding-inline: 5rem;
+    height: 200px;
+    padding-block: 48px;
   }
   .footerInfo {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 98%;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+  .location {
+    text-align: left;
   }
 
   .socialContent {
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-end;
   }
-  .footerLinks {
-    justify-content: flex-start;
-  }
-
-  .socialLinks img:hover {
-    filter: brightness(0) saturate(100%) invert(53%) sepia(42%) saturate(4100%)
-      hue-rotate(323deg) brightness(100%) contrast(98%);
-  }
-
   .socialLinks {
-    position: relative;
-  }
-
-  .location {
-    text-align: justify;
-    position: relative;
-  }
-
-  .copyright {
-    position: relative;
+    margin-bottom: 40px;
   }
 }

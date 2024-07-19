@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "../utility/Typography/Typography";
-import styles from "../Footer/Footer.module.css";
+import styles from "./Footer.module.css";
 import logo from "../../assets/logo.svg";
 import facebook from "../../assets/icon-facebook.svg";
 import pinterest from "../../assets/icon-pinterest.svg";
@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInfo}>
-        <div className={styles.logoDesc}>
+        <div className={styles.footerNavigation}>
           <img src={logo} alt="logo" />
           <div className={styles.footerLinks}>
             <Link to="/" className={styles.link}>
@@ -29,18 +29,18 @@ function Footer() {
           <Typography elType="body1">California 92714</Typography>
           <Typography elType="body1">Call Us: 949-833-7432</Typography>
         </div>
+      </div>
 
-        <div className={styles.socialContent}>
-          <div className={styles.socialLinks}>
-            <img src={facebook} alt="facebook" className={styles.img1} />
-            <img src={pinterest} alt="pinterest" className={styles.img2} />
-            <img src={twitter} alt="X" className={styles.img3} />
-          </div>
-
-          <Typography elType="body1" className={styles.copyright}>
-            Copyright 2020. All Rights Reserved
-          </Typography>
+      <div className={styles.socialContent}>
+        <div className={styles.socialLinks}>
+          <img src={facebook} alt="facebook" />
+          <img src={pinterest} alt="pinterest" />
+          <img src={twitter} alt="X" />
         </div>
+
+        <Typography elType="body1" className={styles.copyright}>
+          Copyright 2020. All Rights Reserved
+        </Typography>
       </div>
     </footer>
   );
