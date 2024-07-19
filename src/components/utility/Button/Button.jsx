@@ -17,6 +17,17 @@ const buttonColorStyle = {
       hoverBackgroundColor: "#012F34",
       hoverColor: "#fff",
     },
+    showMore: {
+      color: "#012F34",
+      backgroundColor: "#f67e7e",
+      borderColor: "#012F34",
+      hoverBackgroundColor: "#79c8c7",
+      hoverColor: "#012F34",
+    },
+    hideMore: {
+      backgroundColor: "",
+      hoverBackgroundColor: "",
+    },
   },
   secondary: {
     color: "#002529",
@@ -35,6 +46,7 @@ const Button = ({ type = "primary", elType, disabled = false, onClick, children,
   const buttonStyle = isSecondary ? buttonColorStyle.secondary : buttonColorStyle.primary[elType];
   const colorConfig = {
     "--button-color": buttonStyle.color,
+    "--button-background-color": buttonStyle.backgroundColor,
     "--button-border-color": buttonStyle.borderColor,
     "--button-hover-background-color": buttonStyle.hoverBackgroundColor,
     "--button-hover-color": buttonStyle.hoverColor,

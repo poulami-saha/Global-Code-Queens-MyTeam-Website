@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,600;0,700;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
 
 * {
   /* font fallback stack from React defaults */
@@ -24,4 +24,5 @@ html {
   --midnight-green: #014e56;
   --police-blue: #2c6269;
   --deep-jungle-blue: #004047;
+  --very-pale-cyan: #C4FFFE;
 }

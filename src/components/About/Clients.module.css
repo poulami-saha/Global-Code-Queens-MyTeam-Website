@@ -10,6 +10,7 @@
   align-items: center;
   height: 632px;
   position: relative;
+  overflow-y: hidden;
 }
 .container::after {
   content: "";
