@@ -1,7 +1,13 @@
-.flexColumnStart{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 24px;
-    width: 100%;
+.flexColumnStart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .flexColumnStart {
+    width: 40vw
+  }
 }
