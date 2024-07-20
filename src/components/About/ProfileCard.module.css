@@ -66,12 +66,15 @@
 .mainButton {
   position: absolute;
   bottom: 0px;
-  padding: 0;
   width: 56px;
   height: 56px;
-  border-radius: 50%;
-  border-style: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.card .mainButton {
+  padding: 18px;
+  border-style: none;
+  border-radius: 50%;
 }
 
 .hideButton,
