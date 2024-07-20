@@ -45,6 +45,7 @@
 
 @media (min-width: 960px) {
   .container{
+    width: 100%;
     align-items: start;
     justify-content: end;
     gap: 2rem;
@@ -55,6 +56,5 @@
   }
   .container ul{
     gap: 0.5rem;
-    width: 40vw;
   }
 }

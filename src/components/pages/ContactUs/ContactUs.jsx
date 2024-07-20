@@ -5,10 +5,10 @@ import AskAbout from "../../Contact/AskAbout/AskAbout";
 
 const ContactUs = () => {
   return (
-    <main className={styles.ContactPage}>
+    <div className={styles.ContactPage}>
       <AskAbout />
       <ContactForm />
-    </main>
+    </div>
   );
 };
 

@@ -4,8 +4,9 @@
 
 .ContactPage {
   background-color: var(--midnight-green);
-  height:100%;
   width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,15 +24,16 @@
     gap: 4rem;
     padding: 7rem 8rem;
     background-image: url("../../../assets/bg-pattern-about-2-contact-1.svg"),url("../../../assets/bg-pattern-contact-2.svg");
-    background-position: top 7rem left -20%, bottom  right -7rem;
+    background-position: top 7.5rem left -6.5rem, bottom  right -7rem;
   }
 }
 
 @media (min-width: 960px) {
   .ContactPage {
     flex-direction: row;
-    align-items: flex-end;
-    gap: 1.875rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 1.875rem; */
     padding: 7.5rem 10.25rem;
   }
 }
