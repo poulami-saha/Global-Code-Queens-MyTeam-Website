@@ -11,6 +11,7 @@ const buttonColorStyle = {
       hoverBackgroundColor: "white",
       hoverColor: "#002529",
     },
+    
     dark: {
       color: "#012F34",
       borderColor: "#012F34",
