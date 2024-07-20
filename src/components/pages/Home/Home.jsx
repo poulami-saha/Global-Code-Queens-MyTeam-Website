@@ -4,7 +4,8 @@ import SuccessStories from "../../HomeContainer/SuceessStories/SuccessStories";
 import BuildManagement from "../../HomeContainer/Management/BuildManagement";
 
 const Home = () => {
-  return <>
+  return (
+    <>
       <Talent />
       <BuildManagement />
       <SuccessStories />
