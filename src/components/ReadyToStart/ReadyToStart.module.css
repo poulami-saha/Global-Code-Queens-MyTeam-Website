@@ -1,4 +1,4 @@
-.footerContent {
+.mainContent {
     background-color: #f67e7e;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     height: 302px;
     position: relative;
   }
-  .footerImg {
+  .mainImg {
     height: 130px;
     position: absolute;
     bottom: 0;
@@ -22,13 +22,13 @@
   }
   
   @media (min-width: 768px) {
-    .footerContent {
+    .mainContent {
       display: flex;
       flex-direction: row;
       align-items: baseline;
       height: 200px;
     }
-    .footerImg {
+    .mainImg {
       width: 200px;
     }
   }
