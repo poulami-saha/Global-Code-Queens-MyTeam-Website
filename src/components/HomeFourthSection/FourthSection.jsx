@@ -11,7 +11,7 @@ function FourthSection() {
         Ready to get started?
       </Typography>
 
-      <Button type="secondary" elType={dark}>contact us</Button>
+      <Button  elType="primaryDark">contact us</Button>
       <img src={mainImage} alt="" className={styles.mainImg} />
     </div>
   );
