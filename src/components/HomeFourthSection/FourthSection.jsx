@@ -6,13 +6,13 @@ import Typography from "../utility/Typography/Typography";
 
 function FourthSection() {
   return (
-    <div className={styles.footerContent}>
+    <div className={styles.mainContent}>
       <Typography elType="h2" className={styles.text}>
         Ready to get started?
       </Typography>
 
-      <Button type="secondary">contact us</Button>
-      <img src={footerImage} alt="" className={styles.footerImg} />
+      <Button type="secondary" elType={dark}>contact us</Button>
+      <img src={mainImage} alt="" className={styles.mainImg} />
     </div>
   );
 }
