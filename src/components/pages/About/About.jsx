@@ -1,8 +1,16 @@
 import React from "react";
-import styles from "./About.module.css";
+import Clients from "../../About/Clients";
+import AboutDetails from "../../About/AboutDetails";
+import Directors from "../../About/Directors";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <AboutDetails />
+      <Directors />
+      <Clients />
+    </>
+  );
 };
 
 export default About;

@@ -1,13 +1,12 @@
 .buttonContainer {
-  height: 120px;
   width: 200px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .buttonContainerColor {
-  background-color: var(--tertiary-color);
+  background-color: var(--dark-theme-background);
 }
 .buttonContainerAlternateColor {
   background-color: white;

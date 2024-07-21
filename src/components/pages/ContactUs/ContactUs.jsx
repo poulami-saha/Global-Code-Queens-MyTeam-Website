@@ -1,9 +1,12 @@
-import React from 'react';
-import styles from './ContactUs.module.css';  
+import React from "react";
+import ContactForm from "../../Contact/ContactForm";
+import styles from './ContactUs.module.css';
 
 const ContactUs = () => {
   return (
-    <div>Contact Us</div>
+    <div className={styles.ContactPage}>
+      <ContactForm />
+    </div>
   );
 };
 

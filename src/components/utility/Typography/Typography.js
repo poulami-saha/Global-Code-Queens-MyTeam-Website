@@ -6,11 +6,14 @@ import PropTypes from "prop-types";
 export const TypographyElements = {
   body1: "p",
   body2: "p",
+  body3: "p",
+  body4: "p",
   span: "span",
   h1Large: "h1",
   h1Small: "h1",
   h2: "h2",
   h3: "h3",
+  h3Large: "h3Large",
   error: "p",
 };
 
@@ -23,10 +26,13 @@ const Typography = ({ elType, className = "", id = "", children }) => {
   const combinedClassName = classNames(className, {
     [styles.body1]: elType === "body1",
     [styles.body2]: elType === "body2",
+    [styles.body3]: elType === "body3",
+    [styles.body4]: elType === "body4",
     [styles.h1Large]: elType === "h1Large",
     [styles.h1Small]: elType === "h1Small",
     [styles.h2]: elType === "h2",
     [styles.h3]: elType === "h3",
+    [styles.h3Large]: elType === "h3Large",
     [styles.error]: elType === "error",
   });
 

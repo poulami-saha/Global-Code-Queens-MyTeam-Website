@@ -36,24 +36,65 @@ const Playground = () => {
           Learn React
         </a>
       </Typography>
+      {/* Primary buttons */}
+      <Typography elType="h3">Primary button light</Typography>
+      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+        <Button
+          elType="primaryWhite"
+          onClick={() => alert("Primary light Button Clicked")}
+          className={styles.buttonMargin}
+        >
+          White Color Button
+        </Button>
+        <Button elType="primaryWhite" disabled className={styles.buttonMargin}>
+          Disabled White Color Button
+        </Button>
+      </div>
+      {/* Primary buttons */}
+      <Typography elType="h3">Primary button dark</Typography>
       <Button
-        style="white"
-        onClick={() => alert("Primary Button Clicked")}
-        className={styles.buttonMargin}
-      >
-        White Color Button
-      </Button>
-      <Button
-        style="dark"
-        onClick={() => alert("Secondary Button Clicked")}
+        elType="primaryDark"
+        onClick={() => alert("Primary dark Button Clicked")}
         className={styles.buttonMargin}
       >
         Dark Color Button
       </Button>
-
-      <Button style="white" disabled className={styles.buttonMargin}>
-        Disabled White Color Button
+      <Button elType="primaryDark" disabled className={styles.buttonMargin}>
+        Disabled Dark Color Button
       </Button>
+      {/* secondary buttons */}
+      <Typography elType="h3">Secondary button</Typography>
+      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+        <Button
+          elType="secondary"
+          onClick={() => alert("Secondary Button Clicked")}
+          className={styles.buttonMargin}
+        >
+          Secondary Button
+        </Button>
+        <Button elType="secondary" disabled className={styles.buttonMargin}>
+        Disabled Secondary Color Button
+        </Button>
+      </div>
+
+      {/* showMore buttons */}
+      <Button
+        elType="showMore"
+        onClick={() => alert("Show More Button Clicked")}
+        className={styles.buttonMargin}
+      >
+        Show More Button
+      </Button>
+
+      {/* hideMore buttons */}
+      <Button
+        elType="hideMore"
+        onClick={() => alert("Hide More Button Clicked")}
+        className={styles.buttonMargin}
+      >
+        Hide More Button
+      </Button>
+
       <div>
         <Typography elType="body1">Form Elements</Typography>
         <FormElement

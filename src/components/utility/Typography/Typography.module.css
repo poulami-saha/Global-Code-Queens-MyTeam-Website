@@ -26,8 +26,27 @@ h3 {
   line-height: 1.5rem;
 }
 
+.body3 {
+  font-size: 0.81rem;
+  line-height: 1.12rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
+.body4 {
+  font-size: 1.12rem;
+  line-height: 1.75rem;
+}
+
+.h3Large {
+  font-size: 1.12rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
 .error::placeholder {
-  color: var(--error-color);
+  color: var(--coral-color);
   opacity: 0.6;
 }
 
@@ -36,7 +55,7 @@ h3 {
   font-weight: 700;
   font-size: 0.62rem;
   line-height: 0.81rem;
-  color: var(--error-color);
+  color: var(--coral-color);
   text-align: left;
 }
 

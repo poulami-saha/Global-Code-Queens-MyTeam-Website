@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .content {
   flex: 1;
-}
-
-.content > :first-child {
-  padding-bottom: 20px;
-  margin-block-start: 75px;
+  /* prevent content being unreachable behind fixed-position header */
+  padding-top: 40px; /* height of header; */
+  /* END header fix */
 }
