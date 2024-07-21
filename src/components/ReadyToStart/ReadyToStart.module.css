@@ -1,37 +1,42 @@
-.mainContent {
-  background-color: #f67e7e;
+.ReadyToStart {
+  background-color: var(--coral-color);
+  background-image: url("../../assets/bg-pattern-home-6-about-5.svg");
+  background-position-x: left;
+  background-position-y: calc(100% + 22px);
+  background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  height: 302px;
-  position: relative;
 }
 
-.mainImg {
-  height: 130px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  align-content: center;
+  margin-block: 85px;
 }
 
 .text {
-  color: #012f34;
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
-  width: 75%;
+  color: var(--dark-theme-background);
+  max-width: 75%;
+  margin-inline: 2em;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .mainContent {
-    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: baseline;
-    height: 200px;
+    width: 100%;
+    max-width: 920px;
+    margin-inline: 6em;
+    margin-block: 71px;
   }
 
-  .mainImg {
-    width: 200px;
+  .text {
+    margin-inline: 0;
   }
 }
