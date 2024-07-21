@@ -2,7 +2,7 @@ import React from "react";
 import Talent from "../../HomeContainer/Talent/Talent";
 import SuccessStories from "../../HomeContainer/SuceessStories/SuccessStories";
 import BuildManagement from "../../HomeContainer/Management/BuildManagement";
-import FourthSection from "../../HomeFourthSection/FourthSection";
+import ReadyToStart from "../../ReadyToStart/ReadyToStart";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Talent />
       <BuildManagement />
       <SuccessStories />
-      <FourthSection />
+      <ReadyToStart />
     </>
   );
 };
