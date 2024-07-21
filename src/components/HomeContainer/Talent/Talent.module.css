@@ -1,0 +1,84 @@
+.container {
+  background: var(--midnight-green);
+  color: var(--primary-white);
+  padding: 0 24px;
+  min-height: 370px;
+  background-image: url("../../../assets/bg-pattern-home-2.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.text_wrapper {
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading_highlight {
+  color: var(--coral-color);
+  font-weight: inherit;
+}
+
+.content {
+  text-align: center;
+  margin-top: 18px;
+  padding: 0 2px;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 45px;
+    height: 456px;
+  }
+  .text_wrapper {
+    padding: 0 110px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+  .container {
+    height: 400px;
+    padding: 0;
+    background-image:
+      url("../../../assets/bg-pattern-home-1.svg"),
+      url("../../../assets/bg-pattern-home-2.svg");
+    background-position:
+      top left -100px,
+      right 169px bottom;
+    background-repeat: no-repeat;
+  }
+
+  .rectangle{
+    background-color: var(--rapture-blue);
+    width: 50px;
+    height: 4px;
+    margin-bottom: 83px;
+  }
+
+
+  .text_wrapper{
+    gap: 30px;
+    margin: 0;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading {
+    width: 635px;
+    text-align: left;
+  }
+
+  .content {
+    width: 441px;
+    height: inherit;
+    text-align: left;
+    margin: 0;
+
+  }
+}

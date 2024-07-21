@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./FourthSection.module.css";
-import footerImage from "../../assets/bg-pattern-home-6-about-5.svg";
+import mainImage from "../../assets/bg-pattern-home-6-about-5.svg";
 import Button from "../utility/Button/Button.jsx";
 import Typography from "../utility/Typography/Typography";
 
