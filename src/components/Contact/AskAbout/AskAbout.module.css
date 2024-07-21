@@ -21,6 +21,7 @@
 }
 
 .container ul {
+  width: 100%;
   color: var(--primary-white);
   display: flex;
   flex-direction: column;
@@ -29,13 +30,18 @@
 }
 
 .container ul li {
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.5rem;
+  gap: 6%;
+  text-align: left;
 }
 
+.container ul li>img{
+  max-width: 72px;
+}
 @media (min-width: 768px) {
   .container,
   .header{
@@ -56,5 +62,9 @@
   }
   .container ul{
     gap: 0.5rem;
+  }
+
+  .container ul li {
+    gap: 1.5rem;
   }
 }

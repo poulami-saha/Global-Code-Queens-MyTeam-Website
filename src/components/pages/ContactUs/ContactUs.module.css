@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.875rem;
-  padding: 5rem 1.5rem 6rem 1.5rem;
+  padding: 5rem 6% 6rem;
 
   /* illustrations */
   background-image: url("../../../assets/bg-pattern-contact-2.svg");
