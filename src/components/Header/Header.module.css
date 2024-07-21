@@ -27,7 +27,15 @@
   justify-content: space-between;
 }
 
-.nav-list {
+.mobileHeaderNav {
+  display: none;
+}
+
+.standardHeaderNav {
+  display: flex;
+}
+
+.standardNavList {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -65,7 +73,7 @@
   cursor: pointer;
 }
 
-.icon_close {
+.icon_hamburger {
   display: none;
 }
 
@@ -117,11 +125,22 @@
     padding-top: 70px;
     transition: 0.5s;
   }
-  .nav-list {
+
+  .standardNavList {
+    display: none;
+  }
+
+  .standardHeaderNav {
+    display: none;
+  }
+
+  .mobileNavList {
+    display: flex;
     width: 100%;
     flex-direction: column;
     padding: 30px 40px;
   }
+
   .nav-list-item {
     padding: 25px;
     margin-left: 15px;
@@ -138,7 +157,16 @@
     bottom: 40px;
     left: 150px;
   }
-  .hide-mobile-menu {
+
+  .icon_hamburger {
+    display: block;
+  }
+
+  .mobileHeaderNav {
+    display: flex;
+  }
+
+  .hideMobileMenu {
     right: -350px;
   }
 }
