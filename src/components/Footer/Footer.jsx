@@ -8,6 +8,9 @@ import twitter from "../../assets/icon-twitter.svg";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const today = new Date();
+  const thisYear = today.getFullYear();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInfo}>
@@ -39,7 +42,7 @@ function Footer() {
         </div>
 
         <Typography elType="body1" className={styles.copyright}>
-          Copyright 2020. All Rights Reserved
+          Copyright {thisYear}. All Rights Reserved
         </Typography>
       </div>
     </footer>
