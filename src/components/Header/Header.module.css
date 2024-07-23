@@ -1,10 +1,7 @@
 .header {
   width: 100%;
-  background-color: var(--dark-theme-background);
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: var(--midnight-green);
+  padding: 28px 10%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #fff;
   display: flex;
