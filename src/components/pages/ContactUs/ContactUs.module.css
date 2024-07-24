@@ -1,6 +1,39 @@
-.ContactPage{
-    background-color: var(--midnight-green);
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
+}
+
+.ContactPage {
+  background-color: var(--midnight-green);
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+  padding: 5rem 6% 6rem;
+
+  /* illustrations */
+  background-image: url("../../../assets/bg-pattern-contact-2.svg");
+  background-position: bottom -6.25rem right -7rem;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .ContactPage {
+    gap: 4rem;
+    padding: 7rem 8rem;
+    background-image: url("../../../assets/bg-pattern-about-2-contact-1.svg"),url("../../../assets/bg-pattern-contact-2.svg");
+    background-position: top 7.5rem left -6.5rem, bottom  right -7rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .ContactPage {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 1.875rem; */
+    padding: 7.5rem 10.25rem;
+  }
 }
