@@ -18,10 +18,7 @@
   margin-block: 85px;
 }
 
-.mainContent .contactLink {
-  padding-top: 8px;
-  padding-bottom: 12px;
-}
+.mainContent
 
 .text {
   color: var(--dark-theme-background);
