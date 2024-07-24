@@ -60,6 +60,18 @@ npm install
 npm start
 ```
 
+### Repository Author & Maintainers
+
+1. [Rika Williams](https://github.com/berikawilliams)
+2. [Manami W](https://github.com/chachamana)
+3. [Eunice Y](https://github.com/eunicey)
+4. [Feven Seyfu](https://github.com/FevenSeyfu)
+5. [Joan Wolkerstorfer](https://github.com/joanwolk)
+6. [Kezia Baidoo](https://github.com/keziabaidoo)
+7. [Sehaj Wadhwa](https://github.com/sehajwadhwa)
+8. [Uzma Khan](https://github.com/Uzmakh)
+9. [Poulami Saha](https://github.com/poulami-saha)
+
 ### Contributing
 
 We welcome contributions! Please follow these steps to contribute:
