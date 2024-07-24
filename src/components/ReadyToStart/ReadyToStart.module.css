@@ -18,6 +18,11 @@
   margin-block: 85px;
 }
 
+.mainContent .contactLink {
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
 .text {
   color: var(--dark-theme-background);
   max-width: 75%;
@@ -29,7 +34,6 @@
   .mainContent {
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
     width: 100%;
     max-width: 920px;
     margin-inline: 6em;
@@ -38,5 +42,6 @@
 
   .text {
     margin-inline: 0;
+    margin-bottom: 0.5rem;
   }
 }

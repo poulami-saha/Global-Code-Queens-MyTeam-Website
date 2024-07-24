@@ -11,7 +11,7 @@ function ReadyToStart() {
           Ready to get started?
         </Typography>
 
-        <Button elType="primaryDark">contact us</Button>
+        <Button elType="primaryDark" className={styles.contactLink}>contact us</Button>
       </div>
     </div>
   );
