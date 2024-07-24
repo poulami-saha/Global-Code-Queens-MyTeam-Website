@@ -14,9 +14,14 @@
 This is an open source project developed as part of the [Open Source Project](https://www.linkedin.com/posts/frontendqueens_opensource-collaboration-community-activity-7201980886232317952-VBld?utm_source=share&utm_medium=member_desktop) initiative by the [FrontEnd Queens](https://www.linkedin.com/company/frontendqueens/)
 
 ## Challenge
+The challenge is to build out a multi-page website and get it looking as close to the design as possible.Your users should be able to:
 
-The challenge is to build out a multi-page website and get it looking as close to the design as possible.
-
+- See the correct content for each team member on the About page when the + icon is clicked
+- Receive an error message when the contact form is submitted if:
+    - The Name, Email Address or Message fields are empty should show "This field is required"
+    - The Email Address is not formatted correctly should show "Please use a valid email address"
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 ## Design
 
 The challenge is part of [Frontend Mentor](https://www.frontendmentor.io/) premium version, hence we are not adding a link of the Design file here.
