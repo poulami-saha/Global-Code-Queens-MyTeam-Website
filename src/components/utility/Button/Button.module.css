@@ -6,7 +6,7 @@
   --button-hover-background-color: red;
   --button-hover-color: black;
   /* END default button colors */
-  padding: 10px 32px;
+  padding: 9px 33px 11px 32px;
   border: 2px solid var(--button-border-color);
   border-radius: 24px;
   cursor: pointer;
