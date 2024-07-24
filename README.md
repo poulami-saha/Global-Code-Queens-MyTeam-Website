@@ -39,6 +39,7 @@ To install and set up this project, follow these steps:
 ### Prerequisites
 
 - The Project is build with React v18
+- The Project is handled with git and Github. Please follow the procedure linked [here](documents/githubLearning.md)
 
 ### Clone the Repository
 
