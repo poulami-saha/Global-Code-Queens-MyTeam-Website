@@ -6,12 +6,12 @@ import styles from "./Button.module.css";
 const Button = ({ elType, disabled = false, onClick, children, className }) => {
   const buttonClass = classNames(styles.button, className, {
     [styles.disabled]: disabled,
-    [styles.buttonPrimaryDark]:   elType === "primaryDark",
-    [styles.buttonPrimaryWhite]:  elType === "primaryWhite",
-    [styles.buttonSecondary]:     elType === "secondary",
-    [styles.buttonShowMore]:      elType === "showMore",
-    [styles.buttonHideMore]:      elType === "hideMore",
-  })
+    [styles.buttonPrimaryDark]: elType === "primaryDark",
+    [styles.buttonPrimaryWhite]: elType === "primaryWhite",
+    [styles.buttonSecondary]: elType === "secondary",
+    [styles.buttonShowMore]: elType === "showMore",
+    [styles.buttonHideMore]: elType === "hideMore",
+  });
 
   return (
     <button
@@ -25,7 +25,13 @@ const Button = ({ elType, disabled = false, onClick, children, className }) => {
 };
 
 Button.propTypes = {
-  elType: PropTypes.oneOf(["primaryWhite", "primaryDark", "secondary", "showMore", "hideMore"]),
+  elType: PropTypes.oneOf([
+    "primaryWhite",
+    "primaryDark",
+    "secondary",
+    "showMore",
+    "hideMore",
+  ]),
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
