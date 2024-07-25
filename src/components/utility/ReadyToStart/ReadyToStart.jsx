@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./ReadyToStart.module.css";
-import Button from "../utility/Button/Button.jsx";
-import Typography from "../utility/Typography/Typography.js";
+import Button from "../Button/Button.jsx";
+import Typography from "../Typography/Typography.js";
 
-function ReadyToStart() {
+const ReadyToStart = () => {
   return (
     <div className={styles.ReadyToStart}>
       <div className={styles.mainContent}>
@@ -15,6 +15,6 @@ function ReadyToStart() {
       </div>
     </div>
   );
-}
+};
 
 export default ReadyToStart;

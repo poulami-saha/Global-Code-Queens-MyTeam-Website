@@ -1,6 +1,6 @@
 import React from "react";
 import { Talent, SuccessStories, BuildManagement } from "../../HomeContainer";
-import ReadyToStart from "../../ReadyToStart/ReadyToStart";
+import { ReadyToStart } from "../../utility";
 
 const Home = () => {
   return (

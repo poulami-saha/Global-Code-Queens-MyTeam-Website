@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutDetails, Directors, Clients } from "../../AboutContainer";
-import ReadyToStart from "../../ReadyToStart/ReadyToStart";
+import { ReadyToStart } from "../../utility";
 
 const About = () => {
   return (
