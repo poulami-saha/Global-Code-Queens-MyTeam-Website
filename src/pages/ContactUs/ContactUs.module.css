@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@
   padding: 5rem 6% 6rem;
 
   /* illustrations */
-  background-image: url("../../../assets/bg-pattern-contact-2.svg");
+  background-image: url("../../assets/bg-pattern-contact-2.svg");
   background-position: bottom -6.25rem right -7rem;
   background-repeat: no-repeat;
 }
@@ -23,8 +23,9 @@
   .ContactPage {
     gap: 4rem;
     padding: 7rem 8rem;
-    background-image: url("../../../assets/bg-pattern-about-2-contact-1.svg"),url("../../../assets/bg-pattern-contact-2.svg");
-    background-position: top 7.5rem left -6.5rem, bottom  right -7rem;
+    background-image: url("../../assets/bg-pattern-about-2-contact-1.svg"),
+      url("../../assets/bg-pattern-contact-2.svg");
+    background-position: top 7.5rem left -6.5rem, bottom right -7rem;
   }
 }
 
@@ -33,7 +34,6 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    /* gap: 1.875rem; */
     padding: 7.5rem 10.25rem;
   }
 }

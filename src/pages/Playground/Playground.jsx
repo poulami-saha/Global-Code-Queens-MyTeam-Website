@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Playground.module.css";
-import { Typography, Button, FormElement } from "../../utility";
+import { Typography, Button, FormElement } from "../../components/utility";
 
 const Playground = () => {
   const [value, setValue] = useState("");

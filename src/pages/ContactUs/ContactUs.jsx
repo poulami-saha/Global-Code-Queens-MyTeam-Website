@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ContactUs.module.css";
-import { AskAbout, ContactForm } from "../../ContactContainer";
+import { AskAbout, ContactForm } from "../../components/ContactContainer";
 
 const ContactUs = () => {
   return (

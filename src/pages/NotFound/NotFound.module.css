@@ -22,7 +22,7 @@
   height: 200px;
   top: 62px;
   left: -100px;
-  background-image: url("../../../assets/bg-pattern-about-2-contact-1.svg");
+  background-image: url("../../assets/bg-pattern-about-2-contact-1.svg");
 }
 
 .NotFound_container::after {
@@ -30,7 +30,7 @@
   height: 112px;
   bottom: 0px;
   right: -100px;
-  background-image: url("../../../assets/bg-pattern-contact-2.svg");
+  background-image: url("../../assets/bg-pattern-contact-2.svg");
 }
 
 @media (min-width: 768px) {
