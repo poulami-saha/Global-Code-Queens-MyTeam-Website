@@ -1,4 +1,4 @@
-import { Typography } from "../utility";
+import { Typography } from "../../utility";
 import styles from "./AboutDetails.module.css";
 
 const AboutDetails = () => {

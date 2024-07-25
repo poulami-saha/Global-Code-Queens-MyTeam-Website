@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from "./ProfileCard.module.css";
-import { Typography, Button } from "../utility";
+import { Typography, Button } from "../../utility";
 
-import CrossIcon from "../../assets/icon-cross.svg";
-import CloseIcon from "../../assets/icon-close.svg";
-import TwitterIcon from "../../assets/icon-twitter.svg";
-import LinkedinIcon from "../../assets/icon-linkedin.svg";
+import { ReactComponent as CrossIcon } from "../../../assets/icon-cross.svg";
+import { ReactComponent as CloseIcon } from "../../../assets/icon-close.svg";
+import { ReactComponent as TwitterIcon } from "../../../assets/icon-twitter.svg";
+import { ReactComponent as LinkedinIcon } from "../../../assets/icon-linkedin.svg";
 
 const ProfileCard = ({ person: { name, title, quote, avatar } }) => {
   const [showQuote, setShowQuote] = useState(false);

@@ -1,6 +1,6 @@
-import { Typography } from "../utility";
+import { Typography } from "../../utility";
 import styles from "./Directors.module.css";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "../ProfileCard/ProfileCard";
 
 import { directors } from "./directorsData";
 

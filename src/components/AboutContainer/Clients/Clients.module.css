@@ -23,7 +23,7 @@
   top: 0px;
   left: 0px;
   transform: translate(-50%, -50%);
-  background-image: url("../../assets/bg-pattern-about-4.svg");
+  background-image: url("../../../assets/bg-pattern-about-4.svg");
 }
 .title {
   color: #fff;

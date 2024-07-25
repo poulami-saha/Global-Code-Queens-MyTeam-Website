@@ -1,9 +1,9 @@
-import nikita from "../../assets/avatar-nikita.jpg";
-import aden from "../../assets/avatar-aden.jpg";
-import christian from "../../assets/avatar-christian.jpg";
-import drake from "../../assets/avatar-drake.jpg";
-import cruz from "../../assets/avatar-cruz.jpg";
-import griffin from "../../assets/avatar-griffin.jpg";
+import nikita from "../../../assets/avatar-nikita.jpg";
+import aden from "../../../assets/avatar-aden.jpg";
+import christian from "../../../assets/avatar-christian.jpg";
+import drake from "../../../assets/avatar-drake.jpg";
+import cruz from "../../../assets/avatar-cruz.jpg";
+import griffin from "../../../assets/avatar-griffin.jpg";
 
 export const directors = [
   {

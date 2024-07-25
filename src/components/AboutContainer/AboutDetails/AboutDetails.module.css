@@ -29,7 +29,7 @@
   bottom: 0px;
   right: 0px;
   transform: translate(50%, 0);
-  background-image: url("../../assets/bg-pattern-about-1-mobile-nav-1.svg");
+  background-image: url("../../../assets/bg-pattern-about-1-mobile-nav-1.svg");
 }
 
 @media (min-width: 768px) {
