@@ -7,7 +7,7 @@ import pinterest from "../../assets/icon-pinterest.svg";
 import twitter from "../../assets/icon-twitter.svg";
 import { Link } from "react-router-dom";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInfo}>
@@ -44,6 +44,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
