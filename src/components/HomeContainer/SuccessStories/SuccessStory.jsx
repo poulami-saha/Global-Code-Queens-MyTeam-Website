@@ -4,7 +4,7 @@ import styles from "./SuccessStories.module.css";
 
 const SuccessStory = ({ quote, name, title, avatar, altText }) => {
   return (
-    <div className={styles.SuccessStories_content}>
+    <article className={styles.SuccessStories_content}>
       <Typography elType="body2">“{quote}”</Typography>
       <Typography elType="h3Large" className={styles.SuccessStories_name}>
         {name}
@@ -15,7 +15,7 @@ const SuccessStory = ({ quote, name, title, avatar, altText }) => {
       <div className={styles.SuccessStories_image}>
         <img src={avatar} alt={altText} />
       </div>
-    </div>
+    </article>
   );
 };
 

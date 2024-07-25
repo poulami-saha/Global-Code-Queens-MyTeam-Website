@@ -13,7 +13,7 @@ const BuildManagement = () => {
             Build & manage distributed teams like no one else.
           </Typography>
 
-          <div>
+          <article>
             {Ideas.map(({ id, title, description, avatar }) => {
               return (
                 <Idea
@@ -24,7 +24,7 @@ const BuildManagement = () => {
                 />
               );
             })}
-          </div>
+          </article>
         </div>
       </div>
     </section>

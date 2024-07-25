@@ -23,12 +23,12 @@ function Footer() {
           </div>
         </div>
 
-        <div className={styles.location}>
+        <address className={styles.location}>
           <Typography elType="body1">997 Hillcrest Lane</Typography>
           <Typography elType="body1">Irvine, CA</Typography>
           <Typography elType="body1">California 92714</Typography>
           <Typography elType="body1">Call Us: 949-833-7432</Typography>
-        </div>
+        </address>
       </div>
 
       <div className={styles.socialContent}>
