@@ -1,7 +1,5 @@
 import React from "react";
-import Talent from "../../HomeContainer/Talent/Talent";
-import SuccessStories from "../../HomeContainer/SuceessStories/SuccessStories";
-import BuildManagement from "../../HomeContainer/Management/BuildManagement";
+import { Talent, SuccessStories, BuildManagement } from "../../HomeContainer";
 import ReadyToStart from "../../ReadyToStart/ReadyToStart";
 
 const Home = () => {

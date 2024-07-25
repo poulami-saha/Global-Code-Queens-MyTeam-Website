@@ -1,5 +1,6 @@
 import styles from "./Clients.module.css";
-import Typography from "../utility/Typography/Typography";
+import { Typography } from "../utility";
+
 import verge from "../../assets/logo-the-verge.png";
 import jakarta from "../../assets/logo-jakarta-post.png";
 import guardian from "../../assets/logo-the-guardian.png";

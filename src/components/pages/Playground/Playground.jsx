@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Playground.module.css";
-import Typography from "../../utility/Typography/Typography";
-import Button from "../../utility/Button/Button";
-import FormElement from "../../utility/FormElement/FormElement";
+import { Typography, Button, FormElement } from "../../utility";
 
 const Playground = () => {
   const [value, setValue] = useState("");
@@ -38,7 +36,9 @@ const Playground = () => {
       </Typography>
       {/* Primary buttons */}
       <Typography elType="h3">Primary button light</Typography>
-      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+      <div
+        className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}
+      >
         <Button
           elType="primaryWhite"
           onClick={() => alert("Primary light Button Clicked")}
@@ -64,7 +64,9 @@ const Playground = () => {
       </Button>
       {/* secondary buttons */}
       <Typography elType="h3">Secondary button</Typography>
-      <div className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}>
+      <div
+        className={`${styles.buttonContainer} ${styles.buttonContainerColor}`}
+      >
         <Button
           elType="secondary"
           onClick={() => alert("Secondary Button Clicked")}
@@ -73,7 +75,7 @@ const Playground = () => {
           Secondary Button
         </Button>
         <Button elType="secondary" disabled className={styles.buttonMargin}>
-        Disabled Secondary Color Button
+          Disabled Secondary Color Button
         </Button>
       </div>
 

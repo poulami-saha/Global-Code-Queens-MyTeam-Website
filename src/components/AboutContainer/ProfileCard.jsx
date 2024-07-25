@@ -1,17 +1,13 @@
 import { useState } from "react";
-
-// styling
 import styles from "./ProfileCard.module.css";
+import { Typography, Button } from "../utility";
 
-// components
-import Typography from "../utility/Typography/Typography";
-import Button from "../utility/Button/Button";
-import { ReactComponent as CrossIcon } from "../../assets/icon-cross.svg";
-import { ReactComponent as CloseIcon } from "../../assets/icon-close.svg";
-import { ReactComponent as TwitterIcon } from "../../assets/icon-twitter.svg";
-import { ReactComponent as LinkedinIcon } from "../../assets/icon-linkedin.svg";
+import CrossIcon from "../../assets/icon-cross.svg";
+import CloseIcon from "../../assets/icon-close.svg";
+import TwitterIcon from "../../assets/icon-twitter.svg";
+import LinkedinIcon from "../../assets/icon-linkedin.svg";
 
-const ProfileCard = ({ person: { name, title, quote, avatar }}) => {
+const ProfileCard = ({ person: { name, title, quote, avatar } }) => {
   const [showQuote, setShowQuote] = useState(false);
 
   const handleClick = () => {
