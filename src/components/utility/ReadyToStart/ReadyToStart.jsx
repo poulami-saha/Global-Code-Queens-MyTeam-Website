@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./ReadyToStart.module.css";
 import Button from "../Button/Button.jsx";
 import Typography from "../Typography/Typography.js";
 
 const ReadyToStart = () => {
+  const navigate = useNavigate();
+
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <div className={styles.ReadyToStart}>
       <div className={styles.mainContent}>
@@ -11,7 +18,9 @@ const ReadyToStart = () => {
           Ready to get started?
         </Typography>
 
-        <Button elType="primaryDark">contact us</Button>
+        <Button elType="primaryDark" onClick={navigateToContact}>
+          contact us
+        </Button>
       </div>
     </div>
   );
