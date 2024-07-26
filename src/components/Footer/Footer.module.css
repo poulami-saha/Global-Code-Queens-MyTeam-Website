@@ -38,6 +38,7 @@
 }
 
 .location {
+  font-style: normal;
   color: var(--primary-white);
   opacity: 0.6;
   text-align: center;

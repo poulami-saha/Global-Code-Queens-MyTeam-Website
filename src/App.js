@@ -1,10 +1,7 @@
 import "./App.css";
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./components/pages/Home/Home";
-import About from "./components/pages/About/About";
-import ContactUs from "./components/pages/ContactUs/ContactUs";
-import Playground from "./components/pages/Playground/Playground";
+import { Home, ContactUs, About, Playground } from "./pages";
 
 const router = createHashRouter([
   {

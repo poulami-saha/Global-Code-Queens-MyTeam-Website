@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders NotFound correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="NotFound_container"
+  >
+    <article
+      class="NotFound_content"
+    >
+      <h1
+        class="NotFound_heading h1Small"
+        id=""
+      >
+        Page not found
+      </h1>
+      <p
+        class="body1"
+        id=""
+      >
+        We can’t seem to find the page you’re looking for.
+        <br />
+        Try going back to the previous page.
+      </p>
+    </article>
+  </section>
+</DocumentFragment>
+`;

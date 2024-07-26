@@ -13,7 +13,7 @@ export const TypographyElements = {
   h1Small: "h1",
   h2: "h2",
   h3: "h3",
-  h3Large: "h3Large",
+  h3Large: "h1",
   error: "p",
 };
 
@@ -32,7 +32,7 @@ const Typography = ({ elType, className = "", id = "", children }) => {
     [styles.h1Small]: elType === "h1Small",
     [styles.h2]: elType === "h2",
     [styles.h3]: elType === "h3",
-    [styles.h3Large]: elType === "h3Large",
+    [styles.h3Large]: elType === "h3",
     [styles.error]: elType === "error",
   });
 

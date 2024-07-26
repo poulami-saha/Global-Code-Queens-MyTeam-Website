@@ -1,0 +1,52 @@
+/* NotFound container */
+.NotFound_container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--deep-jungle-blue);
+  color: var(--primary-white);
+  position: relative;
+  z-index: -2;
+}
+
+/* NotFound container  background decoration*/
+.NotFound_container::before,
+.NotFound_container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.NotFound_container::before {
+  width: 200px;
+  height: 200px;
+  top: 62px;
+  left: -100px;
+  background-image: url("../../assets/bg-pattern-about-2-contact-1.svg");
+}
+
+.NotFound_container::after {
+  width: 200px;
+  height: 112px;
+  bottom: 0px;
+  right: -100px;
+  background-image: url("../../assets/bg-pattern-contact-2.svg");
+}
+
+@media (min-width: 768px) {
+  .NotFound_container::before {
+    top: 124px;
+  }
+  .NotFound_container::after {
+    bottom: 0px;
+  }
+}
+
+/* NotFound content */
+.NotFound_content {
+  padding: 24px;
+  text-align: center;
+}
+.NotFound_heading {
+  margin-bottom: 40px;
+}
