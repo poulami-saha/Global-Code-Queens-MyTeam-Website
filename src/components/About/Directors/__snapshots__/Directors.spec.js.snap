@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Directors section correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="container"
+  >
+    <article
+      class="article"
+    >
+      <h2
+        class="title h2"
+        id=""
+      >
+        Meet the directors
+      </h2>
+      <div
+        class="profiles"
+      >
+        <article
+          class="card"
+          data-testid="profile-card-Nikita Marks"
+        >
+          <div
+            class="avatarContainer"
+          >
+            <img
+              alt="Nikita Marks"
+              class="avatar"
+              src="avatar-nikita.jpg"
+            />
+            <h3
+              class="name h3"
+              id=""
+            >
+              Nikita Marks
+            </h3>
+            <p
+              class="title body2"
+              id=""
+            >
+              Founder & CEO
+            </p>
+          </div>
+          <button
+            class="button mainButton showButton buttonShowMore"
+          >
+            <svg>
+              icon-cross.svg
+            </svg>
+          </button>
+        </article>
+        <article
+          class="card"
+          data-testid="profile-card-Cristian Duncan"
+        >
+          <div
+            class="avatarContainer"
+          >
+            <img
+              alt="Cristian Duncan"
+              class="avatar"
+              src="avatar-christian.jpg"
+            />
+            <h3
+              class="name h3"
+              id=""
+            >
+              Cristian Duncan
+            </h3>
+            <p
+              class="title body2"
+              id=""
+            >
+              Co-founder & COO
+            </p>
+          </div>
+          <button
+            class="button mainButton showButton buttonShowMore"
+          >
+            <svg>
+              icon-cross.svg
+            </svg>
+          </button>
+        </article>
+        <article
+          class="card"
+          data-testid="profile-card-Cruz Hamer"
+        >
+          <div
+            class="avatarContainer"
+          >
+            <img
+              alt="Cruz Hamer"
+              class="avatar"
+              src="avatar-cruz.jpg"
+            />
+            <h3
+              class="name h3"
+              id=""
+            >
+              Cruz Hamer
+            </h3>
+            <p
+              class="title body2"
+              id=""
+            >
+              Co-founder & CTO
+            </p>
+          </div>
+          <button
+            class="button mainButton showButton buttonShowMore"
+          >
+            <svg>
+              icon-cross.svg
+            </svg>
+          </button>
+        </article>
+        <article
+          class="card"
+          data-testid="profile-card-Drake Heaton"
+        >
+          <div
+            class="avatarContainer"
+          >
+            <img
+              alt="Drake Heaton"
+              class="avatar"
+              src="avatar-drake.jpg"
+            />
+            <h3
+              class="name h3"
+              id=""
+            >
+              Drake Heaton
+            </h3>
+            <p
+              class="title body2"
+              id=""
+            >
+              Business Development Lead
+            </p>
+          </div>
+          <button
+            class="button mainButton showButton buttonShowMore"
+          >
+            <svg>
+              icon-cross.svg
+            </svg>
+          </button>
+        </article>
+        <article
+          class="card"
+          data-testid="profile-card-Griffin Wise"
+        >
+          <div
+            class="avatarContainer"
+          >
+            <img
+              alt="Griffin Wise"
+              class="avatar"
+              src="avatar-griffin.jpg"
+            />
+            <h3
+              class="name h3"
+              id=""
+            >
+              Griffin Wise
+            </h3>
+            <p
+              class="title body2"
+              id=""
+            >
+              Lead Marketing
+            </p>
+          </div>
+          <button
+            class="button mainButton showButton buttonShowMore"
+          >
+            <svg>
+              icon-cross.svg
+            </svg>
+          </button>
+        </article>
+        <article
+          class="card"
+          data-testid="profile-card-Aden Allan"
+        >
+          <div
+            class="avatarContainer"
+          >
+            <img
+              alt="Aden Allan"
+              class="avatar"
+              src="avatar-aden.jpg"
+            />
+            <h3
+              class="name h3"
+              id=""
+            >
+              Aden Allan
+            </h3>
+            <p
+              class="title body2"
+              id=""
+            >
+              Head of Talent
+            </p>
+          </div>
+          <button
+            class="button mainButton showButton buttonShowMore"
+          >
+            <svg>
+              icon-cross.svg
+            </svg>
+          </button>
+        </article>
+      </div>
+    </article>
+  </section>
+</DocumentFragment>
+`;

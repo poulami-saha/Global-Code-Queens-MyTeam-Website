@@ -46,7 +46,7 @@ const ProfileCard = ({ person: { name, title, quote, avatar }}) => {
   );
 
   return (
-    <div className={styles.card}>
+    <article className={styles.card} data-testid={`profile-card-${name}`}>
       {!showQuote ? avatarContainer() : quoteContainer()}
       <Button
         elType={!showQuote ? "showMore" : "hideMore"}
@@ -61,7 +61,7 @@ const ProfileCard = ({ person: { name, title, quote, avatar }}) => {
           <CloseIcon className={styles.closeIcon} />
         )}
       </Button>
-    </div>
+    </article>
   );
 };
 

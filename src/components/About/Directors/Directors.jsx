@@ -1,6 +1,6 @@
-import Typography from "../utility/Typography/Typography";
+import Typography from "../../utility/Typography/Typography";
 import styles from "./Directors.module.css";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "../ProfileCard";
 import { directors } from "./directorsData";
 
 const Directors = () => {
