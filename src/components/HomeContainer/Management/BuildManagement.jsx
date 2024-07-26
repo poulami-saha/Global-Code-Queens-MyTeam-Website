@@ -1,7 +1,7 @@
-import Typography from "../../utility/Typography/Typography";
+import { Typography } from "../../utility";
 import Idea from "./Idea";
 import styles from "./BuildManagement.module.css";
-import { Ideas } from "./Ideas.ts";
+import { Ideas } from "./Ideas.js";
 
 const BuildManagement = () => {
   return (
@@ -13,7 +13,7 @@ const BuildManagement = () => {
             Build & manage distributed teams like no one else.
           </Typography>
 
-          <div>
+          <article>
             {Ideas.map(({ id, title, description, avatar }) => {
               return (
                 <Idea
@@ -24,7 +24,7 @@ const BuildManagement = () => {
                 />
               );
             })}
-          </div>
+          </article>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import React from "react";
 import Clients from "../../About/Clients";
 import AboutDetails from "../../About/AboutDetails";
-import Directors from "../../About/Directors";
+import Directors from "../../About/Directors/Directors";
 import ReadyToStart from "../../ReadyToStart/ReadyToStart";
 
 const About = () => {

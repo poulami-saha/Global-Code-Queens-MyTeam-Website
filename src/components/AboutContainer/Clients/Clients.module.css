@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background: var(--dark-theme-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 632px;
+  position: relative;
+  overflow-y: hidden;
+}
+.container::after {
+  content: "";
+  position: absolute;
+}
+
+.container::after {
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../../assets/bg-pattern-about-4.svg");
+}
+.title {
+  color: #fff;
+  margin-bottom: 64px;
+  margin-top: 24px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+}
+.logoVerge {
+  height: 1.5rem;
+  width: 8rem;
+}
+.logoJakarta {
+  height: 1.5rem;
+  width: 10rem;
+}
+.logoGuardian {
+  height: 1.5rem;
+  width: 10rem;
+}
+
+.logoTechRadar {
+  height: 2rem;
+  width: 10rem;
+}
+.logoGadgets {
+  height: 3rem;
+  width: 8rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 40px;
+    height: 308px;
+    overflow-x: hidden;
+  }
+  .title {
+    margin-bottom: 48px;
+  }
+  .news {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .logoVerge {
+    height: 1rem;
+    width: 6rem;
+  }
+  .logoJakarta {
+    height: 1rem;
+    width: 8rem;
+  }
+  .logoGuardian {
+    height: 1rem;
+    width: 8rem;
+  }
+
+  .logoTechRadar {
+    height: 1.5rem;
+    width: 8rem;
+  }
+  .logoGadgets {
+    height: 1.5rem;
+    width: 6rem;
+  }
+  .container::after {
+    height: 200px;
+    width: 200px;
+    transform: translate(0, -45%);
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    height: 437px;
+  }
+  .container::after {
+    transform: none;
+  }
+  .news {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logoVerge {
+    height: 1.5rem;
+    width: 8rem;
+  }
+  .logoJakarta {
+    height: 1.5rem;
+    width: 10rem;
+  }
+  .logoGuardian {
+    height: 1.5rem;
+    width: 10rem;
+  }
+  .logoTechRadar {
+    height: 2rem;
+    width: 10rem;
+  }
+  .logoGadgets {
+    height: 3rem;
+    width: 8rem;
+  }
+}

@@ -1,90 +1,93 @@
 # Global Code Queens Open Source Project
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Challenge](#challenge)
+- [Design](#design)
+- [Features](#features)
+- [Installation](#installation)
+- [Contributing](#contributing)
+
+## Introduction
+
 This is an open source project developed as part of the [Open Source Project](https://www.linkedin.com/posts/frontendqueens_opensource-collaboration-community-activity-7201980886232317952-VBld?utm_source=share&utm_medium=member_desktop) initiative by the [FrontEnd Queens](https://www.linkedin.com/company/frontendqueens/)
 
-## The Challenge
+## Challenge
 
-The challenge is to build out a multi-page website and get it looking as close to the design as possible.
+The challenge is to build out a multi-page website and get it looking as close to the design as possible.Your users should be able to:
+
+- See the correct content for each team member on the About page when the + icon is clicked
+- Receive an error message when the contact form is submitted if:
+  - The Name, Email Address or Message fields are empty should show "This field is required"
+  - The Email Address is not formatted correctly should show "Please use a valid email address"
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
 ## Design
 
 The challenge is part of [Frontend Mentor](https://www.frontendmentor.io/) premium version, hence we are not adding a link of the Design file here.
 
-## More details will be added in due course of time
+## Features
 
-# Getting Started
+- Feature 1: This Project includes 4 fully responsive web page create with React
+- Feature 2: It includes [Hash Router](https://reactrouter.com/en/main/router-components/hash-router) for the implementation of the routing system
+- Feature 3: The Typography and Button across this project uses a common styling system
+- Feature 4: As part of the Innovation of the challenge, this website has an explicit error page for invalid routes.
+- Feature 5: The project uses css modules for the implementation of the stylesheet
+- Feature 6: The project implements a Form with Client side validation.
+- Feature 7: The project is deployed using Github Pages and Github Actions. [Deployed URL](https://poulami-saha.github.io/Global-Code-Queens-MyTeam-Website/#/)
+- Feature 8: This project uses npm as its package manager.
 
-1. Clone the repo. From the terminal, run:
-   `git clone https://github.com/poulami-saha/Global-Code-Queens-MyTeam-Website.git`
-2. Navigate into it: `cd Global-Code-Queens-MyTeam-Website`
-3. You will be on the `main` branch and that will be the only branch you have locally to start. You can see a list of all the branches (both local _and_ remote) by running `git branch -a`. The result will look something like
-   ```
-     feature/reusable-button-component
-   * feature/routing
-     main
-     typography-component
-     remotes/origin/HEAD -> origin/main
-     remotes/origin/feature/form-element-component
-     remotes/origin/feature/reusable-button-component
-     remotes/origin/feature/routing
-     remotes/origin/layout-fix
-     remotes/origin/main
-     remotes/origin/master
-     remotes/origin/responsive-footer
-     remotes/origin/responsive-footer-component
-     remotes/origin/typography-component
-   ```
-4. This project uses npm as its package manager (not yarn). Install the dependencies by running `npm install`.
-5. Start the local dev server with `npm start`.
-   - If you haven't run `npm install`, you won't be able to start the site.
-   - Occasionally, new dependencies may be added. When this happens, you'll probably need to run the install command again.
+## Installation
 
-# Branching
+To install and set up this project, follow these steps:
 
-## How to organize branches
+### Prerequisites
 
-- **DO _NOT_** work directly on the `main` branch. Work on a different branch and open a pull request when you're ready to have your work reviewed to merge into `main`.
-- Branches for working on new features can be named starting with `feature/`, e.g., `feature/routing` or `feature/buttons`
-- Branches for fixing bugs can be named starting with `fix/`, e.g., `fix/layout` or `fix/about-text`
-- Names describing the purpose of the branch are probably best for this project. (Be aware that some projects use ticket numbers to name branches, like `ticket/42` or `KAN-1`, especially when the project gets over a certain size or volume of tickets.)
+- The Project is build with React v18
+- The Project is handled with git and Github. Please follow the procedure linked [here](documents/githubLearning.md)
 
-## Using branches
+### Clone the Repository
 
-- To check out a remote branch, such as `remotes/origin/feature/routing`, you run `git checkout feature/routing` and it will automatically set up tracking for the remote branch.
-- When you want to start working, decide whether you want to branch from `main` or from one of the other branches. There are two workflows; either is fine!
-  - Option 1:
-    - Check out the branch you want to start working from (e.g., `git checkout main` or `git checkout feature/my-feature`)
-    - Open a new branch from there: `git checkout -n feature/example`
-  - Option 2:
-    - Open a new branch from `main`
-    - Merge the current state of any branch(es) that you want features from, using
-      `git pull origin desired-branch-name` **from inside your new branch**
+```bash
+git clone git@github.com:poulami-saha/Global-Code-Queens-MyTeam-Website.git
+cd Global-Code-Queens-MyTeam-Website
+```
 
-# Pull Requests
+### Install Dependencies
 
-Pull requests, or PRs, are how we share our work for review before merging it into the main branch. GitHub has documentation for how to create a [PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+```bash
+npm install
+```
 
-Please start the subject of PRs with the Jira ticket number. If you were opening a PR for the [routing ticket](https://poulamisaha.atlassian.net/jira/software/projects/KAN/boards/1?selectedIssue=KAN-9), that's KAN-9, so the subject line should start with "[KAN-9]". You can look at our [closed PRs](https://github.com/poulami-saha/Global-Code-Queens-MyTeam-Website/pulls?q=is%3Apr+is%3Aclosed) to see examples.
+### Running the Application
 
-When you have opened a PR, please let us know! **All members of the team are encouraged to review PRs and ask questions** about why code does things. It helps us all learn!
+```bash
+npm start
+```
 
-- "Conversation" tab is where all comments will be visible, whether general or attached to specific bit of code (see "Files changed" tab)
-- "Commits" tab lets you see individual commits on the branch being PR'd
-- "Checks" is for showing results of automated testing; we have not set this up yet.
-- "Files changed" tab shows the current diffs for all files in the PR
-  - You can leave comments on a particular line of code and it will be visible on the "Conversation" tab
-  - You can use the green "Review Changes" button to
-    - leave general comments
-    - flag "Request changes" (a signal that something important must be done before merging)
-    - "Approve changes" (which should be done when requested changes are made to your satisfaction, or anytime everything looks mergeable without comment)
+### Repository Author & Maintainers
 
-## Merging PRs
+1. [Rika Williams](https://github.com/berikawilliams)
+2. [Manami W](https://github.com/chachamana)
+3. [Eunice Y](https://github.com/eunicey)
+4. [Feven Seyfu](https://github.com/FevenSeyfu)
+5. [Joan Wolkerstorfer](https://github.com/joanwolk)
+6. [Kezia Baidoo](https://github.com/keziabaidoo)
+7. [Sehaj Wadhwa](https://github.com/sehajwadhwa)
+8. [Uzma Khan](https://github.com/Uzmakh)
+9. [Poulami Saha](https://github.com/poulami-saha)
 
-- PRs must be approved by at least one team member before they are merged.
-  - This can mean a delay of up to a day or two, because our team is spread across many time zones. Please be patient.
-  - Reach out to folks on Slack, either in the team channel or by DMs, if you're trying to accelerate the process.
-- Please do not merge your PR if you have 1 approval and there is a change requested by another approver. Please address all comments before merging the PR.
-- We encourage people to merge their own PRs after approval!
-  - Merge conflicts will happen sometimes and it's good to learn about resolving them.
-  - If you're uncomfortable doing your own merge, ask if someone can help walk you through it.
-  - If you know that another PR has touched the same file(s) as yours and got merged before yours, you can resolve the merge locally on your branch, pushing that change, and then merging the PR.
+### Contributing
+
+We welcome contributions! Please follow these steps to contribute:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature-branch`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add some feature'`).
+5.  Push to the branch (`git push origin feature-branch`).
+6.  Open a pull request.
+
+For Github Related queries please follow the procedure linked [here](documents/githubLearning.md)
