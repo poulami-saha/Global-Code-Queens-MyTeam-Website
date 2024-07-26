@@ -1,5 +1,5 @@
 import React from "react";
-import Typography from "../../utility/Typography/Typography";
+import { Typography } from "../../utility";
 import styles from "./SuccessStories.module.css";
 
 const SuccessStory = ({ quote, name, title, avatar, altText }) => {

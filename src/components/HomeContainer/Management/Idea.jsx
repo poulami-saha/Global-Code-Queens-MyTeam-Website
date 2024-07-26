@@ -1,4 +1,4 @@
-import Typography from "../../utility/Typography/Typography";
+import { Typography } from "../../utility";
 import styles from "./Idea.module.css";
 
 const Idea = ({ title, description, avatar }) => {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ContactForm.module.css";
-import FormElement from "../../utility/FormElement/FormElement";
-import Button from "../../utility/Button/Button";
+import { FormElement, Button } from "../../utility";
 
 const ContactForm = () => {
   const initialState = {

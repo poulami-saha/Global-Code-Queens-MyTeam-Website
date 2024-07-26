@@ -1,5 +1,5 @@
 import React from "react";
-import Typography from "../utility/Typography/Typography";
+import { Typography } from "../utility";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.svg";
 import facebook from "../../assets/icon-facebook.svg";

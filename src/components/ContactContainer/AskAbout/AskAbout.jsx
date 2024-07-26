@@ -1,5 +1,5 @@
 import React from "react";
-import Typography from "../../utility/Typography/Typography.js";
+import { Typography } from "../../utility";
 import styles from "./AskAbout.module.css";
 import { QA_topics } from "./Topic.js";
 

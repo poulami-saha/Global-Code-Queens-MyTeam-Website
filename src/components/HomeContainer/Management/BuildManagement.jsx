@@ -1,7 +1,7 @@
-import Typography from "../../utility/Typography/Typography";
+import { Typography } from "../../utility";
 import Idea from "./Idea";
 import styles from "./BuildManagement.module.css";
-import { Ideas } from "./Ideas.ts";
+import { Ideas } from "./Ideas.js";
 
 const BuildManagement = () => {
   return (
