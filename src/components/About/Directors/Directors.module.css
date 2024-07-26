@@ -24,7 +24,7 @@
   top: 0px;
   left: 0px;
   transform: translate(-50%, -50%);
-  background-image: url("../../assets/bg-pattern-about-2-contact-1.svg");
+  background-image: url("../../../assets/bg-pattern-about-2-contact-1.svg");
 }
 
 .container::after {
@@ -32,7 +32,7 @@
   height: 100px;
   bottom: 0px;
   right: 0px;
-  background-image: url("../../assets/bg-pattern-home-4-about-3.svg");
+  background-image: url("../../../assets/bg-pattern-home-4-about-3.svg");
 }
 
 .article {
