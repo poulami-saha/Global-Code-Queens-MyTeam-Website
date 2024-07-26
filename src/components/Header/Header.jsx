@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import Logo from "../../assets/logo.svg";
 import Button from "../utility/Button/Button";
@@ -9,6 +10,11 @@ import Typography from "../utility/Typography/Typography";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,21 +25,19 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.navLinks}>
           <img src={Logo} alt="logo" className={styles.logo} />
-          <Link
-            to="/"
-            className={`${styles.navLink} ${styles.nav}`}
-          >
+          <Link to="/" className={`${styles.navLink} ${styles.nav}`}>
             <Typography elType="body4">home</Typography>
           </Link>
-          <Link
-            to="/about"
-            className={`${styles.navLink} ${styles.nav}`}
-          >
+          <Link to="/about" className={`${styles.navLink} ${styles.nav}`}>
             <Typography elType="body4">about</Typography>
           </Link>
         </div>
 
-        <Button elType="primaryWhite" className={styles.nav}>
+        <Button
+          elType="primaryWhite"
+          className={styles.nav}
+          onClick={navigateToContact}
+        >
           contact us
         </Button>
         <img
@@ -45,10 +49,15 @@ const Header = () => {
       </header>
       <div className={`${styles.sideDrawer} ${isOpen ? styles.open : ""}`}>
         <nav className={styles.mobileNav}>
-          <img src={closeIcon} className={styles.closeIcon} alt="close" onClick={toggleMenu} />
+          <img
+            src={closeIcon}
+            className={styles.closeIcon}
+            alt="close"
+            onClick={toggleMenu}
+          />
           <ul>
             <li onClick={toggleMenu}>
-              <Link to="/" className={styles.navLink} >
+              <Link to="/" className={styles.navLink}>
                 home
               </Link>
             </li>
@@ -58,7 +67,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Button elType="primaryWhite" className={styles.contact}>
+              <Button
+                elType="primaryWhite"
+                className={styles.contact}
+                onClick={navigateToContact && toggleMenu}
+              >
                 contact us
               </Button>
             </li>
