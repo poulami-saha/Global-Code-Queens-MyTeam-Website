@@ -32,7 +32,7 @@ const Typography = ({ elType, className = "", id = "", children }) => {
     [styles.h1Small]: elType === "h1Small",
     [styles.h2]: elType === "h2",
     [styles.h3]: elType === "h3",
-    [styles.h3Large]: elType === "h3Large",
+    [styles.h3Large]: elType === "h3",
     [styles.error]: elType === "error",
   });
 
