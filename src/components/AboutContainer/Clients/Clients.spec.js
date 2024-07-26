@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import Clients from "./Clients";
 
-test("renders NotFound correctly and matches snapshot", async () => {
+test("renders Clients correctly and matches snapshot", async () => {
   const { asFragment, getByText } = render(<Clients />);
 
   // Snapshot test

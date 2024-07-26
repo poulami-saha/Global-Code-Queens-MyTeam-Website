@@ -8,7 +8,7 @@ jest.mock("react-router-dom", () => {
   };
 });
 
-test("renders NotFound correctly and matches snapshot", async () => {
+test("renders Footer correctly and matches snapshot", async () => {
   const { asFragment, getByText } = render(<Footer />);
 
   // Snapshot test
