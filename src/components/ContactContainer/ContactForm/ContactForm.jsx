@@ -129,7 +129,7 @@ const ContactForm = () => {
         )
       )}
       <Button elType="secondary" disabled={!isFormValid()}>
-        Submit
+        submit
       </Button>
     </form>
   );
