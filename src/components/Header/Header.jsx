@@ -21,14 +21,12 @@ const Header = () => {
           <img src={Logo} alt="logo" className={styles.logo} />
           <Link
             to="/"
-            role="button"
             className={`${styles.navLink} ${styles.nav}`}
           >
             <Typography elType="body4">home</Typography>
           </Link>
           <Link
-            to="/"
-            role="button"
+            to="/about"
             className={`${styles.navLink} ${styles.nav}`}
           >
             <Typography elType="body4">about</Typography>
@@ -46,16 +44,16 @@ const Header = () => {
         />
       </header>
       <div className={`${styles.sideDrawer} ${isOpen ? styles.open : ""}`}>
-        <nav className={styles.mobileNav} onClick={toggleMenu}>
-          <img src={closeIcon} className={styles.closeIcon} alt="close" />
+        <nav className={styles.mobileNav}>
+          <img src={closeIcon} className={styles.closeIcon} alt="close" onClick={toggleMenu} />
           <ul>
-            <li>
-              <Link to="/" role="button">
+            <li onClick={toggleMenu}>
+              <Link to="/" className={styles.navLink} >
                 home
               </Link>
             </li>
-            <li>
-              <Link to="/" role="button">
+            <li onClick={toggleMenu}>
+              <Link to="/about" className={styles.navLink}>
                 about
               </Link>
             </li>
