@@ -107,6 +107,10 @@
     margin-inline: 20px;
   }
 
+  .navLink:hover {
+    color: var(--coral-color);
+  }
+
   .nav {
     display: block;
   }
