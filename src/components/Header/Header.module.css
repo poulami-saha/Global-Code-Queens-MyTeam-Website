@@ -58,6 +58,11 @@
   text-decoration: none;
 }
 
+.mobileNav a:hover,
+.nav a:hover {
+  color: var(--coral-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
