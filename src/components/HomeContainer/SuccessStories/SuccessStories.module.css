@@ -3,81 +3,38 @@
   background-color: var(--deep-jungle-blue);
   color: var(--primary-white);
   position: relative;
-}
-
-/* whole section  background decoration*/
-.SuccessStories::before,
-.SuccessStories::after {
-  content: "";
-  position: absolute;
-}
-
-.SuccessStories::before {
-  width: 147px;
-  height: 100px;
-  top: 0px;
-  left: 0px;
-  background-image: url("../../../assets/bg-pattern-home-4-about-3.svg");
-}
-
-.SuccessStories::after {
-  width: 200px;
-  height: 100px;
-  bottom: 0px;
-  right: 0px;
-  background-image: url("../../../assets/bg-pattern-home-5.svg");
+  background-image: url("../../../assets/bg-pattern-home-4-about-3.svg"),
+    url("../../../assets/bg-pattern-home-5.svg");
+  background-position: top left,
+    bottom right;
+  background-repeat: no-repeat;
 }
 
 /*wrapper*/
-.SuccessStories_wrapper {
+.wrapper {
   box-sizing: border-box;
-  padding: 140px 24px;
+  padding-block: 140px;
   margin: 0 auto;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .SuccessStories_wrapper {
-    padding: 100px 98px;
-  }
-}
-
-@media (min-width: 960px) {
-  .SuccessStories_wrapper {
-    padding: 140px 24px;
-    max-width: 1148px;
-  }
-}
 
 /* contents */
-.SuccessStories_contents {
+.contents {
   display: flex;
   gap: 48px;
   flex-direction: column;
   text-align: center;
 }
 
-@media (min-width: 960px) {
-  .SuccessStories_contents {
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-
 /* content */
-.SuccessStories_content {
+.quote {
   width: 100%;
   padding-block: 10px;
   background: transparent url("../../../assets/icon-quotes.svg") no-repeat center top / 56px 56px;
 }
 
-@media (min-width: 960px) {
-  .SuccessStories_content {
-    width: calc(100% / 3);
-  }
-}
-
 /* image */
-.SuccessStories_image {
+.image {
   width: 60px;
   height: 60px;
   margin: 0 auto;
@@ -86,25 +43,50 @@
   overflow: hidden;
 }
 
-.SuccessStories_image img {
+.image img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* typography*/
-
-.SuccessStories_heading {
+.heading {
   text-align: center;
   margin-bottom: 48px;
 }
-.SuccessStories_heading span {
+
+.heading span {
   color: var(--rapture-blue);
   font-weight: 800;
 }
-.SuccessStories_name {
+
+.name {
   color: var(--rapture-blue);
 }
-.SuccessStories_caption {
+
+.caption {
   padding-bottom: 10px;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .wrapper {
+    padding-block: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .wrapper {
+    padding-block: 140px;
+    max-width: 1148px;
+  }
+
+  .contents {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .quote {
+    width: calc(100% / 3);
+  }
 }

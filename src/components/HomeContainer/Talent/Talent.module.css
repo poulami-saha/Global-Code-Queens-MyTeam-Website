@@ -1,7 +1,7 @@
 .container {
   background: var(--midnight-green);
   color: var(--primary-white);
-  padding: 0 24px;
+  padding: 0;
   min-height: 370px;
   background-image: url("../../../assets/bg-pattern-home-2.svg");
   background-position: center bottom;
@@ -49,7 +49,7 @@
       url("../../../assets/bg-pattern-home-2.svg");
     background-position:
       top left -100px,
-      right 169px bottom;
+      right 165px bottom;
     background-repeat: no-repeat;
   }
 
@@ -66,7 +66,7 @@
     margin: 0;
     height: 195px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .heading {

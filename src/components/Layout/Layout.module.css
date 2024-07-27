@@ -9,3 +9,21 @@
 .content {
   flex: 1;
 }
+
+.content > section > div {
+  padding-inline: 24px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .content > section > div {
+    padding-inline: 97px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+  .content > section > div {
+    padding-inline: 165px;
+  }
+}

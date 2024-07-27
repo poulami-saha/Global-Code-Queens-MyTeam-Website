@@ -7,13 +7,13 @@ import SuccessStory from "./SuccessStory";
 const SuccessStories = () => {
   return (
     <section className={styles.SuccessStories}>
-      <div className={styles.SuccessStories_wrapper}>
-        <Typography elType="h2" className={styles.SuccessStories_heading}>
+      <div className={styles.wrapper}>
+        <Typography elType="h2" className={styles.heading}>
           Delivering real results for top companies. Some of our{" "}
           <span>success stories.</span>
         </Typography>
 
-        <article className={styles.SuccessStories_contents}>
+        <article className={styles.contents}>
           {stories.map(({ id, quote, name, title, avatar, altText }) => {
             return (
               <SuccessStory
