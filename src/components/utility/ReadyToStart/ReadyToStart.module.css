@@ -21,7 +21,6 @@
 .text {
   color: var(--dark-theme-background);
   max-width: 75%;
-  margin-inline: 2em;
   text-align: center;
 }
 
@@ -30,13 +29,18 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 920px;
-    margin-inline: 6em;
     margin-block: 71px;
   }
 
   .text {
-    margin-inline: 0;
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .container .mainContent {
+    padding-inline: 0;
+    margin-inline: 137px;
+    max-width: 917px;
   }
 }
