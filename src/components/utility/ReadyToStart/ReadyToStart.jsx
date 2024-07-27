@@ -12,7 +12,7 @@ const ReadyToStart = () => {
   };
 
   return (
-    <div className={styles.ReadyToStart}>
+    <div className={styles.container}>
       <div className={styles.mainContent}>
         <Typography elType="h2" className={styles.text}>
           Ready to get started?
