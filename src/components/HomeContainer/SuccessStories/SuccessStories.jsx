@@ -6,7 +6,7 @@ import SuccessStory from "./SuccessStory";
 
 const SuccessStories = () => {
   return (
-    <section className={styles.SuccessStories}>
+    <section className={styles.container}>
       <div className={styles.wrapper}>
         <Typography elType="h2" className={styles.heading}>
           Delivering real results for top companies. Some of our{" "}
