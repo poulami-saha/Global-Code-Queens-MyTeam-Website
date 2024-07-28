@@ -2,7 +2,7 @@
   background: var(--midnight-green);
   color: var(--primary-white);
   padding: 0;
-  min-height: 370px;
+  height: 427px;
   background-image: url("../../../assets/bg-pattern-home-2.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
 
 .text_wrapper {
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .heading {
@@ -32,23 +33,22 @@
 @media (min-width: 768px) {
   .container {
     padding: 0 45px;
-    height: 456px;
+    height: 556px;
   }
   .text_wrapper {
-    padding: 0 110px;
+    padding: 80px 110px 0;
   }
 }
 
 /* Desktop */
 @media (min-width: 960px) {
   .container {
-    height: 400px;
     padding: 0;
     background-image:
       url("../../../assets/bg-pattern-home-1.svg"),
       url("../../../assets/bg-pattern-home-2.svg");
     background-position:
-      top left -100px,
+      top 106px left -100px,
       right 165px bottom;
     background-repeat: no-repeat;
   }
@@ -64,6 +64,7 @@
   .text_wrapper{
     gap: 30px;
     margin: 0;
+    padding-top: 106px;
     height: 195px;
     display: flex;
     justify-content: space-between;
