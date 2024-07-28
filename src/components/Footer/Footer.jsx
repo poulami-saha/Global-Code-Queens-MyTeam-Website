@@ -24,10 +24,10 @@ const Footer = () => {
         </div>
 
         <address className={styles.location}>
-          <Typography elType="body1">997 Hillcrest Lane</Typography>
-          <Typography elType="body1">Irvine, CA</Typography>
-          <Typography elType="body1">California 92714</Typography>
-          <Typography elType="body1">Call Us: 949-833-7432</Typography>
+          <Typography elType="body2">997 Hillcrest Lane</Typography>
+          <Typography elType="body2">Irvine, CA</Typography>
+          <Typography elType="body2">California 92714</Typography>
+          <Typography elType="body2">Call Us: 949-833-7432</Typography>
         </address>
       </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
           <img src={twitter} alt="X" />
         </div>
 
-        <Typography elType="body1" className={styles.copyright}>
+        <Typography elType="body2" className={styles.copyright}>
           Copyright 2020. All Rights Reserved
         </Typography>
       </div>
