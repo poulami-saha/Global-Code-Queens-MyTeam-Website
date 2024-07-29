@@ -77,13 +77,13 @@
   .footerInfo {
     flex-direction: row;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
   }
 
   .socialContent {
     flex-direction: row;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
   }
 
   .footerLinks {
