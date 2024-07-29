@@ -1,15 +1,16 @@
 .formElement{
   width: 100%;
 }
+
 input,
 textarea {
+  --input-color: var(--primary-white);
   border: none;
-  border-bottom: 1px solid #ffffff;
-  color: #ffffff;
+  border-bottom: 1px solid var(--input-color);
+  color: var(--primary-white);
   background: transparent;
   padding-left: 14px;
   outline: none;
-  opacity: 0.6;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -22,20 +23,27 @@ textarea {
   height: 42px;
 }
 
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.6;
+  color: var(--input-color);
+}
+
 textarea {
   height: 84px;
   resize: none;
 }
+
 input:focus,
 textarea:focus {
+  --input-color: var(--rapture-blue);
   opacity: 1;
   cursor: pointer;
-  border-bottom: 1px solid #79c8c7;
 }
 
 input.error,
 textarea.error {
-  border-bottom-color: #f67e7e;
+  --input-color: var(--coral-color);
 }
 
 .errorMessage {
