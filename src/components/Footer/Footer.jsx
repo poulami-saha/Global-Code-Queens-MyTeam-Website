@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <Typography elType="body2" className={styles.copyright}>
-          Copyright 2020. All Rights Reserved
+          <span className={styles.avoidWrap}>Copyright 2020.</span> <span className={styles.avoidWrap}>All Rights Reserved</span>
         </Typography>
       </div>
     </footer>
