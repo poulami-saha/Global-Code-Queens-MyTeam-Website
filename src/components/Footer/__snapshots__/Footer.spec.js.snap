@@ -1,6 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders NotFound correctly and matches snapshot 1`] = `
+exports[`renders Footer correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer"
+  >
+    <div
+      class="footerInfo"
+    >
+      <div
+        class="footerNavigation"
+      >
+        <img
+          alt="logo"
+          src="logo.svg"
+        />
+        <div
+          class="footerLinks"
+        >
+          <a
+            href="/"
+          >
+            <p
+              class="body1"
+              id=""
+            >
+              home
+            </p>
+          </a>
+          <a
+            href="/about"
+          >
+            <p
+              class="body1"
+              id=""
+            >
+              about
+            </p>
+          </a>
+        </div>
+      </div>
+      <address
+        class="location"
+      >
+        <p
+          class="body1"
+          id=""
+        >
+          997 Hillcrest Lane
+        </p>
+        <p
+          class="body1"
+          id=""
+        >
+          Irvine, CA
+        </p>
+        <p
+          class="body1"
+          id=""
+        >
+          California 92714
+        </p>
+        <p
+          class="body1"
+          id=""
+        >
+          Call Us: 949-833-7432
+        </p>
+      </address>
+    </div>
+    <div
+      class="socialContent"
+    >
+      <div
+        class="socialLinks"
+      >
+        <img
+          alt="facebook"
+          src="icon-facebook.svg"
+        />
+        <img
+          alt="pinterest"
+          src="icon-pinterest.svg"
+        />
+        <img
+          alt="X"
+          src="icon-twitter.svg"
+        />
+      </div>
+      <p
+        class="copyright body1"
+        id=""
+      >
+        Copyright 2020. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`renders Footer correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <footer
     class="footer"
