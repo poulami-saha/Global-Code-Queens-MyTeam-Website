@@ -10,6 +10,7 @@
 .hamburgerIcon {
   width: 20px;
   height: 17px;
+  margin-bottom: 5px; /* improves vertical centering with logo */
   cursor: pointer;
 }
 
