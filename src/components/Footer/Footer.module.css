@@ -58,6 +58,10 @@
   cursor: pointer;
 }
 
+.socialLink:hover path{
+  fill: var(--coral-color);
+}
+
 .copyright {
   opacity: 0.6;
   align-items: center;
