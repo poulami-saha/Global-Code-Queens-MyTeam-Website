@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.875rem;
-  padding: 5rem 6% 6rem;
+  padding: 0 6% 6rem;
 
   /* illustrations */
   background-image: url("../../assets/bg-pattern-contact-2.svg");
@@ -18,10 +18,10 @@
 @media (min-width: 768px) {
   .ContactPage {
     gap: 4rem;
-    padding: 7rem 8rem;
+    padding: 0 8rem 7rem;
     background-image: url("../../assets/bg-pattern-about-2-contact-1.svg"),
       url("../../assets/bg-pattern-contact-2.svg");
-    background-position: top 7.5rem left -6.5rem, bottom right -7rem;
+    background-position: top left -6.5rem, bottom right -7rem;
   }
 }
 
@@ -30,6 +30,6 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 7.5rem 10.25rem;
+    padding: 0 10.25rem 7.5rem;
   }
 }

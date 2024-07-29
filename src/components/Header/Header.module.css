@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 48px 24px;
+  padding: 48px 24px 68px;
   background-color: var(--midnight-green);
   color: var(--primary-white);
 }
@@ -87,6 +87,7 @@
 
 @media (min-width: 768px) {
   .header {
+    padding-bottom: 129px;
     padding-inline: 39px;
     align-items: center;
     justify-content: space-between;
@@ -126,6 +127,7 @@
 
 @media (min-width: 960px) {
   .header {
+    padding-bottom: 146px;
     padding-inline: 165px;
   }
 }

@@ -2,7 +2,6 @@
   background: var(--midnight-green);
   color: var(--primary-white);
   text-align: center;
-  padding-top: 20px;
   padding-bottom: 108px;
   background-image: url("../../../assets/bg-pattern-about-1-mobile-nav-1.svg");
   background-position: bottom -100px right -100px;
@@ -20,7 +19,6 @@
 
 @media (min-width: 768px) {
   .container {
-    padding-top: 80px;
     padding-bottom: 112px;
     background-position-y: bottom;
   }
@@ -36,7 +34,6 @@
 
 @media (min-width: 960px) {
   .container {
-    padding-top: 60px;
     padding-bottom: 112px;
   }
 
@@ -48,14 +45,13 @@
 
   .headline {
     align-self: flex-start;
-    margin-top: 40px;
   }
 
   .bar {
     width: 50px;
     height: 4px;
     background: var(--coral-color);
-    margin-block: 40px;
+    margin-bottom: 40px;
   }
 
   .aboutus {

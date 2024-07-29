@@ -27,13 +27,13 @@
   padding: 0 2px;
 }
 
-
 /* Tablet */
 @media (min-width: 768px) {
   .container {
-    padding: 0 45px;
+    padding: 0 48px;
     height: 456px;
   }
+
   .text_wrapper {
     padding: 0 110px;
   }
@@ -48,7 +48,7 @@
       url("../../../assets/bg-pattern-home-1.svg"),
       url("../../../assets/bg-pattern-home-2.svg");
     background-position:
-      top left -100px,
+      top 9px left -100px,
       right 165px bottom;
     background-repeat: no-repeat;
   }
@@ -59,7 +59,6 @@
     height: 4px;
     margin-bottom: 83px;
   }
-
 
   .text_wrapper{
     gap: 30px;
