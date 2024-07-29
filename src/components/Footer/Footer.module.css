@@ -55,7 +55,14 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 16px;
+}
+
+.socialLink {
   cursor: pointer;
+}
+
+.socialLink:hover path{
+  fill: var(--coral-color);
 }
 
 .copyright {
