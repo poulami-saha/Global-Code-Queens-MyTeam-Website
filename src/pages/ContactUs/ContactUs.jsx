@@ -4,10 +4,12 @@ import { AskAbout, ContactForm } from "../../components/ContactContainer";
 
 const ContactUs = () => {
   return (
-    <div className={styles.ContactPage}>
-      <AskAbout />
-      <ContactForm />
-    </div>
+    <section className={styles.ContactPage}>
+      <div className={styles.body}>
+        <AskAbout />
+        <ContactForm />
+      </div>
+    </section>
   );
 };
 

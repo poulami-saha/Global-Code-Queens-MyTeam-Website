@@ -3,11 +3,7 @@
   width: 100%;
   min-height: 100vh;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.875rem;
-  padding: 0 6% 6rem;
+  padding-bottom: 6rem;
 
   /* illustrations */
   background-image: url("../../assets/bg-pattern-contact-2.svg");
@@ -15,21 +11,35 @@
   background-repeat: no-repeat;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+}
+
 @media (min-width: 768px) {
   .ContactPage {
-    gap: 4rem;
-    padding: 0 8rem 7rem;
+    padding-bottom: 7rem;
     background-image: url("../../assets/bg-pattern-about-2-contact-1.svg"),
       url("../../assets/bg-pattern-contact-2.svg");
-    background-position: top left -6.5rem, bottom right -7rem;
+    background-position: top left -6.5rem, bottom -0.5rem right -7rem;
+  }
+
+  .body {
+    gap: 4rem;
   }
 }
 
 @media (min-width: 960px) {
   .ContactPage {
+    padding-bottom: 7.5rem;
+    background-position: top left -6.5rem, bottom right -7rem;
+  }
+
+  .body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0 10.25rem 7.5rem;
   }
 }
