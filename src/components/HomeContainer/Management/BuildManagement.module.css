@@ -1,5 +1,4 @@
 .container {
-  padding: 0;
   margin: 0;
   background-color: var(--dark-theme-background);
   color: var(--primary-white);
@@ -8,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 24px;
   background-image: url("../../../assets/bg-pattern-home-3.svg");
   background-position-x: calc(100% + 100px);
   background-position-y: top;
@@ -28,7 +26,7 @@
 
 @media (min-width: 768px) {
   .container {
-    padding: 98px;
+    padding-block: 98px;
   }
   .header {
     width: 445px;

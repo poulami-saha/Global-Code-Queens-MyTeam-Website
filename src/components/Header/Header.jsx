@@ -20,6 +20,11 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const navigateAndToggle = () => {
+    navigate("/contact");
+    toggleMenu();
+  }
+
   return (
     <>
       <header className={styles.header}>
@@ -56,13 +61,13 @@ const Header = () => {
             onClick={toggleMenu}
           />
           <ul>
-            <li onClick={toggleMenu}>
-              <Link to="/" className={styles.navLink}>
+            <li>
+              <Link to="/" className={styles.navLink} onClick={toggleMenu}>
                 home
               </Link>
             </li>
-            <li onClick={toggleMenu}>
-              <Link to="/about" className={styles.navLink}>
+            <li>
+              <Link to="/about" className={styles.navLink} onClick={toggleMenu}>
                 about
               </Link>
             </li>
@@ -70,7 +75,7 @@ const Header = () => {
               <Button
                 elType="primaryWhite"
                 className={styles.contact}
-                onClick={navigateToContact && toggleMenu}
+                onClick={navigateAndToggle}
               >
                 contact us
               </Button>

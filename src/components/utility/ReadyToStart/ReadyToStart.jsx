@@ -12,7 +12,7 @@ const ReadyToStart = () => {
   };
 
   return (
-    <div className={styles.ReadyToStart}>
+    <section className={styles.container}>
       <div className={styles.mainContent}>
         <Typography elType="h2" className={styles.text}>
           Ready to get started?
@@ -22,7 +22,7 @@ const ReadyToStart = () => {
           contact us
         </Button>
       </div>
-    </div>
+    </section>
   );
 };
 
