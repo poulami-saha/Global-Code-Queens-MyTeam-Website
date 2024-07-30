@@ -47,6 +47,10 @@
   .header{
     gap: 1.5rem;
   }
+
+  .container {
+    padding-inline: 1.5rem;
+  }
 }
 
 @media (min-width: 960px) {
@@ -55,6 +59,7 @@
     align-items: start;
     justify-content: end;
     gap: 2rem;
+    padding-inline: 0;
   }
 
   .headings {
