@@ -6,7 +6,7 @@ const SuccessStory = ({ quote, name, title, avatar, altText }) => {
   return (
     <article className={styles.quote}>
       <Typography elType="body2">“{quote}”</Typography>
-      <Typography elType="h3Large" className={styles.name}>
+      <Typography elType="h3" className={styles.name}>
         {name}
       </Typography>
       <Typography elType="body3" className={styles.caption}>

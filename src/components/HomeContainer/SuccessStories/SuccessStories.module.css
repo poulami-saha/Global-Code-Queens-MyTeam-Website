@@ -29,14 +29,14 @@
 /* content */
 .quote {
   width: 100%;
-  padding-block: 10px;
-  background: transparent url("../../../assets/icon-quotes.svg") no-repeat center top / 56px 56px;
+  padding-top: 36px;
+  background: transparent url("../../../assets/icon-quotes.svg") no-repeat center top / 67px 56px;
 }
 
 /* image */
 .image {
-  width: 60px;
-  height: 60px;
+  width: 66px;
+  height: 66px;
   margin: 0 auto;
   border-radius: 50%;
   border: 2px solid var(--rapture-blue);
@@ -62,10 +62,11 @@
 
 .name {
   color: var(--rapture-blue);
+  margin: 16px 0 2px 0;
 }
 
 .caption {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 /* media queries */
@@ -78,7 +79,6 @@
 @media (min-width: 960px) {
   .wrapper {
     padding-block: 140px;
-    max-width: 1148px;
   }
 
   .contents {
@@ -88,5 +88,18 @@
 
   .quote {
     width: calc(100% / 3);
+  }
+
+  .heading {
+    padding: 0 89px;
+    margin-bottom: 56px;
+  }
+
+  .name {
+    margin-top: 24px;
+  }
+
+  .caption {
+    padding-bottom: 30px;
   }
 }
