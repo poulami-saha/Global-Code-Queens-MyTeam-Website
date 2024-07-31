@@ -14,15 +14,16 @@
   align-items: center;
   width: 100%;
   height: 15.813rem;
+  padding: 0 1.5rem;
   background: var(--dark-theme-background);
 }
 
 .avatarContainer {
-  padding: 12.648% 6.8571%;
+  padding-top: 2rem;
 }
 
 .quoteContainer {
-  padding: 13.834% 6.8571%;
+  padding-top: 2.188rem;
 }
 
 .avatar {
@@ -49,8 +50,8 @@
 }
 
 .quote {
-  margin: 2% 0 7% 0;
-  padding: 0 6.8571%;
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0 1.386rem;
   text-align: center;
   color: var(--primary-white);
   font-weight: 600;
@@ -105,7 +106,8 @@
 }
 
 @media (min-width: 960px) {
+
   .quote {
-    padding: 0 6.8571%;
+    padding: 0 1.5rem;
   }
 }

@@ -33,6 +33,6 @@
 @media (min-width: 960px) {
   .content > section > div,
   .content > section > article {
-    padding-inline: 11.458333%;
+    padding-inline: 165px;
   }
 }
