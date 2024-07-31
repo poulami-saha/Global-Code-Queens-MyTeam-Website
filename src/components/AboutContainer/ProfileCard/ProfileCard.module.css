@@ -1,6 +1,6 @@
 .card {
-  height: 17.563rem;
-  width: 20.438rem;
+  height: auto;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
 
 .mainButton {
   position: absolute;
-  bottom: 0px;
+  bottom: -28px;
   width: 56px;
   height: 56px;
   -webkit-tap-highlight-color: transparent;
@@ -95,10 +95,6 @@
 }
 
 @media (min-width: 768px) {
-  .card {
-    width: 17.563rem;
-  }
-
   .quoteContainer {
     padding-left: 1.438rem;
     padding-right: 1.438rem;
@@ -110,10 +106,6 @@
 }
 
 @media (min-width: 960px) {
-  .card {
-    width: calc((96vw / 3) - 1.875rem);
-    max-width: 21.875rem;
-  }
 
   .quote {
     padding: 0 1.5rem;

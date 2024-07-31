@@ -12,7 +12,7 @@
 }
 
 .article {
-  max-width: 100%;
+  width: 100%;
   margin: 5.5rem auto;
 }
 
@@ -22,13 +22,12 @@
 }
 
 .profiles {
+  max-width: 100%;
   margin-top: 3rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.5rem;
   justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-between;
-  row-gap: 1.5rem;
-  column-gap: 0.688rem;
 }
 
 @media (min-width: 768px) {
@@ -46,17 +45,20 @@
   }
 
   .profiles {
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
+    column-gap: 0.688rem;
   }
 }
 
 @media (min-width: 960px) {
   .article {
-    margin: 8.75rem auto;
+    margin: 8.75rem 0;
   }
 
   .profiles {
     margin-top: 4rem;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
   }
 }
