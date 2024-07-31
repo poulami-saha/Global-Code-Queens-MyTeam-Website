@@ -30,7 +30,7 @@ exports[`renders Directors section correctly and matches snapshot 1`] = `
               src="avatar-nikita.jpg"
             />
             <h3
-              class="name h3"
+              class="name h3 h3Large"
               id=""
             >
               Nikita Marks
@@ -63,7 +63,7 @@ exports[`renders Directors section correctly and matches snapshot 1`] = `
               src="avatar-christian.jpg"
             />
             <h3
-              class="name h3"
+              class="name h3 h3Large"
               id=""
             >
               Cristian Duncan
@@ -96,7 +96,7 @@ exports[`renders Directors section correctly and matches snapshot 1`] = `
               src="avatar-cruz.jpg"
             />
             <h3
-              class="name h3"
+              class="name h3 h3Large"
               id=""
             >
               Cruz Hamer
@@ -129,7 +129,7 @@ exports[`renders Directors section correctly and matches snapshot 1`] = `
               src="avatar-drake.jpg"
             />
             <h3
-              class="name h3"
+              class="name h3 h3Large"
               id=""
             >
               Drake Heaton
@@ -162,7 +162,7 @@ exports[`renders Directors section correctly and matches snapshot 1`] = `
               src="avatar-griffin.jpg"
             />
             <h3
-              class="name h3"
+              class="name h3 h3Large"
               id=""
             >
               Griffin Wise
@@ -195,7 +195,7 @@ exports[`renders Directors section correctly and matches snapshot 1`] = `
               src="avatar-aden.jpg"
             />
             <h3
-              class="name h3"
+              class="name h3 h3Large"
               id=""
             >
               Aden Allan
