@@ -59,6 +59,6 @@
   .profiles {
     margin-top: 4rem;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.875rem;
+    column-gap: 2.0833%;
   }
 }
