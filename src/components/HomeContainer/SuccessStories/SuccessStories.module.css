@@ -81,13 +81,22 @@
   }
 
   .contents {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
     gap: 30px;
     max-width: 1148px;
+    margin-inline: auto;
   }
 
   .quote {
-    width: calc(100% / 3);
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+
+  .quote > :first-child {
+    align-self: start;
   }
 
   .heading {
