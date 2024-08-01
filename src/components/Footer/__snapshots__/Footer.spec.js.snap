@@ -44,25 +44,25 @@ exports[`renders NotFound correctly and matches snapshot 1`] = `
         class="location"
       >
         <p
-          class="body1"
+          class="body2"
           id=""
         >
           997 Hillcrest Lane
         </p>
         <p
-          class="body1"
+          class="body2"
           id=""
         >
           Irvine, CA
         </p>
         <p
-          class="body1"
+          class="body2"
           id=""
         >
           California 92714
         </p>
         <p
-          class="body1"
+          class="body2"
           id=""
         >
           Call Us: 949-833-7432
@@ -75,24 +75,37 @@ exports[`renders NotFound correctly and matches snapshot 1`] = `
       <div
         class="socialLinks"
       >
-        <img
-          alt="facebook"
-          src="icon-facebook.svg"
-        />
-        <img
-          alt="pinterest"
-          src="icon-pinterest.svg"
-        />
-        <img
-          alt="X"
-          src="icon-twitter.svg"
-        />
+        <svg
+          class="socialLink"
+        >
+          icon-facebook.svg
+        </svg>
+        <svg
+          class="socialLink"
+        >
+          icon-pinterest.svg
+        </svg>
+        <svg
+          class="socialLink"
+        >
+          icon-twitter.svg
+        </svg>
       </div>
       <p
-        class="copyright body1"
+        class="copyright body2"
         id=""
       >
-        Copyright 2020. All Rights Reserved
+        <span
+          class="avoidWrap"
+        >
+          Copyright 2020.
+        </span>
+         
+        <span
+          class="avoidWrap"
+        >
+          All Rights Reserved
+        </span>
       </p>
     </div>
   </footer>
