@@ -79,6 +79,8 @@
 @media (min-width: 960px) {
   .wrapper {
     padding-block: 140px;
+    max-width: 1148px;
+    box-sizing: border-box;
   }
 
   .contents {
