@@ -80,7 +80,7 @@
   .wrapper {
     padding-block: 140px;
     max-width: 1148px;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
   .contents {
