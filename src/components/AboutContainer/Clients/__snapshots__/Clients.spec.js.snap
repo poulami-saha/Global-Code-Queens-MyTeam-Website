@@ -5,40 +5,44 @@ exports[`renders NotFound correctly and matches snapshot 1`] = `
   <section
     class="container"
   >
-    <h2
-      class="title h2"
-      id=""
-    >
-      Some of our clients
-    </h2>
     <div
-      class="news"
+      class="body"
     >
-      <img
-        alt="The Verge"
-        class="logoVerge"
-        src="logo-the-verge.png"
-      />
-      <img
-        alt="TheJakarta Post"
-        class="logoJakarta"
-        src="logo-jakarta-post.png"
-      />
-      <img
-        alt="The Guardian"
-        class="logoGuardian"
-        src="logo-the-guardian.png"
-      />
-      <img
-        alt="techRadar"
-        class="logoTechRadar"
-        src="logo-tech-radar.png"
-      />
-      <img
-        alt="Gadgets Now"
-        class="logoGadgets"
-        src="logo-gadgets-now.png"
-      />
+      <h2
+        class="title h2"
+        id=""
+      >
+        Some of our clients
+      </h2>
+      <div
+        class="news"
+      >
+        <img
+          alt="The Verge"
+          class="logoVerge"
+          src="logo-the-verge.png"
+        />
+        <img
+          alt="The Jakarta Post"
+          class="logoJakarta"
+          src="logo-jakarta-post.png"
+        />
+        <img
+          alt="The Guardian"
+          class="logoGuardian"
+          src="logo-the-guardian.png"
+        />
+        <img
+          alt="Tech Radar"
+          class="logoTechRadar"
+          src="logo-tech-radar.png"
+        />
+        <img
+          alt="Gadgets Now"
+          class="logoGadgets"
+          src="logo-gadgets-now.png"
+        />
+      </div>
     </div>
   </section>
 </DocumentFragment>
