@@ -2,8 +2,9 @@
 .NotFound_container {
   display: grid;
   place-items: center;
-  height: 100vh;
-  background-color: var(--deep-jungle-blue);
+  align-items: start;
+  height: 60vh;
+  background-color: var(--midnight-green);
   color: var(--primary-white);
   position: relative;
   z-index: -2;

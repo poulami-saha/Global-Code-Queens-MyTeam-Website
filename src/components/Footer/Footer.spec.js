@@ -15,8 +15,7 @@ test("renders NotFound correctly and matches snapshot", async () => {
   expect(asFragment()).toMatchSnapshot();
 
   // Content test
-  expect(getByText(/Copyright 2020./)).toBeInTheDocument();
-  expect(getByText(/All Rights Reserved/)).toBeInTheDocument();
+  expect(getByText(/Copyright 2020. All Rights Reserved/)).toBeInTheDocument();
   expect(getByText(/997 Hillcrest Lane/)).toBeInTheDocument();
   expect(getByText(/Irvine, CA/)).toBeInTheDocument();
   expect(getByText(/California 92714/)).toBeInTheDocument();

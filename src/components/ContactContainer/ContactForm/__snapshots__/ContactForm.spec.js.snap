@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormComponent renders ContactForm correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <form
+    class="flexColumnStart"
+  >
+    <div
+      class="formElement"
+    >
+      <input
+        class=" false input"
+        placeholder="Name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="formElement"
+    >
+      <input
+        class=" false input"
+        placeholder="Email Address"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="formElement"
+    >
+      <input
+        class=" false input"
+        placeholder="Company Name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="formElement"
+    >
+      <input
+        class=" false input"
+        placeholder="Title"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="formElement"
+    >
+      <textarea
+        class=" false textarea"
+        placeholder="Message"
+      />
+    </div>
+    <button
+      class="button disabled buttonSecondary"
+      disabled=""
+    >
+      submit
+    </button>
+  </form>
+</DocumentFragment>
+`;

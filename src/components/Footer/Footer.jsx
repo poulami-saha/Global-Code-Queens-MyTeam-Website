@@ -2,9 +2,7 @@ import React from "react";
 import { Typography } from "../utility";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.svg";
-
 import { Link } from "react-router-dom";
-
 import { ReactComponent as FacebookIcon } from "../../assets/icon-facebook.svg";
 import { ReactComponent as PinterestIcon } from "../../assets/icon-pinterest.svg";
 import { ReactComponent as TwitterIcon } from "../../assets/icon-twitter.svg";
@@ -36,12 +34,15 @@ const Footer = () => {
       <div className={styles.socialContent}>
         <div className={styles.socialLinks}>
           <FacebookIcon className={styles.socialLink} />
-          <PinterestIcon className={styles.socialLink}/>
-          <TwitterIcon className={styles.socialLink}/>
+          <PinterestIcon className={styles.socialLink} />
+          <TwitterIcon className={styles.socialLink} />
         </div>
 
-        <Typography elType="body2" className={styles.copyright}>
-          <span className={styles.avoidWrap}>Copyright 2020.</span> <span className={styles.avoidWrap}>All Rights Reserved</span>
+        <Typography
+          elType="body2"
+          className={`${styles.copyright} ${styles.avoidWrap}`}
+        >
+          Copyright 2020. All Rights Reserved
         </Typography>
       </div>
     </footer>
