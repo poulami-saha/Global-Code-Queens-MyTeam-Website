@@ -96,7 +96,6 @@
   .logo {
     width: 128px;
     height: 32px;
-    margin-right: 28px;
   }
 
   .hamburgerIcon {
@@ -106,7 +105,6 @@
   .navLink {
     color: var(--primary-white);
     text-decoration: none;
-    margin-inline: 20px;
   }
 
   .navLink:hover {
@@ -122,6 +120,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
+  }
+
+  .navLinks > :first-child {
+    margin-right: 8px;
   }
 }
 

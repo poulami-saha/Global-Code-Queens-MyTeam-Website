@@ -29,7 +29,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.navLinks}>
-          <img src={Logo} alt="logo" className={styles.logo} />
+          <Link to="/"><img src={Logo} alt="logo" className={styles.logo} /></Link>
           <Link to="/" className={`${styles.navLink} ${styles.nav}`}>
             <Typography elType="body4">home</Typography>
           </Link>
