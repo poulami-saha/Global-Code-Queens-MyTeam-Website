@@ -58,5 +58,6 @@
   .profiles {
     margin-top: 4rem;
     column-gap: 1.875rem;
+    max-width: 1200px;
   }
 }
