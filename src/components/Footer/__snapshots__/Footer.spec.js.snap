@@ -75,21 +75,21 @@ exports[`renders NotFound correctly and matches snapshot 1`] = `
       <div
         class="socialLinks"
       >
-        <img
-          alt="facebook"
+        <svg
           class="socialLink"
-          src="icon-facebook.svg"
-        />
-        <img
-          alt="Pinterest"
+        >
+          icon-facebook.svg
+        </svg>
+        <svg
           class="socialLink"
-          src="icon-pinterest.svg"
-        />
-        <img
-          alt="twitter"
+        >
+          icon-pinterest.svg
+        </svg>
+        <svg
           class="socialLink"
-          src="icon-twitter.svg"
-        />
+        >
+          icon-twitter.svg
+        </svg>
       </div>
       <p
         class="copyright avoidWrap body2"
