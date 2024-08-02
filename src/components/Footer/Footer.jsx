@@ -2,12 +2,10 @@ import React from "react";
 import { Typography } from "../utility";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.svg";
-
 import { Link } from "react-router-dom";
-
-import FacebookIcon from "../../assets/icon-facebook.svg";
-import PinterestIcon from "../../assets/icon-pinterest.svg";
-import TwitterIcon from "../../assets/icon-twitter.svg";
+import { ReactComponent as FacebookIcon } from "../../assets/icon-facebook.svg";
+import { ReactComponent as PinterestIcon } from "../../assets/icon-pinterest.svg";
+import { ReactComponent as TwitterIcon } from "../../assets/icon-twitter.svg";
 
 const Footer = () => {
   return (
@@ -35,17 +33,9 @@ const Footer = () => {
 
       <div className={styles.socialContent}>
         <div className={styles.socialLinks}>
-          <img
-            src={FacebookIcon}
-            className={styles.socialLink}
-            alt="facebook"
-          />
-          <img
-            src={PinterestIcon}
-            className={styles.socialLink}
-            alt="Pinterest"
-          />
-          <img src={TwitterIcon} className={styles.socialLink} alt="twitter" />
+          <FacebookIcon className={styles.socialLink} />
+          <PinterestIcon className={styles.socialLink} />
+          <TwitterIcon className={styles.socialLink} />
         </div>
 
         <Typography
