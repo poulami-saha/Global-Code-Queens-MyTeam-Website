@@ -75,37 +75,27 @@ exports[`renders NotFound correctly and matches snapshot 1`] = `
       <div
         class="socialLinks"
       >
-        <svg
+        <img
+          alt="facebook"
           class="socialLink"
-        >
-          icon-facebook.svg
-        </svg>
-        <svg
+          src="icon-facebook.svg"
+        />
+        <img
+          alt="Pinterest"
           class="socialLink"
-        >
-          icon-pinterest.svg
-        </svg>
-        <svg
+          src="icon-pinterest.svg"
+        />
+        <img
+          alt="twitter"
           class="socialLink"
-        >
-          icon-twitter.svg
-        </svg>
+          src="icon-twitter.svg"
+        />
       </div>
       <p
-        class="copyright body2"
+        class="copyright avoidWrap body2"
         id=""
       >
-        <span
-          class="avoidWrap"
-        >
-          Copyright 2020.
-        </span>
-         
-        <span
-          class="avoidWrap"
-        >
-          All Rights Reserved
-        </span>
+        Copyright 2020. All Rights Reserved
       </p>
     </div>
   </footer>
